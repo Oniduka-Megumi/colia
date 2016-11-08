@@ -1,0 +1,1281 @@
+
+@charset "shift_jis";
+
+/*
+スマートフォン用CSS
+*/
+
+/*共通*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:middle;
+}
+
+/*--------------------------------------------------*/
+.clearfix{clear: both;}.clearfix:after {content: ".";display: block;clear: both;height: 0;visibility: hidden;}.clearfix { display: inline-block; }
+/* exlude MacIE5 \*/* html .clearfix { height: 1% }.clearfix {display:block;}/* end MacIE5 *//*--------------------------------------------------*/
+
+.indent{
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	display:block;
+}
+
+body {
+	line-height:1.2;
+	font-family:Meiryo, メイリオ, 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif;
+	font-size:14px;
+	width: 100%;
+	/*background: url(http://ic4-a.dena.ne.jp/mi/w/1280/h/1280/q/90/bcimg1-a.dena.ne.jp/plus/u3188072/pc/sp_img/back_lp_03.png);
+	background-repeat : repeat;
+	background-size  : 100% auto;
+	position : fixed;
+	top  : 0;
+	left : 0;
+	right : 0;
+	bottom : 0;*/
+}
+
+section {
+	width: 95%;
+	margin: 0 auto;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    color: #555555;
+    outline: medium none;
+}
+
+ul {
+    list-style: none outside none;
+}
+
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* clearfix */
+.clearfix:after {
+	content: ".";  /* 新しい要素を作る */
+	display: block;  /* ブロックレベル要素に */
+	clear: both;
+	height: 0;
+	visibility: hidden; } 
+
+#content {
+	width: 320px;
+	margin: 0 auto 0px auto;
+	line-height: 150%;
+}
+
+
+/*=============================*/
+/*
+/*トップページ index_set02
+/*
+/*=============================*/
+header{
+	border-top: 2px solid #998675;
+}
+
+.logo{
+	width: 59.37%;
+	height: auto;
+	margin: 10px;
+	float: left;
+	display: block;
+}
+
+.logo a{
+	background: url(../images/common/logo.png) no-repeat 0 0; background-size: 100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 16%;
+	display: block;
+}
+	
+/*ヘッダーロゴ
+-----------------------------*/
+header.sp nav.global_nav {
+position: fixed;
+bottom: 0;
+right: 0;
+z-index:100;
+}
+
+h1{
+	text-align: center;
+}
+
+.top-menu{
+	margin: 15px 5px 0 0;
+	float: right;
+}
+
+.top-menu ul li{
+	float: left;
+	margin-left: 0px;
+}
+
+.top-menu ul li:nth-child(1){
+	margin-top: 5px;
+}
+
+.top-menu ul li:nth-child(2){
+	margin:4px 10px;
+}
+
+.top-menu ul li a.cart{
+	background: url(../images/common/btn_cart.png) no-repeat 0 0;
+	background-size: 30px 33px;
+	width: 30px;
+	height: 33px;
+	display: block;
+	overflow: hidden;
+}
+
+.top-menu ul li a.search{
+	background: url(../images/common/btn_serch.png) no-repeat 0 0;
+	background-size: 30px 33px;
+	width: 30px;
+	height: 33px;
+	display: block;
+	overflow: hidden;
+}
+
+.top-menu ul li a.menu{
+	background: url(../images/common/btn_menu.png) no-repeat 0 0;
+	background-size: 40px 41px;
+	width: 40px;
+	height: 41px;
+	display: block;
+	overflow: hidden;
+}
+
+/*ヘッダー
+グローバルナビ*/
+/*--------------------------------------*/
+#gnav{
+	clear:both;
+	padding:0;
+	z-index	: 100;
+}
+
+#gnav ul{
+	width: 100%;
+	vertical-align:middle;
+	font-size:11px;
+	font-weight: normal;
+}
+
+#gnav li{
+	width: 24.8%;
+	height: auto;
+	float: left;
+	border-right: 1px solid #ccc;
+}
+
+#gnav li:nth-child(4){
+	border-right: none;
+}
+	 
+#gnav ul li a{
+    width: 100%;
+    padding: 30px 0 3px 0;
+    margin: 0;
+    height: auto;
+}
+
+#gnav ul li a.g1 { background: url(../images/common/menu01.png) no-repeat center 0; background-size:contain;}
+#gnav ul li a.g2 { background: url(../images/common/menu02.png) no-repeat center 0; background-size:contain;}
+#gnav ul li a.g3 { background: url(../images/common/menu03.png) no-repeat center 0; background-size:contain;}
+#gnav ul li a.g4 { background: url(../images/common/menu04.png) no-repeat center 0; background-size:contain;}
+
+.fixed {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+	}
+
+.infoBox{
+	background-color: #FAFAFA;
+	min-width: 100%;
+	height: auto;
+	padding: 10px 0;
+	margin: 10px 0;
+}
+
+.info{
+	max-width: 95%;
+	height: auto;
+	border: 1px solid #808080;
+	margin: 0 auto;
+	background: url(../images/top/ico_info.jpg) no-repeat 10px 5px; background-size:10%;
+	padding: 15px 0;
+}
+
+.info p{
+	font-size: 1.2em;
+	text-align: 15px;
+	padding-left: 15%;
+}
+
+.info a{
+	color: #108BF3;
+}
+
+.mailMagazineBox{
+	max-width: 100%;
+	height: auto;
+}
+
+.catNav{
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.catNav ul li{
+	float: left;
+	width: 50%;
+	height: auto;
+}
+
+.catNav ul li a{
+	padding-bottom: 23%;
+}
+
+.catNav ul li:nth-child(1) a{
+	background: url(../images/common/cat01.png) no-repeat 0 0; background-size:100%;
+	display: block;
+}
+.catNav ul li:nth-child(2) a{
+	background: url(../images/common/cat02.png) no-repeat 0 0; background-size:100%;
+	display: block;
+}
+
+/*検索*/
+/*--------------------------------------*/
+body.pageContact div.search-wrap{
+	margin-top: 3%;
+}
+
+.search-wrap{
+}
+
+.search-block{
+}
+.search1{
+	width: 90%;
+	margin: 0 auto;
+	border: none;
+}
+
+.search1 dt{
+	max-width: 100%;
+	margin: 0 auto 10px;
+}
+
+#keyword2{
+	width: 95%;
+	height: 3em;
+	font-size: 1em;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+.search1 dd{
+	width: 40%;
+	margin: 0 auto;
+}
+
+.search1 dd button{
+	width: 100%;
+	height: 3em;
+	background-color: #ccc;
+	border: none;
+}
+
+h3.hotKeyword{
+	width: 95.625%;
+	height: auto;
+	background: url(../images/common/ttl_keyword.png) no-repeat 0 0; background-size:100%;
+	padding-bottom: 8%;
+	margin: 15px auto 3px;
+}
+
+.keywordList{
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.keywordList li{
+	float: left;
+	padding: 5px 10px;
+	margin-left: 10px;
+	margin-bottom: 13px;
+	font-size: 0.8em;
+	text-align: center;
+	box-shadow:0px 0px 1px 2px #e0e0e0;
+	-moz-box-shadow:0px 0px 1px 2px #e0e0e0;
+	-webkit-box-shadow:0px 0px 1px 2px #e0e0e0;
+}
+
+/*新着商品*/
+/*--------------------------------------*/
+h2.new{
+	width: 100%;
+	height: auto;
+	background: url(../images/top/ttl_new.png) no-repeat 0 0; background-size:100%;
+	padding-bottom: 9.68%;
+	margin-top: 10px;
+}
+
+#newItems{
+	width:100%; 
+	padding: 10px 0;
+	background-color: #F2F2F2;
+	margin: 0px 0 20px;
+}
+
+
+/*アコーディオン*/
+/*--------------------------------------*/
+#contactCat{
+	background-color: #F7F4F0;
+	width: 100%;
+	padding-top: 15px;
+}
+
+.accordion {
+	min-width: 90%;
+	margin: 0 auto 20px;
+	padding: 10px;
+}
+.accordion .ac-content {
+	margin: 0 0px;
+}
+.accordion input {
+	display: none;
+}
+.accordion label {
+	display: block;
+	cursor: pointer;
+	padding: 10px;
+}
+.accordion label:hover {
+	background: #ccc;
+}
+.accordion .ac-cont {
+	transition: 0.2s;
+	height: 0;
+	overflow: hidden;
+	padding: 0 0px;
+}
+.accordion input:checked + .ac-cont {
+	height: auto;
+	padding: 0 0px;
+}
+
+.accordion label.btnCat{
+	background: url(../images/contact/btn_cat.png) no-repeat 0 0; background-size:100%;
+	max-width: 94%;
+	height:auto;
+	padding-bottom: 8%;
+}
+
+.accordion label.bland{
+	background: url(../images/contact/btn_brand.jpg) no-repeat 0 0; background-size:100%;
+	width: 90%;
+	height: auto;
+	padding-top:8%;
+	margin: 0 auto;
+}
+
+.ac-cont ul.list li{
+	float: left;
+}
+
+.ac-cont ul.list li{
+	float: left;
+	padding: 5px 10px;
+	margin-left: 10px;
+	margin-bottom: 13px;
+	background-color: #fff;
+	font-size: 0.8em;
+	text-align: center;
+	box-shadow:0px 0px 1px 2px #e0e0e0;
+	-moz-box-shadow:0px 0px 1px 2px #e0e0e0;
+	-webkit-box-shadow:0px 0px 1px 2px #e0e0e0;
+}
+
+.ac-cont ul.list li a{
+	text-decoration: none;
+	color: #999;
+}
+
+ul.clm2{
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+ul.clm2 li{
+	float: left;
+	width: 48%;
+	height: auto;
+}
+
+ul.clm2 li:nth-child(2){
+	margin-left: 4%;
+
+}
+
+ul.clm2 li:nth-child(1) a{
+	background: url(../images/contact/btn_cat01.jpg) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 23.79%;
+	display: block;
+}
+
+ul.clm2 li:nth-child(2) a{
+	background: url(../images/contact/btn_cat02.jpg) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 23.79%;
+	display: block;
+}
+
+ul.clm3{
+	width: 95%;
+	margin: 0 auto 13px;
+	overflow: hidden;
+}
+
+ul.clm3 li{
+	float: left;
+	width: 29%;
+	height: auto;
+}
+
+ul.clm3 li:nth-child(2){
+	margin-left: 6.5%;
+	margin-right: 6.5%;
+}
+
+ul.clm3 li:nth-child(1) a{
+	background: url(../images/contact/btn_cat03.jpg) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 23.79%;
+	display: block;
+}
+
+ul.clm3 li:nth-child(2) a{
+	background: url(../images/contact/btn_cat04.jpg) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 23.79%;
+	display: block;
+}
+
+ul.clm3 li:nth-child(3) a{
+	background: url(../images/contact/btn_cat05.jpg) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 23.79%;
+	display: block;
+}
+
+.accordion label.lense{
+	background: url(../images/contact/btn_lense.jpg) no-repeat 0 0; background-size:100%;
+	width: 90%;
+	height: auto;
+	padding-top:8%;
+	margin: 0 auto;
+}
+
+.accordion label.base{
+	background: url(../images/contact/btn_base.jpg) no-repeat 0 0; background-size:100%;
+	width: 90%;
+	height: auto;
+	padding-top:8%;
+	margin: 0 auto;
+}
+
+h3.color{
+	background: url(../images/contact/ttl_color.jpg) no-repeat 0 0; background-size:100%;
+	width: 96%;
+	height: auto;
+	padding-top:9.8%;
+	margin: 0 auto;
+}
+
+ul.colorList{
+	width: 95%;
+	overflow: hidden;
+}
+
+ul.colorList li{
+	width: 16%;
+	height: auto;
+	float: left;
+	margin-left: 8%;
+}
+
+ul.colorList li a{
+	display: block;
+}
+
+ul.colorList li:nth-child(1) a{
+	background: url(../images/contact/color01.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(2) a{
+	background: url(../images/contact/color02.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(3) a{
+	background: url(../images/contact/color03.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(4) a{
+	background: url(../images/contact/color04.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(5) a{
+	background: url(../images/contact/color05.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(6) a{
+	background: url(../images/contact/color06.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(7) a{
+	background: url(../images/contact/color07.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(8) a{
+	background: url(../images/contact/color08.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+ul.colorList li:nth-child(9) a{
+	background: url(../images/contact/color09.jpg) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 120%;
+}
+
+/*ランキング*/
+/*--------------------------------------*/
+#contactRank h2{
+	background: url(../images/contact/ttl_contact.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 17.72%;
+}
+
+#cosmeRank h2{
+	background: url(../images/cosme/ttl_cosme.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 17.72%;
+}
+
+#cosmeRank h3, #contactRank h3{
+	background: url(../images/cosme/ttl_ranking.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 6.09%;
+}
+
+.contactImg{
+	background: url(../images/contact/img_contact.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 50.16%
+}
+
+.cosmeImg{
+	background: url(../images/cosme/img_cosme.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 42.73%
+}
+
+.ranking div.rankParts{
+	width: 28.74%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.ranking div.center{
+	margin-left:6.5%;
+	margin-right:6.5%;
+}
+
+.ranking div.rankParts a img{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+#cosmeRank div.rankParts a img{
+	border: 1px solid #ccc;
+}
+
+.ranking div.rankParts p{
+	font-size: 0.8em;
+	line-height: 1.5;
+}
+
+.price{
+	font-weight: bold;
+}
+
+.ranking div.rankParts p.price span.priceBig{
+	font-size: 1.2em;
+}
+
+.btnAll{
+	width: 84.06%;
+	height: auto;
+	margin: 0 auto 20px auto;
+}
+
+.btnAll a{
+	background: url(../images/common/btn_all.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 13%;
+	display: block;
+}
+
+/*おすすめコーデ*/
+/*--------------------------------------*/
+#osusume{
+	background: url(../images/common/bg_osusume.jpg) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+#osusume h2{
+	background: url(../images/common/ttl_coorde.png) no-repeat 0 0; background-size:100%;
+	max-width: 92.03125%;
+	height: auto;
+	padding-top: 10%;
+	margin: 10px auto 0 auto;
+	}
+
+.osusumeInner{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.osusumeInner ul li{
+	width: 50%;
+	float: left;
+}
+/*スペシャルコンテンツ
+-----------------------------*/
+#special{
+	width: 100%;
+	height: auto;
+	padding-bottom: 0;
+	margin-bottom: 10px;
+	background-color: #FAF7F4;
+}
+
+#special h2{
+	background: url(../images/common/ttl_special.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	padding-bottom: 10.31%;
+}
+
+#special dl{
+	width: 93.75%;
+	margin: 0 auto;
+}
+
+#special dl dt{
+	margin-bottom: 5px;
+}
+
+#special dl dd{
+	margin-bottom: 15px;
+	line-height: 1.3;
+}
+
+.red{
+	color: #F15A24;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+
+
+
+/*フッター
+-----------------------------*/
+.mailMagazine{
+	max-width: 100%;
+	height: auto;
+	padding-top: 25%;
+	margin: 0 auto;
+	background: url(../images/common/bana_magazine.png) no-repeat 0 0; background-size:100%;
+}
+
+.footMenu ul{
+	border-bottom: 1px solid #ccc;
+}
+
+.footMenu ul li{
+	border-top: 1px solid #ccc;
+}
+
+.footMenu ul li a{
+	width: 100%;
+	height: auto;
+	padding-top: 13.75%;
+	display: block;
+}
+
+.footMenu ul li:nth-child(1) a{
+	background: url(../images/common/foot_menu01.jpg) no-repeat 0 center; background-size:100%;
+}
+
+.footMenu ul li:nth-child(2) a{
+	background: url(../images/common/foot_menu02.jpg) no-repeat 0 center; background-size:100%;
+}
+
+.footMenu ul li:nth-child(3) a{
+	background: url(../images/common/foot_menu03.jpg) no-repeat 0 center; background-size:100%;
+}
+
+.footMenu ul li:nth-child(4) a{
+	background: url(../images/common/foot_menu04.jpg) no-repeat 0 center; background-size:100%;
+}
+
+.footMenu ul li:nth-child(5) a{
+	background: url(../images/common/foot_menu05.jpg) no-repeat 0 center; background-size:100%;
+}
+
+.footMenu ul li:nth-child(6) a{
+	background: url(../images/common/foot_menu06.jpg) no-repeat 0 center; background-size:100%;
+}
+
+.footMenu ul li:nth-child(7) a{
+	background: url(../images/common/foot_menu07.jpg) no-repeat 0 center; background-size:100%;
+}
+
+.sns{
+	background-color: #eee;
+	height: 50px;
+	width: 100%;
+}
+
+#footWrapper{
+	width: 100%;
+	background-color: #57391C;
+	height: auto;
+	overflow: hidden;
+}
+
+.footBox{
+	background: url(../images/common/bg_footer.png) no-repeat 0 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+	overflow: hidden;
+}
+
+.footBox ul{
+	max-width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.footBox ul li{
+	float: left;
+}
+
+.footBox ul li:nth-child(2){
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.footBox ul li a{
+	color: #fff;
+}
+
+.footLogo{
+	width: 34.375%;
+	height: auto;
+	max-width: 100%;
+	padding-top: 10%;
+	margin: 0 auto;
+}
+
+.footLogo a{
+	background: url(../images/common/logo_footer.png) no-repeat 0 0; background-size:100%;
+	display: block;
+	height: auto;
+	max-width: 100%;
+	padding-bottom: 70%;
+}
+
+.copyright{
+	font-size: 0.7em;
+	color: #A67C52;
+	text-align: center;
+	padding-bottom: 5px;
+}
+
+.toTop{
+	border: 1px solid #F15A24;
+	max-width: 83.75%;
+	margin: 20px auto;
+}
+
+.toTop a{
+	max-width: 100%;
+	height: auto;
+	padding-top: 10%;
+	margin: 0 auto;
+	background: url(../images/common/btn_pageTop.png) no-repeat 0 center; background-size:100%;
+	display: block;
+}
+
+/*=======================================================================================*/
+/*
+/*コンタクト color-contact.html
+/*
+/*=====================================================================================*/
+
+/*新商品の紹介*/
+/*--------------------------------------*/
+.swiper-slide a{
+	color: #000;
+	text-decoration: none;
+}
+
+.newItems{
+	margin-bottom: 8%;
+}
+
+.newItems h2{
+	background: url(../images/top/ttl_new.jpg) no-repeat center 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 9.37%;
+}
+
+.newBox{
+	width: 93.90%;
+	margin: 0 auto 30px;
+	overflow: hidden;
+}
+
+.newLeft{
+	float: left;
+	width: 47.96%;
+	margin-right: 3%;
+}
+
+.newLeft img{
+	border: 1px solid #ccc;
+}
+
+.newRight h3{
+	color: #F15A24;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	text-decoration: underline;
+	text-decoration-color: #F15A24;
+}
+
+.newRight p{
+	font-size: 0.9em;
+	line-height: 1.5;
+}
+
+.newRight p.price{
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+.newRight p.price span{
+	font-size: 1.5em;
+	color: #F15A24;
+}
+
+/*クーポン等*/
+/*--------------------------------------*/
+
+.otoku{
+	width: 100%;
+	background-color: #F2F2F2;
+	text-align: center;
+	padding: 0% 0 5%;
+	margin-top: 5%;
+}
+
+.otoku a{
+	display: block;
+	margin-top: 5%;
+}
+
+.days{
+	text-align: center;
+	width: 100%;
+	color: #333;
+	padding: 3% 0;
+	background-color: #ccc;
+}
+
+.couponInner{
+	margin-top: 5%;
+}
+
+/*オススメ定番商品*/
+/*--------------------------------------*/
+.recomend{
+	width: 100%;
+	margin: 5% 0;
+}
+
+.recomend h2{
+	background: url(../images/contact/ttl_recomend.jpg) no-repeat center 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 16.71%;
+}
+
+.recomend dl{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.recomend dl dd{
+	text-align: center;
+	margin: 3% 0 5% 0;
+}
+
+
+/*=======================================================================================*/
+/*
+/*コスメ cosme.html
+/*
+/*=====================================================================================*/
+/*カテゴリー*/
+/*--------------------------------------*/
+
+.catItem{
+	background-color: #C7B299;
+	width: 100%;
+	height: auto;
+	padding: 10px 0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.catItem h2{
+	margin-left: 10px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.cosmeCat{
+	background-color: #F7F4F0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.cosmeCat ul{
+	width: 94.75%;
+	margin: 15px auto;
+}
+
+.cosmeCat ul li{
+	float: left;
+	width: 24%;
+	height: auto;
+	margin-right: 3px;
+}
+
+.cosmeCat ul li a{
+	display: block;
+	padding-bottom: 68%;
+}
+
+.cosmeCat ul li:nth-child(1) a{
+	background: url(../images/cosme/btn_cat01.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(2) a{
+	background: url(../images/cosme/btn_cat02.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(3) a{
+	background: url(../images/cosme/btn_cat03.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(4) a{
+	background: url(../images/cosme/btn_cat04.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(5) a{
+	background: url(../images/cosme/btn_cat05.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(6) a{
+	background: url(../images/cosme/btn_cat06.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(7) a{
+	background: url(../images/cosme/btn_cat07.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(8) a{
+	background: url(../images/cosme/btn_cat08.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(9) a{
+	background: url(../images/cosme/btn_cat09.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(10) a{
+	background: url(../images/cosme/btn_cat10.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(11) a{
+	background: url(../images/cosme/btn_cat11.png) no-repeat center 0; background-size:100%;
+}
+
+.cosmeCat ul li:nth-child(12) a{
+	background: url(../images/cosme/btn_cat12.png) no-repeat center 0; background-size:100%;
+}
+
+.seeAll{
+	width: 94.75%;
+	height: auto;
+	margin: 10% auto 0;
+}
+
+.seeAll a{
+	display: block;
+	background: url(../images/cosme/btn_seeAll.png) no-repeat center 0; background-size:100%;
+	padding-bottom: 10%;
+	margin-top: 3%;
+}
+
+.listInner ul{
+	overflow: hidden;
+	width: 96%;
+	margin: 0 auto 20px;
+}
+
+.listInner ul li{
+	float: left;
+	width: 31%;
+	height: auto;
+	margin-left: 5px;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	display:block;
+}
+
+.listInner ul li a{
+	display: block;
+	padding-bottom: 46.36%;
+}
+
+.listInner ul li:nth-child(1) a{
+	background: url(../images/cosme/b01.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(2) a{
+	background: url(../images/cosme/b02.png) no-repeat center 0; background-size:100%;
+}
+.listInner ul li:nth-child(3) a{
+	background: url(../images/cosme/b03.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(4) a{
+	background: url(../images/cosme/b04.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(5) a{
+	background: url(../images/cosme/b05.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(6) a{
+	background: url(../images/cosme/b06.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(7) a{
+	background: url(../images/cosme/b07.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(8) a{
+	background: url(../images/cosme/b08.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(9) a{
+	background: url(../images/cosme/b09.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(10) a{
+	background: url(../images/cosme/b10.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(11) a{
+	background: url(../images/cosme/b11.png) no-repeat center 0; background-size:100%;
+}
+
+.listInner ul li:nth-child(12) a{
+	background: url(../images/cosme/b12.png) no-repeat center 0; background-size:100%;
+}
+
+
+.itemImg h2{
+	background: url(../images/cosme/ttl_itemImg.jpg) no-repeat center 0; background-size:100%;
+	width: 100%;
+	height: auto;
+	padding-bottom: 15%;
+}
+
+.itemImg{
+	width: 100%;
+}
+
+.itemImg ul{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.itemImg ul li{
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
