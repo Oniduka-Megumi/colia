@@ -290,8 +290,6 @@ a.btn_quick{
 /*リスト型ボタン 小*/
 
 ul.product_section li{  
-	background:url(http://img.shop-pro.jp/s_tmpl_img/1/icon_arrow_l2.png) no-repeat center right;
-	-webkit-background-size: 38px 28px;
 	padding: 10px;
 	border-bottom: 1px solid #ccc;
 	backgroung:#fff;
