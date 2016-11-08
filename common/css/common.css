@@ -1,6 +1,11 @@
 @charset "euc-jp";
 
 
+body{
+	margin:0;
+	padding:0;
+}
+
 
 /*clearfix*/
 
