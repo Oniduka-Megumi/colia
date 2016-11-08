@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="no-index,no-follow" />
-<title>共通スタイル</title>
+<title>トップページ</title>
 <meta name="description" content="<!--ディスクリプション-->">
 <meta name="keywords" content="<!--キーワード-->">
 <meta name="Author" content="<!--製作者名及び代表者名-->">
@@ -55,11 +55,11 @@
 
 
 <!--トップエリア-->
+
 <h3 class="tittleCT">商品カテゴリー</h3>
 
 <div class="categoryArea">
 <div class="categorySP">
-
 <div class="ct1">
 <a href="http://www.k-colle.net/?mode=grp&gid=327392"><img src="https://img17.shop-pro.jp/PA01166/275/etc/01_icon_ct.png?cmsp_timestamp=2133" width="100%" alt="大人気！！かたつむり（エスカルゴ）成分配合コスメ"></a>
 </div>
@@ -93,105 +93,154 @@
 </div>
 </div>
 
+<!--お知らせ(別ページ呼び起こし)-->
+<section id="info" class="no_titlebar">
+<h2 class="sttl">お知らせ</h2>
+<div class="wrap"><!{$info}--></div>
+</section>
 <!--お知らせ-->
 
-<section id="info" class="no_titlebar">
-	<h2 class="sttl">お知らせ</h2>
-	<div class="wrap"><{$info}></div>
-</section>
-
-<!--//商品カテゴリー-->
-<!--おすすめ商品ー-->
-<{if $recommend_num != 0}>
-<section id="recommend" class="sttl_s">
-	<h2 class="ossme"><span>おすすめ商品</span></h2>
-	<ul class="product_section">
-		<{section name=num loop=$recommend}>
-		<li><a href="<{$recommend[num].link_url}>">
-			<div class="product_pict"> <{if $recommend[num].img_url != ""}> <img src="<{$recommend[num].img_url}>" > <{else}> <img src="http://img.shop-pro.jp/tmpl_img/13/now100.gif" /> <{/if}> </div>
-			<div class="product_summary">
-				<div class="product_ttl">
-					<div class="product_name"><{$recommend[num].name}></div>
-					<{if $members_login_flg == true && $recommend[num].discount_flg == true}>
-					<!-- 通常販売価格 -->
-					<p class="product_price_regular"><{$recommend[num].regular_price}></p>
-					<{/if}>
-					<!-- 販売価格 -->
-					<{if $recommend[num].soldout_flg == true}>
-					<p class="product_price_soldout">SOLD OUT</p>
-					<{else}>
-					<p class="product_price"><{$recommend[num].price}></p>
-					<{if $members_login_flg == true && $recommend[num].discount_flg == true}>
-					<!-- 割引率 -->
-					<p class="product_price_discount"><{$recommend[num].discount_rate}>OFF!!</p>
-					<{/if}>
-					<{/if}>
-					<!-- 簡易説明 -->
-					<div class="explanation_simple"><{$recommend[num].s_expl|strip_tags}></div>
-				</div>
-			</div>
-			</a></li>
-		<{/section}>
-	</ul>
-
-</section>
-<!--//お知らせ-->
-<!--//おすすめ商品ー-->
 <!--売れ筋商品-->
-<{if $seller_num != 0}>
+<!{if $seller_num != 0}-->
 <section id="hot" class="sttl_s">
-	<h2 class="ossme"><span>売れ筋商品</span></h2>
-	<ul class="product_section">
-		<{section name=num loop=$seller}>
-		<li><a href="<{$seller[num].link_url}>">
-			<div class="product_pict"> <{if $seller[num].img_url != ""}> <img src="<{$seller[num].img_url}>" > <{else}> <img src="http://img.shop-pro.jp/tmpl_img/13/now100.gif" /> <{/if}> </div>
-			<div class="product_summary">
-				<div class="product_ttl">
-					<div class="product_name"><{$seller[num].name}></div>
-					<{if $members_login_flg == true && $seller[num].discount_flg == true}>
-					<!-- 通常販売価格 -->
-					<p class="product_price_regular"><{$seller[num].regular_price}></p>
-					<{/if}>
-					<!-- 販売価格 -->
-					<{if $seller[num].soldout_flg == true}>
-					<p class="product_price_soldout">SOLD OUT</p>
-					<{else}>
-					<p class="product_price"><{$seller[num].price}></p>
-					<{if $members_login_flg == true && $seller[num].discount_flg == true}>
-					<!-- 割引率 -->
-					<p class="product_price_discount"><{$seller[num].discount_rate}>OFF!!</p>
-					<{/if}>
-					<{/if}>
-					<!-- 簡易説明 -->
-					<div class="explanation_simple"><{$seller[num].s_expl|strip_tags}></div>
-				</div>
-			</div>
-			</a></li>
-		<{/section}>
-	</ul>
+<h2 class="tittleCT">売れ筋商品</h2>
+<ul class="product_section">
+
+<!{section name=num loop=$seller}>
+<li><a href="<{$seller[num].link_url}>">
+<div class="product_pict"> <!{if $seller[num].img_url != ""}> <img src="<!{$seller[num].img_url}>" > <!{else}> <img src="http://img.shop-pro.jp/tmpl_img/13/now100.gif" /> <!{/if}> </div>
+<div class="product_summary">
+<div class="product_ttl">
+<div class="product_name"><!{$seller[num].name}>あああああ</div>
+<!{if $members_login_flg == true && $seller[num].discount_flg == true}>
+<!-- 通常販売価格 -->
+<p class="product_price_regular"><!{$seller[num].regular_price}></p>
+<!{/if}>
+<!-- 販売価格 -->
+<!{if $seller[num].soldout_flg == true}>
+<p class="product_price_soldout">SOLD OUT</p>
+<!{else}>
+<p class="product_price"><!{$seller[num].price}>あああああ</p>
+<!{if $members_login_flg == true && $seller[num].discount_flg == true}>
+<!-- 割引率 -->
+<p class="product_price_discount"><!{$seller[num].discount_rate}>OFF!!</p>
+<!{/if}>
+<!{/if}>
+<!-- 簡易説明 -->
+<div class="explanation_simple"><!{$seller[num].s_expl|strip_tags}>あああああああああああああああああああああああああああああああああ</div>
+</div>
+</div>
+</a></li>
+
+<!-- 更新する時消去-->
+<li><a href="<{$seller[num].link_url}>">
+<div class="product_pict"> <!{if $seller[num].img_url != ""}> <img src="<!{$seller[num].img_url}>" > <!{else}> <img src="http://img.shop-pro.jp/tmpl_img/13/now100.gif" /> <!{/if}> </div>
+<div class="product_summary">
+<div class="product_ttl">
+<div class="product_name"><!{$seller[num].name}>あああああ</div>
+<!{if $members_login_flg == true && $seller[num].discount_flg == true}>
+<!-- 通常販売価格 -->
+<p class="product_price_regular"><!{$seller[num].regular_price}></p>
+<!{/if}>
+<!-- 販売価格 -->
+<!{if $seller[num].soldout_flg == true}>
+<p class="product_price_soldout">SOLD OUT</p>
+<!{else}>
+<p class="product_price"><!{$seller[num].price}>あああああ</p>
+<!{if $members_login_flg == true && $seller[num].discount_flg == true}>
+<!-- 割引率 -->
+<p class="product_price_discount"><!{$seller[num].discount_rate}>OFF!!</p>
+<!{/if}>
+<!{/if}>
+<!-- 簡易説明 -->
+<div class="explanation_simple"><!{$seller[num].s_expl|strip_tags}>あああああああああああああああああああああああああああああああああ</div>
+</div>
+</div>
+</a></li>
+<li><a href="<{$seller[num].link_url}>">
+<div class="product_pict"> <!{if $seller[num].img_url != ""}> <img src="<!{$seller[num].img_url}>" > <!{else}> <img src="http://img.shop-pro.jp/tmpl_img/13/now100.gif" /> <!{/if}> </div>
+<div class="product_summary">
+<div class="product_ttl">
+<div class="product_name"><!{$seller[num].name}>あああああ</div>
+<!{if $members_login_flg == true && $seller[num].discount_flg == true}>
+<!-- 通常販売価格 -->
+<p class="product_price_regular"><!{$seller[num].regular_price}></p>
+<!{/if}>
+<!-- 販売価格 -->
+<!{if $seller[num].soldout_flg == true}>
+<p class="product_price_soldout">SOLD OUT</p>
+<!{else}>
+<p class="product_price"><!{$seller[num].price}>あああああ</p>
+<!{if $members_login_flg == true && $seller[num].discount_flg == true}>
+<!-- 割引率 -->
+<p class="product_price_discount"><!{$seller[num].discount_rate}>OFF!!</p>
+<!{/if}>
+<!{/if}>
+<!-- 簡易説明 -->
+<div class="explanation_simple"><!{$seller[num].s_expl|strip_tags}>あああああああああああああああああああああああああああああああああ</div>
+</div>
+</div>
+</a></li>
+<!-- 更新する時消去-->
+
+
+<!{/section}>
+</ul>
 </section>
-<{/if}>
+<!{/if}>
 <!--//売れ筋商品-->
-		<!-- 商品カテゴリー -->
-	<section id="category" class="sttl_s">
-	<h2 class="sttl">カテゴリー</h2>
-	<div>
-		<nav class="list">
-			<ul class="link_list">
-				<{section name=num loop=$category}>
-				<li><a href="<{$category[num].link_url}>"><{$category[num].name}></a></li>
-				<{/section}>
-			</ul>
-		</nav>
-	</div>
+
+<!--おすすめ商品ー-->
+<!{if $recommend_num != 0}-->
+<section id="recommend" class="sttl_s">
+<h2 class="ossme"><span>おすすめ商品</span></h2>
+<ul class="product_section">
+<!{section name=num loop=$recommend}-->
+<li><a href="<!{$recommend[num].link_url}-->">
+<div class="product_pict"> <!{if $recommend[num].img_url != ""}--> <img src="<{$recommend[num].img_url}>" > <!{else}> <img src="http://img.shop-pro.jp/tmpl_img/13/now100.gif" /> <!{/if}--> </div>
+<div class="product_summary">
+<div class="product_ttl">
+<div class="product_name"><!{$recommend[num].name}--></div>
+<!{if $members_login_flg == true && $recommend[num].discount_flg == true}-->
+<!-- 通常販売価格 -->
+<p class="product_price_regular"><!{$recommend[num].regular_price}--></p>
+<!{/if}-->
+<!-- 販売価格 -->
+<!{if $recommend[num].soldout_flg == true}-->
+<p class="product_price_soldout">SOLD OUT</p>
+<!{else}-->
+<p class="product_price"><!{$recommend[num].price}--></p>
+<!{if $members_login_flg == true && $recommend[num].discount_flg == true}-->
+<!-- 割引率 -->
+<p class="product_price_discount"><!{$recommend[num].discount_rate}-->OFF!!</p>
+<!{/if}-->
+<!{/if}-->
+<!-- 簡易説明 -->
+<div class="explanation_simple"><!{$recommend[num].s_expl|strip_tags}--></div>
+</div>
+</div>
+</a></li>
+<!{/section}>
+</ul>
 </section>
-<{/if}>
+<!--おすすめ商品ー-->
+
+<!-- 商品カテゴリー -->
+<section id="category" class="sttl_s">
+<h2 class="sttl">カテゴリー</h2>
+<div>
+<nav class="list">
+<ul class="link_list">
+<!{section name=num loop=$category}-->
+<li><a href="<{$category[num].link_url}>"><!{$category[num].name}-->あああああああああああああああああああああ</a></li>
+<!{/section}-->
+</ul>
+</nav>
+</div>
+</section>
+<!{/if}-->
 <a href="http://www.k-colle.net/?tid=2&mode=f13" target="_blank"></a>
 <!--//メインエリア-->
-
-
-
-
 
 
 <!--最近チェックした商品リスト-->
