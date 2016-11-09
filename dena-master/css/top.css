@@ -721,7 +721,7 @@ ul.colorList li:nth-child(9) a{
 	margin-bottom: 10px;
 }
 
-#cosmeRank div.rankParts a img{
+div.rankParts a img{
 	border: 1px solid #ccc;
 }
 
