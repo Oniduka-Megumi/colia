@@ -321,11 +321,11 @@ h1{
 }
 
 .catNav ul li:nth-child(1) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/common/cat01.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/common/cat01.png) no-repeat 0 0; background-size:100%;
 	display: block;
 }
 .catNav ul li:nth-child(2) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/common/cat02.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/common/cat02.png) no-repeat 0 0; background-size:100%;
 	display: block;
 }
 
@@ -403,7 +403,7 @@ h3.hotKeyword{
 h2.new{
 	width: 100%;
 	height: auto;
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/ttl_new.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/top/ttl_new.png) no-repeat 0 0; background-size:100%;
 	padding-bottom: 9.68%;
 	margin-top: 10px;
 }
@@ -455,14 +455,14 @@ h2.new{
 }
 
 .accordion label.btnCat{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_cat.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_cat.png) no-repeat 0 0; background-size:100%;
 	max-width: 94%;
 	height:auto;
 	padding-bottom: 8%;
 }
 
 .accordion label.bland{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_brand.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_brand.jpg) no-repeat 0 0; background-size:100%;
 	width: 90%;
 	height: auto;
 	padding-top:8%;
@@ -509,7 +509,7 @@ ul.clm2 li:nth-child(2){
 }
 
 ul.clm2 li:nth-child(1) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_cat01.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_cat01.jpg) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 23.79%;
@@ -517,7 +517,7 @@ ul.clm2 li:nth-child(1) a{
 }
 
 ul.clm2 li:nth-child(2) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_cat02.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_cat02.jpg) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 23.79%;
@@ -542,7 +542,7 @@ ul.clm3 li:nth-child(2){
 }
 
 ul.clm3 li:nth-child(1) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_cat03.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_cat03.jpg) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 23.79%;
@@ -550,7 +550,7 @@ ul.clm3 li:nth-child(1) a{
 }
 
 ul.clm3 li:nth-child(2) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_cat04.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_cat04.jpg) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 23.79%;
@@ -558,7 +558,7 @@ ul.clm3 li:nth-child(2) a{
 }
 
 ul.clm3 li:nth-child(3) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_cat05.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_cat05.jpg) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 23.79%;
@@ -566,7 +566,7 @@ ul.clm3 li:nth-child(3) a{
 }
 
 .accordion label.lense{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_lense.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_lense.jpg) no-repeat 0 0; background-size:100%;
 	width: 90%;
 	height: auto;
 	padding-top:8%;
@@ -574,7 +574,7 @@ ul.clm3 li:nth-child(3) a{
 }
 
 .accordion label.base{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_base.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/btn_base.jpg) no-repeat 0 0; background-size:100%;
 	width: 90%;
 	height: auto;
 	padding-top:8%;
@@ -582,7 +582,7 @@ ul.clm3 li:nth-child(3) a{
 }
 
 h3.color{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/ttl_color.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/ttl_color.jpg) no-repeat 0 0; background-size:100%;
 	width: 96%;
 	height: auto;
 	padding-top:9.8%;
@@ -606,63 +606,63 @@ ul.colorList li a{
 }
 
 ul.colorList li:nth-child(1) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/color01.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color01.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(2) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/color02.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color02.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(3) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/color03.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color03.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(4) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/color04.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color04.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(5) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/color05.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color05.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(6) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/color06.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color06.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(7) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/color07.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color07.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(8) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img//contact/color08.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color08.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
 }
 
 ul.colorList li:nth-child(9) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img//contact/color09.jpg) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/color09.jpg) no-repeat 0 0; background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 120%;
@@ -671,35 +671,35 @@ ul.colorList li:nth-child(9) a{
 /*ランキング*/
 /*--------------------------------------*/
 #contactRank h2{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/ttl_contact.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/ttl_contact.png) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 17.72%;
 }
 
 #cosmeRank h2{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/cosme/ttl_cosme.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/cosme/ttl_cosme.png) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 17.72%;
 }
 
 #cosmeRank h3, #contactRank h3{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/ranking/ttl_ranking.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/cosme/ttl_ranking.png) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 6.09%;
 }
 
 .contactImg{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/img_contact.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/contact/img_contact.png) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 50.16%
 }
 
 .cosmeImg{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/cosme/img_cosme.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/cosme/img_cosme.png) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 42.73%
@@ -745,7 +745,7 @@ ul.colorList li:nth-child(9) a{
 }
 
 .btnAll a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/img/common/btn_all.png) no-repeat 0 0; background-size:100%;
+	background: url(../images/common/btn_all.png) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	padding-bottom: 13%;

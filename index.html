@@ -53,6 +53,27 @@
 </div>
 <!-- ここまでナビエリア -->
 
+
+
+<!-- ここからナビエリア -->
+<div class="nav_bar">
+<nav class="footer_nav clearfix">
+<p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_home.png" alt="ホーム" width="100%"></a></p>
+<p class="page_nav_search"><a href="#cmsearch"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_shop.png" alt="店舗情報" width="100%"></a></p>
+<!{if $members_use_flg == true}-->
+<!{if $members_login_flg != true}-->
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_login.png" alt="ログイン" width="100%"></a></p>
+<!{else}-->
+<p class="page_nav_login"><a href="<{$members_login_url}>"><!--<img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_logout.png" alt="ログアウト" width="100%">--></a></p>
+<!{/if}-->
+<!{/if}-->
+<p class="page_nav_cart"><a href="<{$view_cart_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_cart.png" alt="カート" width="100%"></a></p>
+</nav>
+</div>
+<!-- ここまでナビエリア -->
+
+
+
 </header>
 <!--ヘッダー-->
 
