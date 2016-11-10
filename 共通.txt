@@ -1,0 +1,160 @@
+<!--ヘッダー-->
+<header id="pagetop" class="global_header">
+
+<{if $logo_type=="image"}>
+<!-- ショップ名が画像の時 -->
+<div id="logo_img"><a href="<{$home_url}>"><{ $logo }></a></div>
+<{/if}>
+
+<!-- ここからナビエリア -->
+<div class="nav_bar">
+<nav class="footer_nav clearfix">
+<p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_home.png" alt="ホーム" width="100%"></a></p>
+<p class="page_nav_search"><a href="#cmsearch"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_shop.png" alt="店舗情報" width="100%"></a></p>
+<{if $members_use_flg == true}>
+<{if $members_login_flg != true}>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_login.png" alt="ログイン" width="100%"></a></p>
+<{else}>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_logout.png" alt="ログアウト" width="100%"></a></p>
+<{/if}>
+<{/if}>
+<p class="page_nav_cart"><a href="<{$view_cart_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_cart.png" alt="カート" width="100%"></a></p>
+</nav>
+</div>
+<!-- ここまでナビエリア -->
+
+</header>
+<!--//ヘッダー-->
+
+<!--メインエリア-->
+<{include file = $file_name}>
+<!--//メインエリア-->
+
+<!--最近チェックした商品リスト-->
+<{if $history_num != 0}>
+<section id="history" class="sttl_s">
+<h2 class="sttl">最近チェックした商品</h2>
+<ul class="product_section">
+<{section name=num loop=$history max=10}>
+<li><a href="<{$history[num].link_url}>">
+<div class="product_pict"> <{if $history[num].img_url != ""}> <img src="<{$history[num].img_url}>"> <{else}> <img src="http://img.shop-pro.jp/tmpl_img/13/now100.gif" /> <{/if}> </div>
+<div class="product_summary">
+<div class="product_ttl">
+<div class="product_name"><{$history[num].name}></div>
+<{if $members_login_flg == true && $history[num].discount_flg == true}>
+<!-- 通常販売価格 -->
+<p class="product_price_regular"><{$history[num].regular_price}></p>
+<{/if}>
+<!-- 販売価格 -->
+<{if $history[num].soldout_flg == true}>
+<p class="product_price_soldout">SOLD OUT</p>
+<{else}>
+<p class="product_price"><{$history[num].price}></p>
+<{if $members_login_flg == true && $history[num].discount_flg == true}>
+<!-- 割引率 -->
+<p class="product_price_discount"><{$history[num].discount_rate}>OFF!!</p>
+<{/if}>
+<{/if}>
+<!-- 簡易説明 -->
+<div class="explanation_simple"><{$history[num].s_expl|strip_tags}></div>
+</div>
+</div>
+</a></li>
+<{/section}>
+</ul>
+</section>
+<{/if}>
+<!--//最近チェックした商品リスト-->
+
+<!--ページの先頭へ戻る-->
+<div id="totop" class="nav_bar"><a href="#pagetop" class="btn">ページの先頭へ戻る</a></div>
+<!--//ページの先頭へ戻る-->
+
+<!--商品検索-->
+<section id="cmsearch" class="sttl_s">
+<h2 class="sttl">商品検索</h2>
+<div class="wrap">
+<form action="<{$product_search_url}>" method="GET">
+<{$product_search_mode}>
+<select name="cid">
+<option value="">すべての商品から</option>
+<{section name=num loop=$category}>
+<option value="<{$category[num].id}>"><{$category[num].name}></option>
+<{/section}>
+</select>
+<br />
+<input type="search" name="keyword" placeholder="検索キーワードを入力してください" autocapitalize="off" />
+<{if $prm_view}><input type="hidden" name="view" value="<{$prm_view}>" /><{/if}>
+<input type="submit" value="検 索" class="btn" />
+</form>
+</div>
+</section>
+<!--//商品検索-->
+
+<!--フッター-->
+<footer id="footerlink" class="sttl_s">
+
+<!-- ここからナビエリア -->
+<div class="nav_bar">
+<nav class="footer_nav clearfix">
+<p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_home.png" alt="ホーム" width="100%"></a></p>
+<p class="page_nav_search"><a href="#cmsearch"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_shop.png" alt="店舗情報" width="100%"></a></p>
+<{if $members_use_flg == true}>
+<{if $members_login_flg != true}>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_login.png" alt="ログイン" width="100%"></a></p>
+<{else}>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_logout.png" alt="ログアウト" width="100%"></a></p>
+<{/if}>
+<{/if}>
+<p class="page_nav_cart"><a href="<{$view_cart_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_cart.png" alt="カート" width="100%"></a></p>
+</nav>
+</div>
+<!-- ここまでナビエリア -->
+
+<!-- お問い合わせ -->
+<div class="foot_wrap_toiawase">
+<p><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/logo2.png" width="80%"></a></p>
+<p><a href="<{$view_inq_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/toiawase_btn.png" width="100%"></a></p>
+<p><a href="<{$mailmaga_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/malmaga_btn.png" width="100%"></a></p>
+</div>
+<!--// お問い合わせ -->
+
+<!-- pc切り替え -->
+<div class="foot_wrap_pc">
+<p class="switch"><a href="<{$view_pc_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/pc_sich.png" width="40%"></a></p>
+</div>
+<!-- pc切り替え -->
+
+<!-- sns -->
+<div class="foot_wrap_sns clearfix">
+<p>
+<{if $manager_url != ""}>
+<a href="<{$manager_url}>" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/img/blog_icon.png" width="100%" alt="blog"></a>
+<{/if}>
+<a href="https://twitter.com/beautygarden3" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/img/twitter_icon.png" width="100%" alt="twitter"></a>
+<a href="https://www.facebook.com/shopbeautygarden" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/img/facebook_icon.png" width="100%" alt="facebook"></a>
+</p>
+</div>
+<!--// sns -->
+
+<!--関連リンク-->
+<nav class="menu_nav clearfix">
+<ul class="link_list">
+<li id="mbtn2"><small><a href="<{$view_myaccount_url}>">マイアカウント</a></small></li>
+<li id="mbtn3"><small><a href="<{$members_regi_url}>">会員登録</a></small></li>
+<li id="mbtn4"><small><a href="<{$delivery_url}>">配送方法･送料について</a></small></li>
+<li id="mbtn5"><small><a href="<{$privacy_url}>">プライバシーポリシー</a></small></li>
+<li id="mbtn6"><small><a href="<{$payment_url}>">支払い方法について</a></small></li>
+<li id="mbtn7"><small><a href="<{$sk_url}>">特定商取引法に基づく表記</a></small></li>
+</ul>
+</nav>
+<!--//関連リンク-->
+
+<!-- コピーライト -->
+<div class="foot_wrap">
+<p class="copyright"><small><{ $e_copyright }></small></p>
+</div>
+<!--// コピーライト -->
+</footer>
+
+<!--//フッター-->

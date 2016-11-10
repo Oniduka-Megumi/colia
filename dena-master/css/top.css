@@ -427,7 +427,6 @@ h2.new{
 .accordion {
 	min-width: 90%;
 	margin: 0 auto 20px;
-	padding: 10px;
 }
 .accordion .ac-content {
 	margin: 0 0px;
@@ -456,7 +455,7 @@ h2.new{
 
 .accordion label.btnCat{
 	background: url(https://file001.shop-pro.jp/PA01166/275/img/contact/btn_cat.png) no-repeat 0 0; background-size:100%;
-	max-width: 94%;
+	max-width: 95%;
 	height:auto;
 	padding-bottom: 8%;
 }
@@ -492,6 +491,14 @@ h2.new{
 	box-shadow:0px 0px 1px 2px #e0e0e0;
 	-moz-box-shadow:0px 0px 1px 2px #e0e0e0;
 	-webkit-box-shadow:0px 0px 1px 2px #e0e0e0;
+}
+
+.ac-cont ul.cosmebland li{
+	width:45%;
+	float: left;
+	padding:0;
+	margin-left:11px;
+	background-color: #fff;
 }
 
 .ac-cont ul.list2 li a{
@@ -772,7 +779,7 @@ ul.cosmeList li:nth-child(9) a{
 	padding-bottom: 17.72%;
 }
 
-#cosmeRank h3, #contactRank h3{
+#cosmeRank h3.rankingTittle, #contactRank h3.rankingTittle{
 	background: url(https://file001.shop-pro.jp/PA01166/275/img/ranking/ttl_ranking.png) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;

@@ -12,8 +12,29 @@
 <img src="https://file001.shop-pro.jp/PA01166/275/img/slide/slide02.png" height="auto" width="100%" alt="" class="gallery-cell">
 <img src="https://file001.shop-pro.jp/PA01166/275/img/slide/slide03.png" height="auto" width="100%" alt="" class="gallery-cell">
 </div>
+<!--スライドショー-->
 
-<!--おすすめ商品ー-->
+<!--商品検索-->
+<section id="cmsearch" class="sttl_s">
+<div class="wrap">
+<form action="<{$product_search_url}>" method="GET">
+<{$product_search_mode}>
+<select name="cid">
+<option value="">すべての商品から</option>
+<{section name=num loop=$category}>
+<option value="<{$category[num].id}>"><{$category[num].name}></option>
+<{/section}>
+</select>
+<br />
+<input type="search" name="keyword" placeholder="検索キーワードを入力してください" autocapitalize="off" />
+<{if $prm_view}><input type="hidden" name="view" value="<{$prm_view}>" /><{/if}>
+<input type="submit" value="検 索" class="btn" />
+</form>
+</div>
+</section>
+<!--//商品検索-->
+
+<!--おすすめ商品-->
 <{if $recommend_num != 0}>
 <h2 class="new indent clearfix">オススメの新着商品</h2>
 <section id="newItems">
@@ -24,16 +45,16 @@
 </div>
 </section>
 <{/if}>
-<!--おすすめ商品ー-->
+<!--おすすめ商品-->
 
-<!--ナビー-->
+<!--ナビ-->
 <nav class="catNav">
 <ul class="indent">
 <li><a href="#contactRank">コンタクトレンズ</a></li>
 <li><a href="#cosmeRank">韓国コスメ</a></li>
 </ul>
 </nav>
-<!--ナビー-->
+<!--ナビ-->
 
 <!--コンタクトレンズ　ランキング-->
 <section id="contactRank" class="ranking">
@@ -41,9 +62,85 @@
 <h2 class="indent">コンタクトレンズ</h2>
 <div class="contactImg indent">Contact Lens</div>
 
+<div class="accordion">
+<div class="ac-content">
+<label class="btnCat indent" for="ac-cap1">Catagory Serch</label>
+<input id="ac-cap1" type="checkbox">
+<div class="ac-cont">
+<section id="contactCat">
+<label class="bland indent" for="ac-cap2">ブランド別</label>
+<input id="ac-cap2" type="checkbox">
+
+<div class="ac-cont">
+<ul class="list2">
+<{section name=group01 start=0 loop=$category}>
+<li><a href="<{$category[group01].link_url}>"><{$category[group01].name}></a></li>
+<{/section}>
+</ul>
+</div>
+
+
+<ul class="clm2 clearfix">
+<li class="indent"><a href="">度あり</a></li>
+<li class="indent"><a href="">度なし</a></li>
+</ul>
+
+<ul class="clm3 clearfix">
+<li class="indent"><a href="">ワンデー</a></li>
+<li class="indent"><a href="">2週間</a></li>
+<li class="indent"><a href="">1ヶ月</a></li>
+</ul>
+
+<label class="lense indent" for="ac-cap3">レンズ直径</label>
+<input id="ac-cap3" type="checkbox">
+<div class="ac-cont">
+<ul class="list2">
+<li><a href="">13.8mm</a></li>
+<li><a href="">14.0mm</a></li>
+<li><a href="">14.1mm</a></li>
+<li><a href="">14.2mm</a></li>
+<li><a href="">14.3mm</a></li>
+<li><a href="">14.4mm</a></li>
+<li><a href="">14.5mm</a></li>
+<li><a href="">14.8mm</a></li>
+<li><a href="">15.0mm</a></li>
+</ul>
+</div>
+
+<label class="base indent" for="ac-cap4">ベースカーブ</label>
+<input id="ac-cap4" type="checkbox">
+<div class="ac-cont">
+<ul class="list2">
+<li><a href="">8.5mm</a></li>
+<li><a href="">8.6mm</a></li>
+<li><a href="">8.7mm</a></li>
+<li><a href="">8.8mm</a></li>
+<li><a href="">8.9mm</a></li>
+<li><a href="">9.0mm</a></li>
+</ul>
+</div>
+
+<h3 class="color indent">カラーリング</h3>
+<ul class="colorList">
+<li class="indent"><a href="">ブラック</a></li>
+<li class="indent"><a href="">グレー</a></li>
+<li class="indent"><a href="">グリーン</a></li>
+<li class="indent"><a href="">ピンク</a></li>
+<li class="indent"><a href="">ヘーゼル</a></li>
+<li class="indent"><a href="">ブラウン</a></li>
+<li class="indent"><a href="">ブルー</a></li>
+<li class="indent"><a href="">パープル</a></li>
+<li class="indent"><a href="">シルバー</a></li>
+</ul>
+
+</section>
+</div>
+<!--ac-content--></div>
+<!--accordion--></div>
+
 <{if $seller_num != 0}>
 
-<h3 class="indent">RANKING</h3>
+<h3 class="rankingTittle indent">RANKING</h3>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 7)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
@@ -171,90 +268,54 @@
 </section>
 <!--コンタクトレンズ　ランキング-->
 
-<div class="accordion">
-<div class="ac-content">
-<label class="btnCat indent" for="ac-cap1">Catagory Serch</label>
-<input id="ac-cap1" type="checkbox">
-<div class="ac-cont">
-<section id="contactCat">
-<label class="bland indent" for="ac-cap2">ブランド別</label>
-<input id="ac-cap2" type="checkbox">
-
-<div class="ac-cont">
-<ul class="list2">
-<{section name=group01 start=0 loop=$category}>
-<li><a href="<{$category[group01].link_url}>"><{$category[group01].name}></a></li>
-<{/section}>
-</ul>
-</div>
-
-
-<ul class="clm2 clearfix">
-<li class="indent"><a href="">度あり</a></li>
-<li class="indent"><a href="">度なし</a></li>
-</ul>
-
-<ul class="clm3 clearfix">
-<li class="indent"><a href="">ワンデー</a></li>
-<li class="indent"><a href="">2週間</a></li>
-<li class="indent"><a href="">1ヶ月</a></li>
-</ul>
-
-<label class="lense indent" for="ac-cap3">レンズ直径</label>
-<input id="ac-cap3" type="checkbox">
-<div class="ac-cont">
-<ul class="list">
-<li><a href="">13.8mm</a></li>
-<li><a href="">14.0mm</a></li>
-<li><a href="">14.1mm</a></li>
-<li><a href="">14.2mm</a></li>
-<li><a href="">14.3mm</a></li>
-<li><a href="">14.4mm</a></li>
-<li><a href="">14.5mm</a></li>
-<li><a href="">14.8mm</a></li>
-<li><a href="">15.0mm</a></li>
-</ul>
-</div>
-
-<label class="base indent" for="ac-cap4">ベースカーブ</label>
-<input id="ac-cap4" type="checkbox">
-<div class="ac-cont">
-<ul class="list">
-<li><a href="">8.5mm</a></li>
-<li><a href="">8.6mm</a></li>
-<li><a href="">8.7mm</a></li>
-<li><a href="">8.8mm</a></li>
-<li><a href="">8.9mm</a></li>
-<li><a href="">9.0mm</a></li>
-</ul>
-</div>
-
-<h3 class="color indent">カラーリング</h3>
-<ul class="colorList">
-<li class="indent"><a href="">ブラック</a></li>
-<li class="indent"><a href="">グレー</a></li>
-<li class="indent"><a href="">グリーン</a></li>
-<li class="indent"><a href="">ピンク</a></li>
-<li class="indent"><a href="">ヘーゼル</a></li>
-<li class="indent"><a href="">ブラウン</a></li>
-<li class="indent"><a href="">ブルー</a></li>
-<li class="indent"><a href="">パープル</a></li>
-<li class="indent"><a href="">シルバー</a></li>
-</ul>
-
-</section>
-</div>
-<!--ac-content--></div>
-<!--accordion--></div>
-
 <!--韓国コスメ　ランキング-->
 <section id="cosmeRank" class="ranking">
 
 <h2 class="indent">韓国コスメ</h2>
 <div class="cosmeImg indent">Koria Cosme</div>
 
+<div class="accordion">
+<div class="ac-content">
+<label class="btnCat indent" for="ac-cap5">Catagory Serch</label>
+<input id="ac-cap5" type="checkbox">
+<div class="ac-cont">
+<section id="cosmeCat">
+
+<label class="cosmeItem indent" for="ac-cap6">商品カテゴリー別</label>
+<input id="ac-cap6" type="checkbox">
+<div class="ac-cont">
+<ul class="cosmeList">
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327392">大人気！！かたつむり（エスカルゴ）成分配合コスメ</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327384">シワ撃退！！蛇毒（シンエイク）成分配合</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327387">ニキビ・トラブル肌には蜂毒（Bee-Venom）成分配合</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482325">スペシャルケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327383">スキンケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482207">メイク用品</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450084">ボディー・ヘアケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450074">小物</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=480977">IKKOさんオススメ！</a></li>
+</ul>
+</div>
+
+<label class="bland indent" for="ac-cap7">ブランド別</label>
+<input id="ac-cap7" type="checkbox">
+<div class="ac-cont">
+<ul class="list2 cosmebland">
+<{section name=num loop=$category}>
+
+<li><a href="<{$category[num].link_url}>"><img src="<{$category[num].img_url}>" width="100%"></a></li>
+
+<{/section}>
+</ul>
+</div>
+
+</section>
+</div>
+<!--ac-content--></div>
+<!--accordion--></div>
+
 <{if $seller_num != 0}>
-<h3 class="indent">RANKING</h3>
+<h3 class="rankingTittle indent">RANKING</h3>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 1)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
@@ -381,44 +442,6 @@
 <div class="btnAll indent"><a href="#">全商品を見る</a></div>
 </section>
 <!--韓国コスメ　ランキング-->
-
-<div class="accordion">
-<div class="ac-content">
-<label class="btnCat indent" for="ac-cap5">Catagory Serch</label>
-<input id="ac-cap5" type="checkbox">
-<div class="ac-cont">
-<section id="cosmeCat">
-
-<label class="cosmeItem indent" for="ac-cap6">商品カテゴリー別</label>
-<input id="ac-cap6" type="checkbox">
-<div class="ac-cont">
-<ul class="cosmeList">
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327392">大人気！！かたつむり（エスカルゴ）成分配合コスメ</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327384">シワ撃退！！蛇毒（シンエイク）成分配合</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327387">ニキビ・トラブル肌には蜂毒（Bee-Venom）成分配合</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482325">スペシャルケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327383">スキンケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482207">メイク用品</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450084">ボディー・ヘアケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450074">小物</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=480977">IKKOさんオススメ！</a></li>
-</ul>
-</div>
-
-<label class="bland indent" for="ac-cap7">ブランド別</label>
-<input id="ac-cap7" type="checkbox">
-<div class="ac-cont">
-<ul class="list2">
-<{section name=group01 start=0 loop=$category}>
-<li><a href="<{$category[group01].link_url}>"><{$category[group01].name}></a></li>
-<{/section}>
-</ul>
-</div>
-
-</section>
-</div>
-<!--ac-content--></div>
-<!--accordion--></div>
 
 <section id="osusume">
 <h2 class="indent">おすすめコーデ</h2>
