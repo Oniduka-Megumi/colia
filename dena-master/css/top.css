@@ -418,7 +418,7 @@ h2.new{
 
 /*アコーディオン*/
 /*--------------------------------------*/
-#contactCat{
+#cosmeCat ,#contactCat{
 	background-color: #F7F4F0;
 	width: 100%;
 	padding-top: 15px;
@@ -469,11 +469,19 @@ h2.new{
 	margin: 0 auto;
 }
 
-.ac-cont ul.list li{
+.accordion label.cosmeItem{
+	background: url(https://file001.shop-pro.jp/PA01166/275/img/cosme/btn_brand_2.jpg) no-repeat 0 0; background-size:100%;
+	width: 90%;
+	height: auto;
+	padding-top:8%;
+	margin: 0 auto;
+}
+
+.ac-cont ul.list2 li{
 	float: left;
 }
 
-.ac-cont ul.list li{
+.ac-cont ul.list2 li{
 	float: left;
 	padding: 5px 10px;
 	margin-left: 10px;
@@ -486,7 +494,7 @@ h2.new{
 	-webkit-box-shadow:0px 0px 1px 2px #e0e0e0;
 }
 
-.ac-cont ul.list li a{
+.ac-cont ul.list2 li a{
 	text-decoration: none;
 	color: #999;
 }
@@ -668,6 +676,86 @@ ul.colorList li:nth-child(9) a{
 	padding-bottom: 120%;
 }
 
+ul.cosmeList {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+ul.cosmeList li{
+	width: 30%;
+	height: auto;
+	float: left;
+	margin-left: 2.5%;
+}
+
+ul.cosmeList li a{
+	display: block;
+}
+
+ul.cosmeList li:nth-child(1) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/01_icon_ct.png?cmsp_timestamp=2133) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 70%;
+}
+
+ul.cosmeList li:nth-child(2) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/02_icon_ct.png?cmsp_timestamp=2152) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 70%;
+}
+
+ul.cosmeList li:nth-child(3) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/03_icon_ct.png?cmsp_timestamp=2124) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 70%;
+}
+
+ul.cosmeList li:nth-child(4) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/04_icon_ct.png?cmsp_timestamp=2142) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 70%;
+}
+
+ul.cosmeList li:nth-child(5) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/05_icon_ct.png?cmsp_timestamp=210300) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 70%;
+}
+
+ul.cosmeList li:nth-child(6) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/06_icon_ct.png?cmsp_timestamp=2128) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom: 70%;
+}
+
+ul.cosmeList li:nth-child(7) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/07_icon_ct.png?cmsp_timestamp=2133) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom:85%;
+}
+
+ul.cosmeList li:nth-child(8) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/08_icon_ct.png?cmsp_timestamp=2121) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom:85%;
+}
+
+ul.cosmeList li:nth-child(9) a{
+	background: url(https://img17.shop-pro.jp/PA01166/275/etc/09_icon_ct.png?cmsp_timestamp=2143) no-repeat 0 0; background-size:100%;
+	height: auto;
+	width: 100%;
+	padding-bottom:85%;
+}
+
 /*ランキング*/
 /*--------------------------------------*/
 #contactRank h2{
@@ -755,7 +843,7 @@ div.rankParts a img{
 /*おすすめコーデ*/
 /*--------------------------------------*/
 #osusume{
-	background: url(../images/common/bg_osusume.jpg) no-repeat 0 0; background-size:100%;
+	background: url(https://file001.shop-pro.jp/PA01166/275/img/common/bg_osusume.jpg) no-repeat 0 0; background-size:100%;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
@@ -764,7 +852,7 @@ div.rankParts a img{
 }
 
 #osusume h2{
-	background: url(../images/common/ttl_coorde.png) no-repeat 0 0; background-size:100%;
+	background: url(https://file001.shop-pro.jp/PA01166/275/img/common/ttl_coorde.png) no-repeat 0 0; background-size:100%;
 	max-width: 92.03125%;
 	height: auto;
 	padding-top: 10%;
@@ -780,6 +868,7 @@ div.rankParts a img{
 	width: 50%;
 	float: left;
 }
+
 /*スペシャルコンテンツ
 -----------------------------*/
 #special{

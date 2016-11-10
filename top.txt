@@ -181,7 +181,7 @@
 <input id="ac-cap2" type="checkbox">
 
 <div class="ac-cont">
-<ul class="list">
+<ul class="list2">
 <li><a href="">AngelColor</a></li>
 <li><a href="">secretcandymagic</a></li>
 <li><a href="">EverColor</a></li>
@@ -393,40 +393,65 @@
 </section>
 <!--韓国コスメ　ランキング-->
 
-<h3 class="tittleCT">商品カテゴリー</h3>
+<div class="accordion">
+<div class="ac-content">
+<label class="btnCat indent" for="ac-cap5">Catagory Serch</label>
+<input id="ac-cap5" type="checkbox">
+<div class="ac-cont">
+<section id="cosmeCat">
 
-<div class="categoryArea">
-<div class="categorySP">
-
-<div class="ct1">
-<a href="http://www.k-colle.net/?mode=grp&gid=327392"><img src="https://img17.shop-pro.jp/PA01166/275/etc/01_icon_ct.png?cmsp_timestamp=2133" width="100%" alt="大人気！！かたつむり（エスカルゴ）成分配合コスメ"></a>
-</div>
-<div class="ct2">
-<a href="http://www.k-colle.net/?mode=grp&gid=327384"><img src="https://img17.shop-pro.jp/PA01166/275/etc/02_icon_ct.png?cmsp_timestamp=2152" width="100%" alt="シワ撃退！！蛇毒（シンエイク）成分配合"></a>
-</div>
-<div class="ct3">
-<a href="http://www.k-colle.net/?mode=grp&gid=327387"><img src="https://img17.shop-pro.jp/PA01166/275/etc/03_icon_ct.png?cmsp_timestamp=2124" width="100%" alt="ニキビ・トラブル肌には蜂毒（Bee-Venom）成分配合"></a>
-</div>
-
-<div class="ct4">
-<a href="http://www.k-colle.net/?mode=grp&gid=482325"><img src="https://img17.shop-pro.jp/PA01166/275/etc/04_icon_ct.png?cmsp_timestamp=2142" width="100%" alt="スペシャルケア"></a>
-</div>
-<div class="ct5">
-<a href="http://www.k-colle.net/?mode=grp&gid=327383"><img src="https://img17.shop-pro.jp/PA01166/275/etc/05_icon_ct.png?cmsp_timestamp=210300" width="100%" alt="スキンケア"></a>
-</div>
-<div class="ct6">
-<a href="http://www.k-colle.net/?mode=grp&gid=482207"><img src="https://img17.shop-pro.jp/PA01166/275/etc/06_icon_ct.png?cmsp_timestamp=2128" width="100%" alt="メイク用品"></a>
+<label class="cosmeItem indent" for="ac-cap6">商品カテゴリー別</label>
+<input id="ac-cap6" type="checkbox">
+<div class="ac-cont">
+<ul class="cosmeList">
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327392">大人気！！かたつむり（エスカルゴ）成分配合コスメ</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327384">シワ撃退！！蛇毒（シンエイク）成分配合</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327387">ニキビ・トラブル肌には蜂毒（Bee-Venom）成分配合</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482325">スペシャルケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327383">スキンケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482207">メイク用品</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450084">ボディー・ヘアケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450074">小物</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=480977">IKKOさんオススメ！</a></li>
+</ul>
 </div>
 
-<div class="ct7">
-<a href="http://www.k-colle.net/?mode=grp&gid=450084"><img src="https://img17.shop-pro.jp/PA01166/275/etc/07_icon_ct.png?cmsp_timestamp=2133" width="100%" alt="ボディー・ヘアケア"></a>
-</div>
-<div class="ct8">
-<a href="http://www.k-colle.net/?mode=grp&gid=450074"><img src="https://img17.shop-pro.jp/PA01166/275/etc/08_icon_ct.png?cmsp_timestamp=2121" width="100%" alt="小物"></a>
-</div>
-<div class="ct9">
-<a href="http://www.k-colle.net/?mode=grp&gid=480977"><img src="https://img17.shop-pro.jp/PA01166/275/etc/09_icon_ct.png?cmsp_timestamp=2143" width="100%" alt="IKKOさんオススメ！"></a>
+<label class="bland indent" for="ac-cap7">ブランド別</label>
+<input id="ac-cap7" type="checkbox">
+<div class="ac-cont">
+<ul class="list2">
+<li><a href="">AngelColor</a></li>
+<li><a href="">secretcandymagic</a></li>
+<li><a href="">EverColor</a></li>
+<li><a href="">loveil</a></li>
+<li><a href="">LALISH</a></li>
+<li><a href="">BeeHeartB</a></li>
+<li><a href="">RICHBABY</a></li>
+<li><a href="">candymagic</a></li>
+<li><a href="">LILMOON</a></li>
+<li><a href="">Prime 1day</a></li>
+<li><a href="">Viewm 1day</a></li>
+<li><a href="">Victoria 1day</a></li>
+<li><a href="">Acorde</a></li>
+<li><a href="">NeoSight Oneday</a></li>
+</ul>
 </div>
 
+</section>
 </div>
+<!--ac-content--></div>
+<!--accordion--></div>
+
+<section id="osusume">
+<h2 class="indent">おすすめコーデ</h2>
+<div class="osusumeInner">
+<img src="https://file001.shop-pro.jp/PA01166/275/img/common/img_coode.png" width="100%" height="auto">
+<ul>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code01.png" width="100%" height="auto"></a></li>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code02.png" width="100%" height="auto"></a></li>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code03.png" width="100%" height="auto"></a></li>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code04.png" width="100%" height="auto"></a></li>
+</ul>
+<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/img/common/btn_coode.png" width="100%" height="auto"></a>
 </div>
+</section>
