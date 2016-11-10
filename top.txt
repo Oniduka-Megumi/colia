@@ -182,20 +182,9 @@
 
 <div class="ac-cont">
 <ul class="list2">
-<li><a href="">AngelColor</a></li>
-<li><a href="">secretcandymagic</a></li>
-<li><a href="">EverColor</a></li>
-<li><a href="">loveil</a></li>
-<li><a href="">LALISH</a></li>
-<li><a href="">BeeHeartB</a></li>
-<li><a href="">RICHBABY</a></li>
-<li><a href="">candymagic</a></li>
-<li><a href="">LILMOON</a></li>
-<li><a href="">Prime 1day</a></li>
-<li><a href="">Viewm 1day</a></li>
-<li><a href="">Victoria 1day</a></li>
-<li><a href="">Acorde</a></li>
-<li><a href="">NeoSight Oneday</a></li>
+<{section name=group01 start=0 loop=$category}>
+<li><a href="<{$category[group01].link_url}>"><{$category[group01].name}></a></li>
+<{/section}>
 </ul>
 </div>
 
@@ -420,20 +409,9 @@
 <input id="ac-cap7" type="checkbox">
 <div class="ac-cont">
 <ul class="list2">
-<li><a href="">AngelColor</a></li>
-<li><a href="">secretcandymagic</a></li>
-<li><a href="">EverColor</a></li>
-<li><a href="">loveil</a></li>
-<li><a href="">LALISH</a></li>
-<li><a href="">BeeHeartB</a></li>
-<li><a href="">RICHBABY</a></li>
-<li><a href="">candymagic</a></li>
-<li><a href="">LILMOON</a></li>
-<li><a href="">Prime 1day</a></li>
-<li><a href="">Viewm 1day</a></li>
-<li><a href="">Victoria 1day</a></li>
-<li><a href="">Acorde</a></li>
-<li><a href="">NeoSight Oneday</a></li>
+<{section name=group01 start=0 loop=$category}>
+<li><a href="<{$category[group01].link_url}>"><{$category[group01].name}></a></li>
+<{/section}>
 </ul>
 </div>
 
