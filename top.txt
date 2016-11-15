@@ -1,16 +1,16 @@
-<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/css/top.css">
-<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/js/flickity.min.css">
-<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/js/slick.css">
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/sp/css/top.css">
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/sp/js/flickity.min.css">
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/sp/js/slick.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js?20150524"></script>
-<script src="https://file001.shop-pro.jp/PA01166/275/js/flickity.pkgd.min.js" type="text/javascript"></script>
-<script src="https://file001.shop-pro.jp/PA01166/275/js/slick.min.js" type="text/javascript"></script>
-<script src="https://file001.shop-pro.jp/PA01166/275/js/slide.js" type="text/javascript"></script>
-<script src="https://file001.shop-pro.jp/PA01166/275/js/slide02.js" type="text/javascript"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/flickity.pkgd.min.js" type="text/javascript"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/slick.min.js" type="text/javascript"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/slide.js" type="text/javascript"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/slide02.js" type="text/javascript"></script>
 
 <div class="main-gallery">
-<img src="https://file001.shop-pro.jp/PA01166/275/img/slide/slide01.png" height="auto" width="100%" alt="" class="gallery-cell">
-<img src="https://file001.shop-pro.jp/PA01166/275/img/slide/slide02.png" height="auto" width="100%" alt="" class="gallery-cell">
-<img src="https://file001.shop-pro.jp/PA01166/275/img/slide/slide03.png" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide01.png" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide02.png" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide03.png" height="auto" width="100%" alt="" class="gallery-cell">
 </div>
 <!--スライドショー-->
 
@@ -19,16 +19,8 @@
 <div class="wrap">
 <form action="<{$product_search_url}>" method="GET">
 <{$product_search_mode}>
-<select name="cid">
-<option value="">すべての商品から</option>
-<{section name=num loop=$category}>
-<option value="<{$category[num].id}>"><{$category[num].name}></option>
-<{/section}>
-</select>
-<br />
 <input type="search" name="keyword" placeholder="検索キーワードを入力してください" autocapitalize="off" />
 <{if $prm_view}><input type="hidden" name="view" value="<{$prm_view}>" /><{/if}>
-<input type="submit" value="検 索" class="btn" />
 </form>
 </div>
 </section>
@@ -145,7 +137,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 7)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
-<p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p>
+<p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -165,7 +157,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 8)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts center">
-<p class="no02"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p>
+<p class="no02"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -185,7 +177,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 9)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
-<p class="no03"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p>
+<p class="no03"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -205,7 +197,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 10)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts clearfix">
-<p class="no04"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p>
+<p class="no04"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -225,7 +217,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 11)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts center">
-<p class="no05"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p>
+<p class="no05"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -245,7 +237,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 12)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
-<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
+<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -320,7 +312,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 1)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
-<p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p>
+<p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -340,7 +332,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 2)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts center">
-<p class="no02"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p>
+<p class="no02"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -360,7 +352,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 3)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
-<p class="no03"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p>
+<p class="no03"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -380,7 +372,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 4)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts clearfix">
-<p class="no04"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p>
+<p class="no04"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -400,7 +392,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 5)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts center">
-<p class="no05"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p>
+<p class="no05"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -420,7 +412,7 @@
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
-<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
+<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -446,13 +438,13 @@
 <section id="osusume">
 <h2 class="indent">おすすめコーデ</h2>
 <div class="osusumeInner">
-<img src="https://file001.shop-pro.jp/PA01166/275/img/common/img_coode.png" width="100%" height="auto">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/img_coode.png" width="100%" height="auto">
 <ul>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code01.png" width="100%" height="auto"></a></li>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code02.png" width="100%" height="auto"></a></li>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code03.png" width="100%" height="auto"></a></li>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/img/common/code04.png" width="100%" height="auto"></a></li>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code01.png" width="100%" height="auto"></a></li>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code02.png" width="100%" height="auto"></a></li>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code03.png" width="100%" height="auto"></a></li>
+<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code04.png" width="100%" height="auto"></a></li>
 </ul>
-<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/img/common/btn_coode.png" width="100%" height="auto"></a>
+<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/btn_coode.png" width="100%" height="auto"></a>
 </div>
 </section>

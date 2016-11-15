@@ -1,3 +1,12 @@
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/sp/css/top.css">
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/sp/js/flickity.min.css">
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/sp/js/slick.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js?20150524"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/flickity.pkgd.min.js" type="text/javascript"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/slick.min.js" type="text/javascript"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/slide.js" type="text/javascript"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/sp/js/slide02.js" type="text/javascript"></script>
+
 <!--ヘッダー-->
 <header id="pagetop" class="global_header">
 
@@ -9,16 +18,20 @@
 <!-- ここからナビエリア -->
 <div class="nav_bar">
 <nav class="footer_nav clearfix">
-<p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_home.png" alt="ホーム" width="100%"></a></p>
-<p class="page_nav_search"><a href="#cmsearch"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_shop.png" alt="店舗情報" width="100%"></a></p>
+<p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_home.png" alt="ホーム" width="100%"></a></p>
+<{if $free_area_flg==""}>
+<p class="page_nav_search">
+<a href="<{$free1_link}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_shop.png" alt="店舗情報" width="100%"></a>
+</p>
+<{/if}>
 <{if $members_use_flg == true}>
 <{if $members_login_flg != true}>
-<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_login.png" alt="ログイン" width="100%"></a></p>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_login.png" alt="ログイン" width="100%"></a></p>
 <{else}>
-<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_logout.png" alt="ログアウト" width="100%"></a></p>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_logout.png" alt="ログアウト" width="100%"></a></p>
 <{/if}>
 <{/if}>
-<p class="page_nav_cart"><a href="<{$view_cart_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_cart.png" alt="カート" width="100%"></a></p>
+<p class="page_nav_cart"><a href="<{$view_cart_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_cart.png" alt="カート" width="100%"></a></p>
 </nav>
 </div>
 <!-- ここまでナビエリア -->
@@ -67,29 +80,47 @@
 <!--//最近チェックした商品リスト-->
 
 <!--ページの先頭へ戻る-->
-<div id="totop" class="nav_bar"><a href="#pagetop" class="btn">ページの先頭へ戻る</a></div>
+<div id="totop" class="nav_bar"><a href="#pagetop">ページの先頭へ戻る</a></div>
 <!--//ページの先頭へ戻る-->
 
 <!--商品検索-->
-<section id="cmsearch" class="sttl_s">
 <h2 class="sttl">商品検索</h2>
+<section id="cmsearch" class="sttl_s">
 <div class="wrap">
 <form action="<{$product_search_url}>" method="GET">
 <{$product_search_mode}>
-<select name="cid">
-<option value="">すべての商品から</option>
-<{section name=num loop=$category}>
-<option value="<{$category[num].id}>"><{$category[num].name}></option>
-<{/section}>
-</select>
-<br />
 <input type="search" name="keyword" placeholder="検索キーワードを入力してください" autocapitalize="off" />
 <{if $prm_view}><input type="hidden" name="view" value="<{$prm_view}>" /><{/if}>
-<input type="submit" value="検 索" class="btn" />
 </form>
 </div>
 </section>
-<!--//商品検索-->
+<!--商品検索-->
+
+<!--スペシャル-->
+<section id="special" class="clearfix">
+<h2 class="indent">Special Contents</h2>
+<dl>
+<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp01.png" width="100%" height="auto"></a></dt>
+<dd>【今だけ】chayのナチュラルワンデーでお得キャンペーン開催中!!</dd>
+
+<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp02.png" width="100%" height="auto"></a></dt>
+<dd><span class="red bold">人気モデルなつぅみ完全プロデュース</span><br>
+毎日のオシャレは瞳から。新作マンスリーDebut</dd>
+
+<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp03.png" width="100%" height="auto"></a></dt>
+<dd>【モテコン】ナチュラルハーフのなじみ系マンスリー</dd>
+
+<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp04.png" width="100%" height="auto"></a></dt>
+<dd><span class="bold">ヴィヴィアン</span><br>モアコンタクト先行発売！</dd>
+</dl>
+</section>
+<!--スペシャル-->
+
+<!--メルマガ-->
+<section class="mailMagazineBox clearfix">
+<a class="mailMagazine indent" href="<{$mailmaga_url}>">メールマガジン登録はこちらから</a>
+</section>
+<!--メルマガ-->
 
 <!--フッター-->
 <footer id="footerlink" class="sttl_s">
@@ -97,31 +128,30 @@
 <!-- ここからナビエリア -->
 <div class="nav_bar">
 <nav class="footer_nav clearfix">
-<p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_home.png" alt="ホーム" width="100%"></a></p>
-<p class="page_nav_search"><a href="#cmsearch"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_shop.png" alt="店舗情報" width="100%"></a></p>
+<p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_home.png" alt="ホーム" width="100%"></a></p>
+<p class="page_nav_search"><a href="#cmsearch"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_shop.png" alt="店舗情報" width="100%"></a></p>
 <{if $members_use_flg == true}>
 <{if $members_login_flg != true}>
-<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_login.png" alt="ログイン" width="100%"></a></p>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_login.png" alt="ログイン" width="100%"></a></p>
 <{else}>
-<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_logout.png" alt="ログアウト" width="100%"></a></p>
+<p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_logout.png" alt="ログアウト" width="100%"></a></p>
 <{/if}>
 <{/if}>
-<p class="page_nav_cart"><a href="<{$view_cart_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/icon_img_cart.png" alt="カート" width="100%"></a></p>
+<p class="page_nav_cart"><a href="<{$view_cart_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_cart.png" alt="カート" width="100%"></a></p>
 </nav>
 </div>
 <!-- ここまでナビエリア -->
 
 <!-- お問い合わせ -->
 <div class="foot_wrap_toiawase">
-<p><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/logo2.png" width="80%"></a></p>
-<p><a href="<{$view_inq_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/toiawase_btn.png" width="100%"></a></p>
-<p><a href="<{$mailmaga_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/malmaga_btn.png" width="100%"></a></p>
+<p><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/logo2.png" width="80%"></a></p>
+<p><a href="<{$view_inq_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/toiawase_btn.png" width="100%"></a></p>
 </div>
 <!--// お問い合わせ -->
 
 <!-- pc切り替え -->
 <div class="foot_wrap_pc">
-<p class="switch"><a href="<{$view_pc_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/img/pc_sich.png" width="40%"></a></p>
+<p class="switch"><a href="<{$view_pc_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/pc_sich.png" width="40%"></a></p>
 </div>
 <!-- pc切り替え -->
 
@@ -129,10 +159,10 @@
 <div class="foot_wrap_sns clearfix">
 <p>
 <{if $manager_url != ""}>
-<a href="<{$manager_url}>" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/img/blog_icon.png" width="100%" alt="blog"></a>
+<a href="<{$manager_url}>" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/blog_icon.png" width="100%" alt="blog"></a>
 <{/if}>
-<a href="https://twitter.com/beautygarden3" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/img/twitter_icon.png" width="100%" alt="twitter"></a>
-<a href="https://www.facebook.com/shopbeautygarden" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/img/facebook_icon.png" width="100%" alt="facebook"></a>
+<a href="https://twitter.com/beautygarden3" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/twitter_icon.png" width="100%" alt="twitter"></a>
+<a href="https://www.facebook.com/shopbeautygarden" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/facebook_icon.png" width="100%" alt="facebook"></a>
 </p>
 </div>
 <!--// sns -->
@@ -155,6 +185,6 @@
 <p class="copyright"><small><{ $e_copyright }></small></p>
 </div>
 <!--// コピーライト -->
-</footer>
 
+</footer>
 <!--//フッター-->
