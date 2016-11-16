@@ -48,6 +48,181 @@
 </nav>
 <!--ナビ-->
 
+<!--韓国コスメ　ランキング-->
+<section id="cosmeRank" class="ranking">
+
+<h2 class="indent">韓国コスメ</h2>
+<div class="cosmeImg indent">Koria Cosme</div>
+
+<div class="accordion">
+<div class="ac-content">
+<label class="btnCat indent" for="ac-cap5">Catagory Serch</label>
+<input id="ac-cap5" type="checkbox">
+<div class="ac-cont">
+<section id="cosmeCat">
+
+<label class="cosmeItem indent" for="ac-cap6">商品カテゴリー別</label>
+<input id="ac-cap6" type="checkbox">
+<div class="ac-cont">
+<ul class="cosmeList">
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327392">大人気！！かたつむり（エスカルゴ）成分配合コスメ</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327384">シワ撃退！！蛇毒（シンエイク）成分配合</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327387">ニキビ・トラブル肌には蜂毒（Bee-Venom）成分配合</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482325">スペシャルケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327383">スキンケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482207">メイク用品</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450084">ボディー・ヘアケア</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450074">小物</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=480977">IKKOさんオススメ！</a></li>
+</ul>
+</div>
+
+<label class="bland indent" for="ac-cap7">ブランド別</label>
+<input id="ac-cap7" type="checkbox">
+<div class="ac-cont">
+<ul class="list2 cosmebland">
+<{section name=num loop=$category}>
+
+<li><a href="<{$category[num].link_url}>"><img src="<{$category[num].img_url}>" width="100%"></a></li>
+
+<{/section}>
+</ul>
+</div>
+
+</section>
+</div>
+<!--ac-content--></div>
+<!--accordion--></div>
+
+<{if $seller_num != 0}>
+<h3 class="rankingTittle indent">RANKING</h3>
+
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 1)}>
+<{assign var="num" value=$smarty.section.num.iteration}>
+<div class="rankParts">
+<p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p>
+<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<img src="<{$seller[num].img_url}>" /><{else}>
+<span class="none">No Photo</span>
+<{/if}>
+</a>
+<p><{$seller[num].name}></p>
+<{if $seller[num].soldout_flg == true}>
+<p class="price">
+<span class="soldout">SOLD OUT</span>
+<{else}>
+<span class="priceBig red bold"><{$seller[num].price}></span>
+</p>
+<{/if}>
+</div>
+<{/if}><{/section}>
+
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 2)}>
+<{assign var="num" value=$smarty.section.num.iteration}>
+<div class="rankParts center">
+<p class="no02"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p>
+<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<img src="<{$seller[num].img_url}>" /><{else}>
+<span class="none">No Photo</span>
+<{/if}>
+</a>
+<p><{$seller[num].name}></p>
+<{if $seller[num].soldout_flg == true}>
+<p class="price">
+<span class="soldout">SOLD OUT</span>
+<{else}>
+<span class="priceBig red bold"><{$seller[num].price}></span>
+</p>
+<{/if}>
+</div>
+<{/if}><{/section}>
+
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 3)}>
+<{assign var="num" value=$smarty.section.num.iteration}>
+<div class="rankParts">
+<p class="no03"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p>
+<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<img src="<{$seller[num].img_url}>" /><{else}>
+<span class="none">No Photo</span>
+<{/if}>
+</a>
+<p><{$seller[num].name}></p>
+<{if $seller[num].soldout_flg == true}>
+<p class="price">
+<span class="soldout">SOLD OUT</span>
+<{else}>
+<span class="priceBig red bold"><{$seller[num].price}></span>
+</p>
+<{/if}>
+</div>
+<{/if}><{/section}>
+
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 4)}>
+<{assign var="num" value=$smarty.section.num.iteration}>
+<div class="rankParts clearfix">
+<p class="no04"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p>
+<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<img src="<{$seller[num].img_url}>" /><{else}>
+<span class="none">No Photo</span>
+<{/if}>
+</a>
+<p><{$seller[num].name}></p>
+<{if $seller[num].soldout_flg == true}>
+<p class="price">
+<span class="soldout">SOLD OUT</span>
+<{else}>
+<span class="priceBig red bold"><{$seller[num].price}></span>
+</p>
+<{/if}>
+</div>
+<{/if}><{/section}>
+
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 5)}>
+<{assign var="num" value=$smarty.section.num.iteration}>
+<div class="rankParts center">
+<p class="no05"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p>
+<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<img src="<{$seller[num].img_url}>" /><{else}>
+<span class="none">No Photo</span>
+<{/if}>
+</a>
+<p><{$seller[num].name}></p>
+<{if $seller[num].soldout_flg == true}>
+<p class="price">
+<span class="soldout">SOLD OUT</span>
+<{else}>
+<span class="priceBig red bold"><{$seller[num].price}></span>
+</p>
+<{/if}>
+</div>
+<{/if}><{/section}>
+
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
+<{assign var="num" value=$smarty.section.num.iteration}>
+<div class="rankParts">
+<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
+<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<img src="<{$seller[num].img_url}>" /><{else}>
+<span class="none">No Photo</span>
+<{/if}>
+</a>
+<p><{$seller[num].name}></p>
+<{if $seller[num].soldout_flg == true}>
+<p class="price">
+<span class="soldout">SOLD OUT</span>
+<{else}>
+<span class="priceBig red bold"><{$seller[num].price}></span>
+</p>
+<{/if}>
+</div>
+<{/if}><{/section}>
+
+<{/if}>
+
+<div class="btnAll indent"><a href="#">全商品を見る</a></div>
+</section>
+<!--韓国コスメ　ランキング-->
+
 <!--コンタクトレンズ　ランキング-->
 <section id="contactRank" class="ranking">
 
@@ -259,181 +434,6 @@
 <div class="btnAll indent"><a href="#">全商品を見る</a></div>
 </section>
 <!--コンタクトレンズ　ランキング-->
-
-<!--韓国コスメ　ランキング-->
-<section id="cosmeRank" class="ranking">
-
-<h2 class="indent">韓国コスメ</h2>
-<div class="cosmeImg indent">Koria Cosme</div>
-
-<div class="accordion">
-<div class="ac-content">
-<label class="btnCat indent" for="ac-cap5">Catagory Serch</label>
-<input id="ac-cap5" type="checkbox">
-<div class="ac-cont">
-<section id="cosmeCat">
-
-<label class="cosmeItem indent" for="ac-cap6">商品カテゴリー別</label>
-<input id="ac-cap6" type="checkbox">
-<div class="ac-cont">
-<ul class="cosmeList">
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327392">大人気！！かたつむり（エスカルゴ）成分配合コスメ</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327384">シワ撃退！！蛇毒（シンエイク）成分配合</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327387">ニキビ・トラブル肌には蜂毒（Bee-Venom）成分配合</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482325">スペシャルケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327383">スキンケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482207">メイク用品</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450084">ボディー・ヘアケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450074">小物</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=480977">IKKOさんオススメ！</a></li>
-</ul>
-</div>
-
-<label class="bland indent" for="ac-cap7">ブランド別</label>
-<input id="ac-cap7" type="checkbox">
-<div class="ac-cont">
-<ul class="list2 cosmebland">
-<{section name=num loop=$category}>
-
-<li><a href="<{$category[num].link_url}>"><img src="<{$category[num].img_url}>" width="100%"></a></li>
-
-<{/section}>
-</ul>
-</div>
-
-</section>
-</div>
-<!--ac-content--></div>
-<!--accordion--></div>
-
-<{if $seller_num != 0}>
-<h3 class="rankingTittle indent">RANKING</h3>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 1)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts">
-<p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 2)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts center">
-<p class="no02"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 3)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts">
-<p class="no03"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 4)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts clearfix">
-<p class="no04"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 5)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts center">
-<p class="no05"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts">
-<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{/if}>
-
-<div class="btnAll indent"><a href="#">全商品を見る</a></div>
-</section>
-<!--韓国コスメ　ランキング-->
 
 <section id="osusume">
 <h2 class="indent">おすすめコーデ</h2>
