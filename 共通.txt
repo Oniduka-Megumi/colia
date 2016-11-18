@@ -129,7 +129,7 @@
 <div class="nav_bar">
 <nav class="footer_nav clearfix">
 <p class="page_nav_home"><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_home.png" alt="ƒz[ƒ€" width="100%"></a></p>
-<p class="page_nav_search"><a href="#cmsearch"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_shop.png" alt="“X•Üî•ñ" width="100%"></a></p>
+<p class="page_nav_search"><a href="<{$free1_link}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_shop.png" alt="“X•Üî•ñ" width="100%"></a></p>
 <{if $members_use_flg == true}>
 <{if $members_login_flg != true}>
 <p class="page_nav_login"><a href="<{$members_login_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/icon_img_login.png" alt="ƒƒOƒCƒ“" width="100%"></a></p>
