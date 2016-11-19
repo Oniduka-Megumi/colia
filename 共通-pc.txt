@@ -1,0 +1,585 @@
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/pc/css/common.css">
+<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/pc/css/animate.css">
+<link rel="stylesheet" href="https://file001.shop-pro.jp/PA01166/275/pc/css/slick.css" />
+<link rel="stylesheet" href="https://file001.shop-pro.jp/PA01166/275/pc/css/slick-theme.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://file001.shop-pro.jp/PA01166/275/pc/js/common.js"></script>
+<script src="https://file001.shop-pro.jp/PA01166/275/pc/js/slick.min.js"></script>
+
+<!--ヘッダー-->
+<header>
+	 
+<div id="headArea" class="clearfix">
+<div id="headAreaSpeace">
+
+<div class="right">
+<p>
+<ul class="navUl">
+<li class="mypage"><span><a href="<{$view_myaccount_url}>">マイアカウント</a></span></li>
+<{if $members_use_flg == true}>
+<{if $members_login_flg != true}>
+<{if $members_register_flg == true}>
+<li class="regist"><a href="<{$members_regi_url}>">会員登録</a></li>
+<{/if}>
+<li class="login"><a href="<{$members_login_url}>">ログイン</a></li>
+<{else}>
+<li class="logout"><a href="<{$members_login_url}>">ログアウト</a></li>
+<{/if}>
+<{/if}>
+<li><a href="#guideArea"><span>お買い物ガイド</span></a></li>
+<li><a href="http://basket.step.rakuten.co.jp/rms/mall/bs/cart/?shop_bid=320863&__event=ES01_003_001" ><span><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/icon/icocart.jpg" width="100%"></span></a></li>
+</ul>
+</p>
+</div>
+
+</div>
+</div>
+
+<!-- ここからスライドショー -->
+<div id="sliderImg" class="clearfix">
+<div id="slick">
+<div id="slider">
+<div><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head01.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></div>
+<div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head02.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
+<div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head03.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
+<div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head04.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<!-- ここまでスライドショー -->
+
+<!-- ナビ -->
+<div id="navArea" class="clearfix">
+<nav>
+<ul class="menu">
+<li><a href="#top"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_1.jpg" width="201" height="69" alt="トップ"></a></li>
+<li class="menu__mega">
+<a href="http://item.rakuten.co.jp/beautygarden-shop/c/"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_2.jpg" width="201" height="69" alt="カテゴリー"></a>
+<ul class="menu_category">
+<{section name=num loop=$category}>
+<{if $category[num].img_url != ""}>
+<li><a href="<{$category[num].link_url}>"><{$category[num].name}></a></li>
+<{/if}>
+<{/section}>
+</ul>
+</li>
+
+<!--ブランド-->
+<li class="menu__mega">
+<a href="http://item.rakuten.co.jp/beautygarden-shop/c/0000000105/"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_3.jpg" width="201" height="69" alt="ブランド"></a>
+<div class="category">
+<ul class="menu_brand">
+<{section name=num loop=$group}>
+<{if $group[num].img_url != ""}>
+<li><a href="<{$group[num].link_url}>"><{$group[num].name}></a></li>
+<{/if}>
+<{/section}>
+</ul>
+</li>
+<!--ブランド-->
+	    
+<li><a href="#new"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_4.jpg" width="201" height="69" alt="新着商品"></a></li>
+<li><a href="http://esearch.rakuten.co.jp/rms/sd/esearch/vc?sv=6&sitem=&f=A&su=beautygarden-shop&sn=COSME%A1%A1BEAUTYGARDEN&sid=320863"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_5.jpg" width="100%" alt="商品一覧"></a></li>
+<li><a href="#guideArea"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_6.jpg" width="201" height="69" alt="お買い物について"></a></li>
+</ul>
+
+</nav>
+</div>
+<!-- ナビ -->
+
+</header>
+<!--ヘッダー-->
+
+<!--ピックアップ-->
+<div id="pickupArea" class="clearfix">
+<div class="pickupCnt">
+
+<div class="pickTitle">
+<h2><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_pickup.png" width="100%"></h2>
+<p>
+<a href="http://esearch.rakuten.co.jp/rms/sd/esearch/vc?sv=6&sitem=&f=A&su=beautygarden-shop&sn=COSME%A1%A1BEAUTYGARDEN&sid=320863">
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/btn/btn_pickup_all.png" width="100%" alt="商品はこちら">
+</a>
+</p>
+</div>
+
+<div class="pickSectionArea">
+<section class="left">
+<p>
+<a href="http://item.rakuten.co.jp/beautygarden-shop/scandal-sale01/">
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/pickup/img_pickup.jpg" width="50%" class="leftImg">
+</a>
+</p>
+</section>
+
+<section class="center">
+<h3>大分フォーラス<br>2017年2月閉店セール</h3>
+<p class="centerTittle">店舗情報</p>
+<p class="centerText">
+ここに店舗情報が入ります。<br>
+ここに店舗情報が入ります。<br>
+ここに店舗情報が入ります。<br>
+ここに店舗情報が入ります。<br>
+</p>
+</section>
+
+<section class="right">
+
+<p class="rightImgL">
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/pickup/pcinfo01.jpg" width="300">
+</p>
+
+<p class="rightTextR">
+ここに店舗情報が入ります。<br>
+ここに店舗情報が入ります。<br>
+ここに店舗情報が入ります。<br>
+ここに店舗情報が入ります。<br>
+</p>
+
+</section>
+
+</div>
+
+</div>
+</div>
+<!--ピックアップ-->
+
+<!--box-->
+<div id="box" class="clearfix">
+
+<!--コンテンツ-->
+<article>
+
+<{include file = $file_name}>
+
+</article>
+<!--コンテンツ-->
+
+<!--サイド-->
+<aside>
+<h3 id="asideH3"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_cat.jpg" width="100%" alt="カテゴリー"></h3>
+
+<nav id="aside" class="clearfix">
+<ul>
+<{section name=num loop=$category}>
+<{if $category[num].img_url != ""}>
+<li><a href="<{$category[num].link_url}>"><{$category[num].name}></a></li>
+<{/if}>
+<{/section}>
+</ul>
+</nav>
+
+<!-- サイドバナー -->
+<section id = "sidebanner">
+<a href="#"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/contact_btn.jpg" width="255" height="105"></a>
+<a href="#"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/food_button.jpg" width="255" height="105"></a>
+</section>
+<!-- サイドバナー -->
+
+</aside>
+<!--サイド-->
+
+</div>
+<!--box-->
+
+<!--フッター-->
+<footer class="clearfix">
+
+<!--companyArea-->
+<div id="companyArea" class="clearfix">
+<div class="about">
+<h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_about.png" width="100%"></h3>
+<h4>株式会社シュプリーム</h4>
+<p>
+〒8700274 大分県大分市 大字種具８３２－５<br>
+TEL:0975747555 FAX:0975747556<br>
+代表者:河野 珠里<br>
+店舗運営責任者:河野 珠里<br>
+店舗セキュリティ責任者:河野珠里<br>
+</p>
+</div>
+
+<div class="calendar">
+<h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_cal.png" width="100%"></h3>
+	<table class="calbase_rakuten">
+	<tr>
+	<td>
+	<table>
+	<tr>
+	<td align="center">
+
+            <table class="calframe_rakuten">
+              <tr>
+                <th colspan="7">2016年11月</th>
+              </tr>
+              <tr class="weektitle_rakuten">
+                <td style="color:#BF0000">日</td>
+                <td style="color:#000000">月</td>
+                <td style="color:#000000">火</td>
+                <td style="color:#000000">水</td>
+                <td style="color:#000000">木</td>
+                <td style="color:#000000">金</td>
+                <td style="color:#1D54A7">土</td>
+              </tr>
+              <tr>
+                <td style="color:#CECECE">30</td>
+                <td style="color:#CECECE">31</td>
+                <td style="color:#000000">1</td>
+                <td style="color:#000000">2</td>
+                <td style="color:#BF0000" class="event2day_rakuten">3</td>
+                <td style="color:#000000">4</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">5</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">6</td>
+                <td style="color:#000000">7</td>
+                <td style="color:#000000">8</td>
+                <td style="color:#000000">9</td>
+                <td style="color:#000000">10</td>
+                <td style="color:#000000">11</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">12</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">13</td>
+                <td style="color:#000000">14</td>
+                <td style="color:#000000">15</td>
+                <td style="color:#000000">16</td>
+                <td style="color:#000000">17</td>
+                <td style="color:#000000">18</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">19</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">20</td>
+                <td style="color:#000000">21</td>
+                <td style="color:#000000">22</td>
+                <td style="color:#BF0000" class="event2day_rakuten">23</td>
+                <td style="color:#000000">24</td>
+                <td style="color:#000000">25</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">26</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">27</td>
+                <td style="color:#000000">28</td>
+                <td style="color:#000000">29</td>
+                <td style="color:#000000">30</td>
+                <td style="color:#CECECE">1</td>
+                <td style="color:#CECECE">2</td>
+                <td style="color:#CECECE">3</td>
+              </tr>
+            </table>
+
+            <table class="calframe_rakuten">
+              <tr>
+                <th colspan="7">2016年12月</th>
+              </tr>
+              <tr class="weektitle_rakuten">
+                <td style="color:#BF0000">日</td>
+                <td style="color:#000000">月</td>
+                <td style="color:#000000">火</td>
+                <td style="color:#000000">水</td>
+                <td style="color:#000000">木</td>
+                <td style="color:#000000">金</td>
+                <td style="color:#1D54A7">土</td>
+              </tr>
+              <tr>
+                <td style="color:#CECECE">27</td>
+                <td style="color:#CECECE">28</td>
+                <td style="color:#CECECE">29</td>
+                <td style="color:#CECECE">30</td>
+                <td style="color:#000000">1</td>
+                <td style="color:#000000">2</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">3</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">4</td>
+                <td style="color:#000000">5</td>
+                <td style="color:#000000">6</td>
+                <td style="color:#000000">7</td>
+                <td style="color:#000000">8</td>
+                <td style="color:#000000">9</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">10</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">11</td>
+                <td style="color:#000000">12</td>
+                <td style="color:#000000">13</td>
+                <td style="color:#000000">14</td>
+                <td style="color:#000000">15</td>
+                <td style="color:#000000">16</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">17</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">18</td>
+                <td style="color:#000000">19</td>
+                <td style="color:#000000">20</td>
+                <td style="color:#000000">21</td>
+                <td style="color:#000000">22</td>
+                <td style="color:#BF0000" class="event2day_rakuten">23</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">24</td>
+              </tr>
+              <tr>
+                <td style="color:#BF0000" class="event2day_rakuten">25</td>
+                <td style="color:#000000">26</td>
+                <td style="color:#000000">27</td>
+                <td style="color:#000000">28</td>
+                <td style="color:#000000">29</td>
+                <td style="color:#000000">30</td>
+                <td style="color:#1D54A7" class="event3day_rakuten">31</td>
+              </tr>
+            </table>
+
+	</td>
+	</tr>
+	</table>
+	</td>
+	</tr>
+	</table>
+
+<p>
+※土・日・祝日、夏季、年末年始はお休みを頂いております。<br>
+メール返信、商品発送ともお休みさせていただきますので翌営業日の対応となります。<br>
+ご注文は年中無休・24時間可能となっております。年末年始及び臨時休業につきましては都度、HPにてお知らせいたします。
+</p>
+
+</div>
+</div>
+<!--companyArea-->
+
+<div id="guideArea" class="clearfix">
+
+<div id = "Shopping_Guide">
+<img class = "guideTitle" src = "https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_guide.png">
+<div id="guideAll" class="clearfix">
+
+<div id="guidehead">
+<h4>ご注文に際しての注意点</h4>
+<p>
+当店ではご注文いただきましたお客様には必ずご注文確認・発送のご案内等のメールをお送りしておりますが、ご登録いただいておりますメールアドレス（特にフリーメールや携帯電話のアドレス）にて受信いただけていないお客様が多数いらっしゃいます。 
+<br><br>
+今一度ご登録のメールアドレスのご確認とセキュリティに関する受信設定をご確認くださいますようお願い致します。<br>
+なお、ドメイン指定・受信許可設定をされている場合は vox_rakuten.shop@jewel-vox.net を必ず受信できるよう設定をお願いいたします。 また、コンビニ決済をご希望の場合は info@aksd.rakuten-kc.co.jp からのメールも受信できるよう設定ください。 
+<br><br>
+yahoo!やhotmail、MSNなどのフリーメールをご利用の場合、自動的に「迷惑メールフォルダ」へ振り分けられている事例が多数ございます。恐れ入りますがご注文の前に今一度ご確認くださいますよう宜しくお願いいたします	
+</p>
+</div>
+
+<div id="guideCntArea" class="clearfix">
+<div id="guideCnt01">
+<h4>お支払方法について</h4>
+<div class="cntText">
+<p>
+<span>●クレジットカード</span><br>
+以下のクレジットカードがご利用可能です。 <br>
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/img_card.jpg" width="100%">
+※全てのカードで一括払いが可能です。発行元カード会社によってリボ払い、分割払いが利用できない場合がございます。<br>
+ご利用いただけるお支払い回数については、お客様とカード会社のご契約内容をご確認ください。
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>●代金引換</span><br>
+【業者】佐川急便・クロネコヤマト・ゆうパック・福山通運<br>
+【備考】●当店からお送りするメールに記載の金額を、商品配送時にご用意ください。<br>
+【代引手数料料金表】 全国一律料金： 648円
+</p>
+</div>
+</div>
+
+<div id="guideCnt02">
+<h4>返品交換について</h4>
+
+<div class="cntText">
+<p>
+●返品、交換は商品到着日より5日以内にメール、またはお電話にてご連絡をお願いいたします。<br><br>
+●現金書留にてのご返金はお受けしておりませんので、ご理解のほどよろしくお願い致します。<br>
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>●クレジットカードにてご購入頂いた場合</span><br>
+クレジットカードをご利用の場合、締め日の関係上カード会社経由の返金になります。<br>
+トラブルを防ぐため、クレジットカードでお支払いのお客様には現金書留等でのご返金はお断りさせて頂きます。<br>
+なお、カード会社様の締め日の関係上、商品代金を引き落としさせて頂いた場合は後日、カード会社様よりご返金をさせて頂きます。翌々月になります。
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>●代金引換にてご購入頂いた場合</span><br>
+商品と一緒にお客様のご返金先【銀行名・支店名・口座番号・ご名義人様のお名前（それぞれにふり仮名をお願いいたします）】をお知らせ下さい。<br><br>
+ご返品商品確認後、お客様のご指定の銀行口座にお振込み致します。
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>●返品理由が初期不良の場合は、送料は当店負担となります。</span><br>
+返品理由がそれ以外のお客様都合の場合は、送料、振り込み手数料はお客様のご負担となります。
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>●次の場合、返品・交換はお受けできません。</span><br>
+<ul class="guideUl">
+<li>ご使用になったもの</li>
+<li>商品のタグや付属物をはずしたもの</li>
+<li>お客様が破損、汚損されたもの</li>
+<li>お届け後6日間以上経過した場合</li>
+</ul>
+</p>
+<p>
+パッケージを開封されますとご返品はお受けできませんのでご注意下さい。
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>●返品方法</span><br>
+送料をご自分でお支払いになる場合（元払い）は、お近くの宅配便、郵パック等をご利用ください。
+</p>
+<p class="guideLine">
+〒870-0035 大分県大分市中央町2-7-28 ガレリア竹町ビル1F<br>
+BEAUTY GARDEN「返品・交換係」
+</p>
+<p>
+ご返品の際、出来ましたらクロネコヤマト・ゆうちょ・西濃運輸・佐川急便をご利用いただくと商品到着が早いため、対応日数が短縮されます
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>●交換について</span><br>
+不良品によるお取替えは、お手数ですがメールにてご連絡ください。<br>
+責任を持ってお取替えをさせて頂きます。<br>
+往復運賃はお客様負担となります。（不良品交換の場合は当社負担）<br><br>
+返品、お問い合わせ先<br>
+電話番号：097-574-7555<br>
+メールでのお問い合わせは<a href="https://secure.shop-pro.jp/?mode=inq&shop_id=PA01166275" class="red">コチラ</a><br><br>
+誠に勝手ながら、土・日・祝日はメール発信等の業務はお休みを頂いております。
+</p>
+</div>
+
+</div>
+
+<div id="guideCnt03">
+<h4>送料・配送方法について</h4>
+
+<div class="cntText">
+<p>
+<span>宅配便（佐川急便・クロネコヤマト・ゆうぱっく・福山通運）</span><br>
+【商品発送のタイミング】<br>
+特にご指定がない場合、<br>
+銀行振込、ゆうちょ振替　⇒ご入金確認後、1～5営業日以内に発送いたします。<br>
+クレジット、代金引換　⇒ご注文確認後、1～5営業日以内に発送いたします。 
+</p>
+<p>
+【配送希望時間帯をご指定出来ます】<br>
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/img_time.jpg" width="100%" class="cntimg">
+ただし時間を指定された場合でも、事情により指定時間内に配達ができない事もございます。
+</p>
+<p>
+<span class="red">【重要事項のため下記配送方法について必ずご確認ください】</span><br>
+※商品ページに「送料無料」「メール便配送」が記載されている商品につきましては、メール便での配送となる場合がございます。<br>
+※メール便（クロネコヤマト：ネコポス便・郵便局：ゆうーメール便・佐川急便：飛脚メール便）配送の場合は、ポスト投函となりますので到着日及び、到着時間を指定することができませんので、ご了承ください。<br>
+その際、ご購入時に配送日指定を頂いても、指定日にお届けできない場合がございますので、ご了承ください。<br>
+（※メール便につきましては、発送後、地域によって1～5営業日での配達となります）<br>
+<a href="http://www.rakuten.co.jp/beautygarden-shop/info2.html#delivery_6" target="_top"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/btn/btn_price.jpg" width="100%" class="cntbtn"></a>
+</p>
+</div>
+
+<div class="cntText">
+<p>
+<span>メール便（送料無料）</span><br>
+【商品発送のタイミング】<br>
+特にご指定がない場合、<br>
+ご決済確認後、3営業日以内に発送いたします。<br>
+※ポスト投函の為、到着日の指定はできませんのでご了承ください。<br>
+※代引をご希望の際は、その他の配送方法をお選びください。<br>
+<br>
+【配送希望時間帯をご指定出来ます】<br>
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/img_time.jpg" width="100%" class="cntimg">
+ただし時間を指定された場合でも、事情により指定時間内に配達ができない事もございます。<br>
+<br>
+【送料料金表】<br>
+全国一律料金：0円<br>
+離島他の扱い<br>
+離島・一部地域は追加送料がかかる場合があります
+</p>
+</div>
+
+</div>
+</div>
+
+<div id="guidefoot" class="clearfix">
+<h3><span>DM便ご利用の際の注意点</span></h3>
+
+<div class="guidefoot_L">
+<h4>・DM便の場合、荷物保証がございません。</h4>
+<p>
+※ポスト投函の通常の郵便ですので、 荷物への保証(配送時の破損も含む)がございません。<br>
+送料を節約したい方のみご選択下さい。(質より安さ優先型)<br>
+※1点1点丁寧に梱包致しておりますが、封筒でのお届けとなる為、破損、 箱がつぶれる場合もございます。その場合の保障はございません。<br>
+<ul>
+<li>ラッピング商品に関しましてはDM便での発送は承れません。</li>
+<li>大きさはＡ４の封筒に入り、厚さが２センチ以下の品物に限ります。<br>
+※「DM便不可」の商品は宅配便のみの取扱となります。</li>
+</ul>
+</p>
+</div>
+
+<div class="guidefoot_R">
+<h4>・到着日・時間のご指定はできません。</h4>
+<p>
+（発送からお届けまで数日かかります）<br>
+<ul>
+<li>代引きでのお支払いはできません。<br>
+※代金引換の場合、連絡無く宅配便に変更させて頂く事がございます。</li>
+<li>ポストへの投函となります。</li>
+<li>「DM便OK」の商品でも複数ご購入の場合、包装等により厚さが２センチを越えDM便でお送りできない場合が多々ございます。<br>
+その場合は宅配便でお送りさせて頂きますので予めご了承ください。</li>
+</ul>
+</p>
+</div>
+</div>
+<!--Shopping_Guide end -->
+
+</div>
+</div>
+</div>
+
+<div id="flow" class="clearfix"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/img_flow.png" width="100%" alt="ご注文からお届けまでの流れ"></div>
+<div id="couponArea" class="clearfix">
+<div id="couponAll">
+<div class="couponLogo">
+<!--<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/footerlogo.jpg" width="100%" alt="韓国コスメ専門店　ビューティーガーデン" class="logoimg">-->
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_coupon.jpg" width="100%" alt="おトクなクーポン配信中！！" class="imgCT">
+</div>
+<div class="couponMenu">
+<a href="https://coupon.rakuten.co.jp/getCoupon?getkey=NjFKTi1RMklTLU9HUUQtWllGVw--&rt=" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_100.jpg" width="100%" alt="100off　クーポン"></a>
+<a href="https://coupon.rakuten.co.jp/getCoupon?getkey=UkRTTi1DNUo0LURWNjItWEZLQQ--&rt=" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_300.jpg" width="100%" alt="300off　クーポン"></a>
+<a href="https://coupon.rakuten.co.jp/getCoupon?getkey=UEpOOC1NWjNSLVY5Q08tRVU5Wg--&rt=" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_500.jpg" width="100%" alt="500off　クーポン"></a>
+<a href="https://coupon.rakuten.co.jp/getCoupon?getkey=QVlWVi1POE9XLTVXTk0tRjFORw--&rt=" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/sale/sale1110/btn30off.png" width="216px" height="134px" alt="30%OFFクーポン"></a>
+</div>
+</div>
+
+</div>
+
+<div id="copy"><p><{$e_copyright}></p></div>
+
+</footer>
+
+<!--
+<div id="rc_rightArea">
+<ul>
+<li><a href="#couponArea"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/btn_coupon.png" /></a></li>
+<li><a href="http://item.rakuten.co.jp/beautygarden-shop/c/0000000220/"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/sale/sale1110/flowtingSide.png" /></a></li>
+</ul>
+</div>
+-->
