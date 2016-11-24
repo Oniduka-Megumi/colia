@@ -1,34 +1,3 @@
-<!--newアイテム-->
-<div id="new" class="clearfix">
-<div id="newTittle">
-<h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_new.jpg" width="100%" alt="newアイテム"></h3>
-<p id="btnIchiran"><a href="#">商品一覧はコチラ</a></p>
-</div>
-<{if $new_item_num != 0 }>
-<div class="newArea clearfix">
-<{section name=num loop=5}> 
-<div class="newBox"><a href="<{ $new_item[num].link_url }>">
-<{if $new_item[num].img_url != ""}>
-<img src="<{ $new_item[num].img_url }>" width="100%">
-<{else}>
-<span class="none">No Photo</span>
-<{/if}>
-<p class="newText"><{ $new_item[num].name }></p>
-<p class="newKingaku clearfix">
-<{if $new_item[num].soldout_flg == true}>
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span><{$new_item[num].price}></span>
-<{/if}>
-</p>
-</a></div>
-
-<{/section}>
-</div>
-<{/if}>
-</div>
-<!--newアイテム-->
-
 <section class="tub">
 
 <ul id="tabMenu" class="clearfix">
@@ -41,17 +10,18 @@
 <div id="tabBoxes">
 <div id="tabBox1">
 <section class="koreacosmeImg">
-<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_ranking2.png" width="700">
 <img src="https://file001.shop-pro.jp/PA01166/275/pc/img/koreacosme-top.jpg" width="700">
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_ranking2.png" width="540">
 </section>
 <section class="boxInner">
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 1)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no1.png" width="100%" height="auto" alt="No01"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -68,13 +38,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 2)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no2.png" width="100%" height="auto" alt="No02"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -91,13 +63,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 3)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no3.png" width="100%" height="auto" alt="No03"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -114,13 +88,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 4)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no4.png" width="100%" height="auto" alt="No04"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -137,13 +113,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 5)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no5.png" width="100%" height="auto" alt="No05"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -160,13 +138,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no5.png" width="100%" height="auto" alt="No06"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -183,6 +163,7 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 </section>
 </div>
@@ -190,18 +171,19 @@
 <div id="tabBox2">
 
 <section class="contactImg">
-<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_ranking2.png" width="700">
 <img src="https://file001.shop-pro.jp/PA01166/275/pc/img/contact-top.jpg" width="700">
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_ranking2.png" width="540">
 </section>
 
 <section class="boxInner">
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 7)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no1.png" width="100%" height="auto" alt="No01"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -218,13 +200,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 8)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no2.png" width="100%" height="auto" alt="No02"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -241,13 +225,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 9)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no3.png" width="100%" height="auto" alt="No03"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -264,13 +250,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 10)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no4.png" width="100%" height="auto" alt="No04"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -287,13 +275,15 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 11)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no5.png" width="100%" height="auto" alt="No05"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
+<{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
 <{/if}>
@@ -310,19 +300,24 @@
 </dd>
 <{/if}><{/section}>
 </dl>
+</a>
 
 <{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 12)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
+<a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no5.png" width="100%" height="auto" alt="No06"></p></dt>
 <dt>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
+<{if $seller[num].img_url != ""}>
+<img src="<{$seller[num].img_url}>" />
+<{else}>
 <span class="none">No Photo</span>
 <{/if}>
 </dt>
 <dd>
-<p><span class="itemTtl"><{$seller[num].name}></span></p>
+<p>
+<span class="itemTtl">
+<{$seller[num].name}></span></p>
 <{if $seller[num].soldout_flg == true}>
 <p class="price">
 <span class="soldout">SOLD OUT</span>
@@ -333,7 +328,7 @@
 </dd>
 <{/if}><{/section}>
 </dl>
-
+</a>
 </section>
 </div>
 
@@ -350,58 +345,3 @@
         return false;
     });
 </script>
-
-<!--アクセス-->
-
-<div id="new" class="clearfix">
-<div id="newTittle">
-<h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_access.jpg" width="100%" alt="newアイテム"></h3>
-</div>
-
-<!--西大道店 -->
-<div id = "access">
-<h4 id="nishiodori" class="indent">西大道店</h4>
-<p id = "loc">
-BEAUTYGARDEN 西大道店<br>
-〒870-0820大分市西大道1-1-13 堤ビル2Ｆ<br>
-TEL:097-574-7555
-<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/map/nishiodori_map.jpg"  class = "map">
-</p>
-<a href="https://www.google.co.jp/maps/place/%EF%BD%81%EF%BD%95%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97+%E5%A4%A7%E9%81%93/@33.231002,131.5979906,19.5z/data=!4m5!3m4!1s0x3546a1de3a07706d:0x9799ebc2d768eaa2!8m2!3d33.2313723!4d131.5980462?hl=ja">
-<img class = "googlemap" src = "https://file001.shop-pro.jp/PA01166/275/pc/img/map/googlemap_btn.jpg">
-</a>
-</div>
-<!--西大道店 -->
-
-<!--フォーラス店 -->
-<div id = "access">
-<h4 id="forus-Oita" class="indent">フォーラス</h4>
-<p id = "loc">
-BEAUTYGARDEN 大分フォーラス店1階<br>
-〒870-0035大分市中央町1-2-7<br>
-TEL:097-574-7555
-<img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/map/forusmap.jpg"  class = "map">
-</p>
-<a href="https://www.google.co.jp/maps/search/%E5%A4%A7%E5%88%86%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%82%B9%E5%BA%971%E9%9A%8E+%E3%80%92870-0035%E5%A4%A7%E5%88%86%E5%B8%82%E4%B8%AD%E5%A4%AE%E7%94%BA1-2-7+/@33.2359955,131.6047371,17z/data=!3m1!4b1?hl=ja">
-<img class = "googlemap" src = "https://file001.shop-pro.jp/PA01166/275/pc/img/map/googlemap_btn.jpg">
-</a>
-</div>
-<!--フォーラス店 -->
-
-<!--イオン狭間店 -->
-<div id = "access">
-<h4 id="aeonkyushu-Hazama" class="indent">イオン狭間店</h4>
-<p id = "loc">
-BEAUTYGARDEN イオン狭間店１階<br>
-〒879-5518 　 由布市挾間町北方77<br>
-TEL:097-574-7555
-<img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/map/ion_map.jpg"  class = "map">
-</p>
-<a href="https://www.google.co.jp/maps/search/%E3%82%A4%E3%82%AA%E3%83%B3%E7%8B%AD%E9%96%93%E5%BA%97%EF%BC%91%E9%9A%8E+%E3%80%92879-5518+%E3%80%80+%E7%94%B1%E5%B8%83%E5%B8%82%E6%8C%BE%E9%96%93%E7%94%BA%E5%8C%97%E6%96%B977/@33.206557,131.5202821,17z/data=!3m1!4b1?hl=ja">
-<img class = "googlemap" src = "https://file001.shop-pro.jp/PA01166/275/pc/img/map/googlemap_btn.jpg">
-</a>
-</div>
-<!--イオン狭間店 -->
-
-<div class="clear"></div>
-</div>

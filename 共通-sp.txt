@@ -96,6 +96,21 @@
 </section>
 <!--商品検索-->
 
+<!--クーポン-->
+<section id="coupon" class="otoku clearfix">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ttl_coupon.jpg" width="100%" height="auto">
+<div class="couponInner">
+<a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/coupon/btn_coupon_100.jpg" width="65%" height="auto"></a>
+<a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/coupon/btn_coupon_300.jpg" width="65%" height="auto"></a>
+<a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/coupon/btn_coupon_500.jpg" width="65%" height="auto"></a>
+</div>
+
+</section>
+<p class="days">
+利用期限： 2016/11/13/20:00～11/14/1:59
+</p>
+<!--クーポン-->
+
 <!--スペシャル-->
 <section id="special" class="clearfix">
 <h2 class="indent">Special Contents</h2>
