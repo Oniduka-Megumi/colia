@@ -9,11 +9,34 @@
 <script type="text/javascript" src="https://file001.shop-pro.jp/PA01166/275/pc/js/common.js"></script>
 <script src="https://file001.shop-pro.jp/PA01166/275/pc/js/slick.min.js"></script>
 
+<!--↑検索エンジンに入れてから投稿してください-->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37898103-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
 <!--ヘッダー-->
 <header>
 	 
 <div id="headArea" class="clearfix">
 <div id="headAreaSpeace">
+
+<div class="left">
+<{if $members_use_flg == true}>
+<p>ようこそ、&nbsp;<{if $members_login_flg != true}>ゲスト<{else}><{$members_login_name}><{/if}>&nbsp;様
+<{/if}>
+</p>
+</div>
 
 <div class="right">
 <p>
@@ -22,15 +45,15 @@
 <{if $members_use_flg == true}>
 <{if $members_login_flg != true}>
 <{if $members_register_flg == true}>
-<li class="regist"><a href="<{$members_regi_url}>">会員登録</a></li>
+<li class="regist"><span><a href="<{$members_regi_url}>">会員登録</a></span></li>
 <{/if}>
-<li class="login"><a href="<{$members_login_url}>">ログイン</a></li>
+<li class="login"><span><a href="<{$members_login_url}>">ログイン</a></span></li>
 <{else}>
-<li class="logout"><a href="<{$members_login_url}>">ログアウト</a></li>
+<li class="logout"><span><a href="<{$members_login_url}>">ログアウト</a></span></li>
 <{/if}>
 <{/if}>
-<li><a href="#guideArea"><span>お買い物ガイド</span></a></li>
-<li><a href="#" ><span><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/icon/icocart.jpg" width="100%"></span></a></li>
+<li class="cartBtn"><a href="<{$view_cart_url}>" ><span>カートを見る</span></a></li>
+<li class="cartG"><a href="#guideArea"><span>お買い物ガイド</span></a></li>
 </ul>
 </p>
 </div>
@@ -46,6 +69,7 @@
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head02.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head03.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head04.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
+<div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head05.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 </div>
 <div class="clear"></div>
 </div>
@@ -73,7 +97,7 @@
 
 <!--ブランド-->
 <li class="menu__mega">
-<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_3.jpg" width="201" height="69" alt="ブランド"></a>
+<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_3.jpg" width="201" height="69" alt="グループ"></a>
 <div class="category">
 <ul class="menu_category">
 <{section name=num loop=$group}>
@@ -84,7 +108,7 @@
 <!--ブランド-->
 	    
 <li><a href="#new"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_4.jpg" width="201" height="69" alt="新着商品"></a></li>
-<li><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_5.jpg" width="100%" alt="商品一覧"></a></li>
+<li><a href="http://www.k-colle.net/?mode=srh"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_5.jpg" width="100%" alt="商品一覧"></a></li>
 <li><a href="#pickupArea"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_6.jpg" width="201" height="69" alt="店舗情報"></a></li>
 </ul>
 
@@ -107,7 +131,7 @@
 <div id="new" class="clearfix">
 <div id="newTittle">
 <h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_new.jpg" width="100%" alt="newアイテム"></h3>
-<p id="btnIchiran"><a href="#">商品一覧はコチラ</a></p>
+<p id="btnIchiran"><a href="http://www.k-colle.net/?mode=srh">商品一覧はコチラ</a></p>
 </div>
 <{if $new_item_num != 0 }>
 <div class="newArea clearfix">
@@ -194,6 +218,16 @@ TEL:097-574-7555
 
 <!--サイド-->
 <aside>
+
+<!--ツイッター-->
+
+<h3 id="twitter" class="indent">ショップ情報</h3>
+<section id="twitterArea">
+<a class="twitter-timeline" data-chrome="noheader nofooter noborders" data-width="250" data-height="300" data-dnt="true" data-link-color="#E81C4F" href="https://twitter.com/beautygarden3">Tweets by beautygarden3</a>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+<!--ツイッター-->
+
 <h3 id="asideH3"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_cat.jpg" width="100%" alt="カテゴリー"></h3>
 
 <nav id="aside" class="clearfix">
@@ -208,10 +242,10 @@ TEL:097-574-7555
 
 <!-- サイドバナー -->
 <section id = "sidebanner">
+<a href="<{$mailmaga_url}>" ><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/bana_magazine.png" width="255" height="auto"></a>
+<a href="http://www.k-colle.net/?mode=sk#iyakuhintop"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/sidemenu_dr.jpg" width="255" height="105"></a>
 <a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=0"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/contact_btn.jpg" width="255" height="105"></a>
 <a href="http://www.k-colle.net/?mode=grp&gid=1285758"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/food_button.jpg" width="255" height="105"></a>
-<a href="http://www.k-colle.net/?mode=sk#iyakuhintop"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/sidemenu_dr.jpg" width="255" height="105"></a>
-<a class="mailMagazine indent" href="<{$mailmaga_url}>">メールマガジン登録はこちらから</a>
 </section>
 <!-- サイドバナー -->
 
@@ -242,13 +276,13 @@ TEL:097-574-7555
 </section>
 
 <section class="center">
-<h3>大分フォーラス<br>2017年2月閉店セール</h3>
+<h3>大分フォーラス<br>閉店売りつくしセール・第１弾</h3>
 <p class="centerTittle">店舗情報</p>
 <p class="centerText">
-ここに店舗情報が入ります。<br>
-ここに店舗情報が入ります。<br>
-ここに店舗情報が入ります。<br>
-ここに店舗情報が入ります。<br>
+期　　間：11/19日(土)～11/27(日)<br>
+※閉店売りつくしセール第１弾期間<br>
+(第２弾12月初旬予定)
+営業時間：10:00～20:00
 </p>
 </section>
 
@@ -474,20 +508,21 @@ BEAUTY GARDEN「返品・交換係」
 <a href="#" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_100.jpg" width="100%" alt="100off　クーポン"></a>
 <a href="#" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_300.jpg" width="100%" alt="300off　クーポン"></a>
 <a href="#" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_500.jpg" width="100%" alt="500off　クーポン"></a>
-<a href="#" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/sale/sale1110/btn30off.png" width="216px" height="134px" alt="30%OFFクーポン"></a>
 </div>
 </div>
 
 </div>
 
 <div id="copy">
-<p>
-<a href="<{$home_url}>">ホーム</a>｜
-<a href="<{$sk_url}>#payment">支払・配送</a>｜
-<a href="<{$sk_url}>#info">特定商取引法に基づく表記</a>｜
-<a href="<{$privacy_url}>">プライバシーポリシー</a>｜
-<a href="<{$view_inq_url}>">お問合せ</a>
-</p>
+<nav>
+<ul>
+<li><a href="<{$home_url}>">ホーム</a></li>
+<li><a href="<{$sk_url}>#payment">支払・配送</a></li>
+<li><a href="<{$sk_url}>#info">特定商取引法に基づく表記</a></li>
+<li><a href="<{$privacy_url}>">プライバシーポリシー</a></li>
+<li><a href="<{$view_inq_url}>">お問合せ</a></li>
+</ul>
+</nav>
 <p><{$e_copyright}></p>
 </div>
 

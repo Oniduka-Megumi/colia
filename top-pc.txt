@@ -144,7 +144,7 @@
 <{assign var="num" value=$smarty.section.num.iteration}>
 <a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no5.png" width="100%" height="auto" alt="No06"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no6.png" width="100%" height="auto" alt="No06"></p></dt>
 <dt>
 <{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
@@ -306,7 +306,7 @@
 <{assign var="num" value=$smarty.section.num.iteration}>
 <a href="<{$seller[num].link_url}>">
 <dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no5.png" width="100%" height="auto" alt="No06"></p></dt>
+<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no6.png" width="100%" height="auto" alt="No06"></p></dt>
 <dt>
 <{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" />

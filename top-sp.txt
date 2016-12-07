@@ -1,8 +1,9 @@
 <!--スライドショー-->
 <div class="main-gallery">
-<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide01.jpg" height="auto" width="100%" alt="" class="gallery-cell">
 <img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide02.jpg" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide01.jpg" height="auto" width="100%" alt="" class="gallery-cell">
 <img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide03.jpg" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide04.jpg" height="auto" width="100%" alt="" class="gallery-cell">
 </div>
 <!--スライドショー-->
 
@@ -211,7 +212,7 @@
 
 <{/if}>
 
-<div class="btnAll indent"><a href="#">全商品を見る</a></div>
+<div class="btnAll indent"><a href="http://www.k-colle.net/?mode=srh&keyword=&view=smartphone">全商品を見る</a></div>
 </section>
 <!--韓国コスメ　ランキング-->
 
@@ -232,50 +233,50 @@
 
 <div class="ac-cont">
 <ul class="list2">
-<{section name=group01 start=0 loop=$category}>
-<li><a href="<{$category[group01].link_url}>"><{$category[group01].name}></a></li>
-<{/section}>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=1">エバーカラーワンデーナチュラル</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=4">エバーカラーワンデー</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=5">エバーカラーワンデーモイストレーベル</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=6">エバーカラーワンデーナチュラルモイストレーベル</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=2">エンジェルカラーワンデー アクア バンビ</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=10">エンジェルカラーワンデー バンビヴィンテージ</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=9">キャンディーマジックワンデー</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=7">ヴィクトリア キャンディーマジック</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=3">シークレットキャンディーマジック</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=8">ラヴェール 倖田來未デザインプロデュース</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=11">アンヴィ</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=12">リルムーン モデル【ローラ】プロデュース</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=13">フランミー</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=14">ナチュラリ</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=15">クオーレ ナチュラ</a></li>
+<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=16">クオーレ カリーナ</a></li>
 </ul>
 </div>
 
 
 <ul class="clm2 clearfix">
-<li class="indent"><a href="">度あり</a></li>
-<li class="indent"><a href="">度なし</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=1320645">度あり</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=1320648">度なし</a></li>
 </ul>
 
 <ul class="clm3 clearfix">
-<li class="indent"><a href="">ワンデー</a></li>
-<li class="indent"><a href="">2週間</a></li>
-<li class="indent"><a href="">1ヶ月</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=1320650">ワンデー</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=1320651">2週間</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=1320652">1ヶ月</a></li>
 </ul>
 
 <label class="lense indent" for="ac-cap3">レンズ直径</label>
 <input id="ac-cap3" type="checkbox">
 <div class="ac-cont">
 <ul class="list2">
-<li><a href="">13.8mm</a></li>
-<li><a href="">14.0mm</a></li>
-<li><a href="">14.1mm</a></li>
-<li><a href="">14.2mm</a></li>
-<li><a href="">14.3mm</a></li>
-<li><a href="">14.4mm</a></li>
-<li><a href="">14.5mm</a></li>
-<li><a href="">14.8mm</a></li>
-<li><a href="">15.0mm</a></li>
-</ul>
-</div>
-
-<label class="base indent" for="ac-cap4">ベースカーブ</label>
-<input id="ac-cap4" type="checkbox">
-<div class="ac-cont">
-<ul class="list2">
-<li><a href="">8.5mm</a></li>
-<li><a href="">8.6mm</a></li>
-<li><a href="">8.7mm</a></li>
-<li><a href="">8.8mm</a></li>
-<li><a href="">8.9mm</a></li>
-<li><a href="">9.0mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320654">13.8mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320656">14.0mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320657">14.1mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320658">14.2mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320659">14.3mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320661">14.4mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320664">14.5mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320665">14.8mm</a></li>
+<li><a href="http://www.k-colle.net/?mode=grp&gid=1320666">15.0mm</a></li>
 </ul>
 </div>
 
@@ -423,7 +424,8 @@
 
 <{/if}>
 
-<div class="btnAll indent"><a href="#">全商品を見る</a></div>
+<div class="btnAll indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=">全商品を見る</a></div>
+
 </section>
 <!--コンタクトレンズ　ランキング-->
 
