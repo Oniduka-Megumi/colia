@@ -25,6 +25,15 @@
 
 </script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!--ヘッダー-->
 <header>
 	 
@@ -63,15 +72,12 @@
 
 <!-- ここからスライドショー -->
 <div id="sliderImg" class="clearfix">
-<div id="slick">
 <div id="slider">
 <div><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head01.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head02.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head03.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head04.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head05.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
-</div>
-<div class="clear"></div>
 </div>
 </div>
 <!-- ここまでスライドショー -->
@@ -108,7 +114,7 @@
 <!--ブランド-->
 	    
 <li><a href="#new"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_4.jpg" width="201" height="69" alt="新着商品"></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_5.jpg" width="100%" alt="商品一覧"></a></li>
+<li><a href="http://www.k-colle.net/?mode=f23"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_5.jpg" width="100%" alt="商品一覧"></a></li>
 <li><a href="#pickupArea"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_6.jpg" width="201" height="69" alt="店舗情報"></a></li>
 </ul>
 
@@ -160,9 +166,9 @@
 
 <!--アクセス-->
 
-<div id="new" class="clearfix">
-<div id="newTittle">
-<h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_access.jpg" width="100%" alt="newアイテム"></h3>
+<div id="mapArea" class="clearfix">
+<div id="mapTittle">
+<h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_access.jpg" width="100%" alt="アクセス"></h3>
 </div>
 
 <!--西大道店 -->
@@ -220,13 +226,20 @@ TEL:097-574-7555
 <aside>
 
 <!--ツイッター-->
-
+<!--
 <h3 id="twitter" class="indent">ショップ情報</h3>
 <section id="twitterArea">
 <a class="twitter-timeline" data-chrome="noheader nofooter noborders" data-width="250" data-height="300" data-dnt="true" data-link-color="#E81C4F" href="https://twitter.com/beautygarden3">Tweets by beautygarden3</a>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </section>
+-->
 <!--ツイッター-->
+
+<!--facebook-->
+<div class="fb-page" data-href="https://www.facebook.com/shopbeautygarden" data-tabs="timeline,events" data-width="250" data-height="400" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false">
+<blockquote cite="https://www.facebook.com/shopbeautygarden" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/shopbeautygarden">Beauty Garden</a></blockquote>
+</div>
+<!--facebook-->
 
 <h3 id="asideH3"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_cat.jpg" width="100%" alt="カテゴリー"></h3>
 
@@ -244,8 +257,9 @@ TEL:097-574-7555
 <section id = "sidebanner">
 <a href="<{$mailmaga_url}>" ><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/bana_magazine.png" width="255" height="auto"></a>
 <a href="http://www.k-colle.net/?mode=sk#iyakuhintop"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/sidemenu_dr.jpg" width="255" height="105"></a>
-<a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=0"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/contact_btn.jpg" width="255" height="105"></a>
-<a href="http://www.k-colle.net/?mode=grp&gid=1285758"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/food_button.jpg" width="255" height="105"></a>
+<a href="http://www.k-colle.net/?mode=f21"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/contact_btn.jpg" width="255" height="105"></a>
+<a href="http://www.k-colle.net/?mode=f19"><img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/bannerbtn/food_button.jpg" width="255" height="105"></a>
+<img src = "https://file001.shop-pro.jp/PA01166/275/pc/img/line_qr_img.jpg" width="255" height="400">
 </section>
 <!-- サイドバナー -->
 
@@ -276,12 +290,10 @@ TEL:097-574-7555
 </section>
 
 <section class="center">
-<h3>大分フォーラス<br>閉店売りつくしセール・第１弾</h3>
+<h3>大分フォーラス<br>閉店売りつくしセール・第3弾</h3>
 <p class="centerTittle">店舗情報</p>
 <p class="centerText">
-期　　間：11/19日(土)～11/27(日)<br>
-※閉店売りつくしセール第１弾期間<br>
-(第２弾12月初旬予定)
+期    間：2017年1月1日(日)朝10時スタート！<br>
 営業時間：10:00～20:00
 </p>
 </section>
@@ -289,11 +301,11 @@ TEL:097-574-7555
 <section class="right">
 
 <p>
-<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/pickup/pcinfo01.jpg" width="500">
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/pickup/happybag_pc.jpg" width="500">
 </p>
 
 <p>
-クリスマスイベント開催中！！！<br>
+福袋のご予約お待ちしております<br>
 </p>
 
 </section>
@@ -319,9 +331,6 @@ TEL:097-574-7555
 <p>
 〒8700274 大分県大分市 大字種具８３２－５<br>
 TEL:0975747555 FAX:0975747556<br>
-代表者:河野 珠里<br>
-店舗運営責任者:河野 珠里<br>
-店舗セキュリティ責任者:河野珠里<br>
 </p>
 </div>
 
@@ -533,4 +542,8 @@ BEAUTY GARDEN「返品・交換係」
 <li><a href="#couponArea"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/btn_coupon.png" /></a></li>
 <!-- <li><a href="http://item.rakuten.co.jp/beautygarden-shop/c/0000000220/"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/sale/sale1110/flowtingSide.png" /></a></li> -->
 </ul>
+<p id="officialsite" class="indent">
+<a class="uc2" href="http://uc2.co.jp/" target="_blank">UC-Ⅱ公式サイトはコチラ</a>
+<a class="krilloil" href="https://krilloil.co.jp/" target="_blank">南極オキアミクリルオイル公式サイトはコチラ</a>
+</p>
 </div>

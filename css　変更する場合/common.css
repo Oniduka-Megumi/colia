@@ -11,10 +11,10 @@ body {
 }
 
 .indent{
-  text-indent:100%;
-  white-space:nowrap;
-  overflow:hidden;
-  display:block;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+	display:block;
 }
 
 h1 {
@@ -42,10 +42,6 @@ a:hover p{
 	width:1200px;
 	height:auto;
 	margin:0 auto;
-	padding:0;
-}
-
-#slick{
 	padding:0;
 }
 
@@ -147,21 +143,25 @@ header #headAreaSpeace .right li{
 li.login {
 	background: url(http://img.shop-pro.jp/tmpl_img/37/0302_icon_login.gif) 0 0 no-repeat;
 	padding-left:10px;
+	padding-bottom:5px;
 }
 
 li.logout {
 	background: url(http://img.shop-pro.jp/tmpl_img/37/0302_icon_logout.gif) 0 0 no-repeat;
 	padding-left:10px;
+	padding-bottom:5px;
 }
 
 li.regist {
 	background: url(http://img.shop-pro.jp/tmpl_img/37/0302_icon_regist.gif) 0 0 no-repeat;
 	padding-left:10px;
+	padding-bottom:5px;
 }
 
  li.mypage {
 	background: url(http://img.shop-pro.jp/tmpl_img/37/0302_icon_mypage.gif) 0 0 no-repeat;
 	padding-left:10px;
+	padding-bottom:5px;
 }
 
 li.cartG {
@@ -171,6 +171,7 @@ li.cartG {
 li.cartBtn{
 	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/icon/icocart.png) 0 0 no-repeat;
 	padding-left:10px;
+	padding-bottom:5px;
 }
 
 header #navArea{
@@ -342,7 +343,7 @@ header span img{
 #pickupArea{
 	width:100%;
 	height:auto;
-	margin:0 0 20px 0;
+	margin:0;
 	padding:0;
 	background:#f9f3f0;
 }
@@ -498,7 +499,7 @@ article a{
 
 article #new{
 	width:850px;
-	margin:15px auto;
+	margin:15px auto 50px auto;
 }
 
 #new span.none {
@@ -668,7 +669,7 @@ aside {
 }
 
 #asideH3 {
-	margin:0px 0 5px 0;
+	margin:20px 0 5px 0;
 	padding:0;
 	background:#fff;
 }
@@ -880,27 +881,18 @@ footer #companyArea2 h4{
 }
 
 #Shopping_Guide{
-	width: 1200px;
+	width: 100%;
 	height: auto;
 	margin: 0 auto;
 }
 
 .guideTitle{
-	top: 10px;
-	right: 0;
-	bottom: 0;
-	left: 0;
 	width: 220px;
 	height: 34px;
-	padding-top: 40px;
-	padding-right: 490px;
-	padding-bottom: 0;
-	padding-left: 490px;
-	margin: 0 px;
+	margin: 0 auto;
+	padding:40px 0 20px 0;
 	display: block;
 }
-
-
 
 #guideAll{
 	width:1000px;
@@ -920,6 +912,7 @@ footer #companyArea2 h4{
 }
 
 #guidehead h3{
+	width:32%;
 	padding:10px 0 5px 10px;
 	border-bottom:2px solid #aaa;
 }
@@ -937,7 +930,7 @@ footer #companyArea2 h4{
 }
 
 #guideCntArea{
-	width:95%;
+	width:98.5%;
 	height:auto;
 	margin:0 auto;
 	margin-top:25px;
@@ -1151,9 +1144,10 @@ footer #companyArea2 h4{
 
 /*---------------------------*/
 #rc_rightArea{
- position: fixed;
- top: 100px;
- right:0px;
+	position: fixed;
+	top: 100px;
+	right:0px;
+	z-index: 9999;
  }
 
  #rc_rightArea ul li{
@@ -1161,19 +1155,50 @@ footer #companyArea2 h4{
  }
 
 #rc_rightArea ul li:nth-child(1) a{
- width: 56px;
- display: inline-block;
- z-index: 9999;
+	width: 56px;
+	display: inline-block;
+	z-index: 9999;
 }
 
 #rc_rightArea ul li:nth-child(2) a{
- width: 56px;
- display: inline-block;
- z-index: 9999;
+	width: 56px;
+	display: inline-block;
+	z-index: 9999;
 }
 
 #rc_rightArea ul li a:hover{
- right: 0px;
+	right: 0px;
+}
+
+#officialsite .uc2 {
+	width: 180px; /*画像の全体幅*/
+	height:60px;
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/btn/uc2_btn_img.png) no-repeat center top;
+	position: fixed;
+	right: -96px; /*マウスを乗せた時に出てくる幅*/
+	display: inline-block;
+	transition: all .2s ease;
+	z-index: 9999;
+}
+
+#officialsite .uc2:hover{
+	right: 0;
+}
+
+#officialsite .krilloil{
+	width: 180px; /*画像の全体幅*/
+	height:60px;
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/btn/krill_btn_img.png) no-repeat center top;
+	margin-top:65px;
+	position: fixed;
+	right: -96px; /*マウスを乗せた時に出てくる幅*/
+	display: inline-block;
+	transition: all .2s ease;
+	z-index: 9999;
+}
+
+#officialsite .krilloil:hover{
+	right: 0;
 }
 
 .specialInner{
@@ -1202,6 +1227,7 @@ a.mb20{
 }
 
 /*30%OFF追加1110---------------------------*/
+
 .flowting{
 	background-color: #bf0000;
 	padding: 5px 0;
@@ -1222,6 +1248,32 @@ hr{
 }
 
 /*ACCESS*/
+
+article #mapArea{
+	width:850px;
+	margin:15px auto;
+}
+
+#mapArea h3{
+	margin:0;
+	padding:0 0 5px 0;
+	top:0;
+	background:#fff;
+	border-bottom:2px solid #dcd2b1;
+}
+
+#mapArea h3 img{
+	width:102px;
+	display:inline;
+}
+
+#mapAreaTittle {  
+    width:100%;  
+    margin-right:20px;  
+    float:left;  
+}
+
+/*---------------------------*/
 
 div#accessArea{
 	width:850px;
@@ -1293,21 +1345,125 @@ div#access{
 
 /*ショップガイド---------------------------*/
 
-
 div#shopInfo{
 	width:800px;
 	height:auto;
+	margin:0 auto 60px auto;
+	padding:20px 0 0 0;
+	border-top:2px dashed #ff7bac;
+	font-size:16px;
+}
+
+.pan{
+	width:800px;
+	height:auto;
 	margin:0 auto;
+	font-size:12px;
+}
+
+.pan ul.topicpass{
+	margin:0 0 5px;
+}
+
+.pan ul.topicpass li{
+	display:inline;
+	margin:0;
+	line-height:1.5em;
+	padding:0;
+	backgound-image:none;
+}
+
+.pan ul.topicpass li a{
+	margin:0;
+	color:#f4f;
+}
+
+div#shopInfo #appearance{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0px 10px 30px 10px;
 }
 
 div#shopInfo .shopLoc{
 	float:left;
-	width:50%;
+	width:60%;
+}
+
+div#shopInfo .shopLoc span{
+	color:#aa3f88;
+	font-weight:bold;
+	font-size:18px;
+	font-family:sans-serif;
+}
+
+div#shopInfo .shopLoc p{
+	line-height:1.5em;
+	padding:270px 0 0 30px;
 }
 
 div#shopInfo .mapImg{
 	float:left;
-	width:50%;
+	width:40%;
+}
+
+div.ttlShop{
+	margin:0;
+	padding:0;
+	height:110px;
+}
+
+div.ttlShop #blogBtn{
+	position:relative;
+	margin:-78px 0 0 625px;
+	top:0;
+	right:0;
+}
+
+div.ttlShop #blogBtn a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/btn/ttl_pc_brg_btn.png) no-repeat 0 0;
+	display:block;
+	width:165px;
+	height:51px;
+}
+
+div#shopInfo h4#nishiodori{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/title/nishiomichi_ttl.jpg) no-repeat 10px 0;
+	background-size:780px;
+	width:100%;
+	padding-bottom:11%;
+	margin:0 auto;
+}
+
+div#shopInfo h4#forus-Oita{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/title/fours-oita_ttl.jpg) no-repeat 10px 0;
+	background-size:780px;
+	width:100%;
+	padding-bottom:11%;
+	margin:0 auto;
+}
+
+div#shopInfo h4#aeonkyushu-Hazama{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/title/ion_ttl.jpg) no-repeat 10px 0;
+	background-size:780px;
+	width:100%;
+	padding-bottom:11%;
+	margin:0 auto;
+}
+
+.nishiodoriAppearance{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/nishiomichi.jpg) no-repeat 10px 0;
+	background-size:475px;
+}
+
+.forus-OitaAppearance{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/fours-oita.jpg) no-repeat 10px 0;
+	background-size:475px;
+}
+
+.aeonkyushu-HazamaAppearance{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/aeonkyushu-hasama.jpg) no-repeat 10px 0;
+	background-size:475px;
 }
 
 div#shopInfo .mapImg a{
@@ -1318,49 +1474,29 @@ div#shopInfo .mapImg a{
 	background-size:100%;
 }
 
-div#shopInfo span{
-	margin:0 auto;
-	padding:0;
-	width:70%;
+
+div#shopInfo .mapImg span{
+	width:240px;
+	height:240px;
+	margin:0 auto 10px auto;
+	padding:9px;
+	border:1px solid #af4c8f;
 }
 
 div#shopInfo span#nishiomichimap{
-	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/map/nishiodori_map.jpg) no-repeat 0 0;
-	padding-bottom:63%;
+	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/map/nishiodori_map.jpg) no-repeat 0;
+	background-size:100%;
+
 }
 
 div#shopInfo span#forusmap{
-	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/map/forusmap.jpg) no-repeat 0 0;
-	padding-bottom:63%;
+	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/map/forusmap.jpg) no-repeat 0;
+	background-size:100%;
 }
 
 div#shopInfo span#ionmap{
-	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/map/ion_map.jpg) no-repeat 0 0;
-	padding-bottom:63%;
-}
-
-div#shopInfo h4#forus-Oita{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/foursoita-tittle.jpg) no-repeat 0 0;
+	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/map/ion_map.jpg) no-repeat 0;
 	background-size:100%;
-	width:100%;
-	height:auto;
-	padding-bottom:18%;
-}
-
-div#shopInfo h4#nishiodori{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/nishioomichi.jpg) no-repeat 0 0;
-	background-size: 100%;
-	width:100%;
-	height:auto;
-	padding-bottom:18%;
-}
-
-div#shopInfo h4#aeonkyushu-Hazama{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/aeonkyushu-hasama.jpg) no-repeat 0 0;
-	background-size:100%;
-	width:100%;
-	height:auto;
-	padding-bottom:18%;
 }
 
 /*ランキング---------------------------*/
@@ -1503,4 +1639,607 @@ h3#twitter{
 	-webkit-border-bottom-right-radius: 6px;
 	-moz-border-radius-bottomleft: 6px;
 	-moz-border-radius-bottomright: 6px;
+}
+
+/*商品検索一覧---------------------------*/
+
+div#itemList{
+	width:800px;
+	height:auto;
+	margin:0 auto 60px auto;
+	padding:20px 0 0 0;
+	border-top:2px dashed #ff7bac;
+	font-size:16px;
+}
+
+div#itemList #appearance{
+	width:100%;
+	height:auto;
+	margin:0;
+	padding:0px 10px 30px 10px;
+}
+
+div#itemList .shopLoc{
+	float:left;
+	width:60%;
+}
+
+div#itemList .shopLoc span{
+	color:#aa3f88;
+	font-weight:bold;
+	font-size:18px;
+	font-family:sans-serif;
+}
+
+div#itemList .shopLoc p{
+	line-height:1.5em;
+	padding:270px 0 0 30px;
+}
+
+div#itemList .mapImg{
+	float:left;
+	width:40%;
+}
+
+div.ttlItem{
+	margin:0;
+	padding:0;
+	height:110px;
+}
+
+div.ttlItem #blogBtn{
+	position:relative;
+	margin:-75px 0 0 625px;
+	top:0;
+	right:0;
+}
+
+div.ttlItem #blogBtn a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/btn/ttl_pc_item_btn.png) no-repeat 0 0;
+	display:block;
+	width:165px;
+	height:51px;
+}
+
+div#itemList h4#koriacosmeTitle{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/title/koreancosme_ttl.jpg) no-repeat 10px 0;
+	background-size:780px;
+	width:100%;
+	padding-bottom:11%;
+	margin:0 auto;
+}
+
+div#itemList h4#contactTitle{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/title/karakon_ttl.jpg) no-repeat 10px 0;
+	background-size:780px;
+	width:100%;
+	padding-bottom:11%;
+	margin:0 auto;
+}
+
+div#itemList h4#drugTitle{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/title/supple_ttl.jpg) no-repeat 10px 0;
+	background-size:780px;
+	width:100%;
+	padding-bottom:11%;
+	margin:0 auto;
+}
+
+div#itemList h4#japancosmeTitle{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/title/nishiomichi_ttl.jpg) no-repeat 10px 0;
+	background-size:780px;
+	width:100%;
+	padding-bottom:11%;
+	margin:0 auto;
+}
+
+.koriacosmeAppearance{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/item/koreancosme_bnr.jpg) no-repeat 10px 0;
+	background-size:470px;
+}
+
+.contactAppearance{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/item/colorcon_bnr.jpg) no-repeat 10px 0;
+	background-size:470px;
+}
+
+.drugAppearance{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/item/supple_bnr.jpg) no-repeat 10px 0;
+	background-size:470px;
+}
+
+.nishiodoriAppearance{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/nishiomichi.jpg) no-repeat 10px 0;
+	background-size:475px;
+}
+
+div#itemList .mapImg a{
+	width: 250px;
+	height: 58px;
+	margin:0 auto;
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/btn/ninki_btn.png) no-repeat center top;
+	background-size:95%;
+}
+
+
+div#itemList .mapImg span{
+	width:215px;
+	height:215px;
+	margin:0 auto 10px auto;
+	padding:9px;
+	border:1px solid #dcd2b1;
+}
+
+div#itemList span#nishiomichimap{
+	background: url(https://file001.shop-pro.jp/PA01166/275/pc/img/map/nishiodori_map.jpg) no-repeat 0;
+	background-size:100%;
+}
+
+/*各商品一覧ページ---------------------------*/
+
+div#productListArea{
+	width:800px;
+	height:auto;
+	margin:0 auto 60px auto;
+	padding:450px 0 0 0;
+	border-top:2px dashed #ff7bac;
+	font-size:16px;
+}
+
+div#productListArea h3 {
+	position: relative;
+	text-align: center;
+	width: 90%;
+	margin:0 auto 20px auto;
+	color:#ff7bac;
+	font-size:20px;
+}
+
+div#productListArea h3 span {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin: 0 2.5em;
+	padding: 0 1em;
+	background-color: #fff;
+	text-align: left;
+}
+
+div#productListArea h3::before {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #ff7bac;
+}
+
+div#productListArea section{
+	width:90%;
+	margin:0 auto 20px auto;
+}
+
+div#productListArea section ul{
+	list-style-type:none;
+	display:inline-block;
+	clear:both;
+}
+
+div#productListArea section ul li{
+	float:left;
+}
+
+/*医薬品一覧--------------------------------*/
+
+div.freepage19{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/item/supple_bnr.jpg) no-repeat center 20px;
+	background-size:90%;
+}
+
+div.freepage19 ul.ulCategory1 li{
+	margin:0 0 5px 5px;
+}
+
+div.freepage19 ul.ulCategory1 li:first-child , div.freepage19 ul.ulCategory1 li:nth-child(4){
+	margin:0 0 5px 0;
+}
+
+div.freepage19 ul.ulCategory1 li a{
+	width:135px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	font-size:22px;
+	font-weight:bold;
+	color:#000;
+	background:#fff;
+	padding:20px 40px;
+	border:0.5px solid #ccc;
+	border-radius: 5px;		/* CSS3草案 */
+	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;	/* Firefox用 */
+	clear:both;
+}
+
+div.freepage19 ul.ulCategory1 li a.lines2{
+	padding:9px 40px;
+}
+
+div.freepage19 ul.ulCategory2 li{
+	margin:0 0 5px 10px;
+}
+
+div.freepage19 ul.ulCategory2 li a{
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	font-size:22px;
+	font-weight:bold;
+	color:#fff;
+	background:#ff7bac;
+	padding:20px 105px;
+	border:0.5px solid #ff7bac;
+	clear:both;
+}
+
+/*韓国コスメ--------------------------------*/
+
+div.freepage24{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/item/koreancosme_bnr.jpg) no-repeat center 20px;
+	background-size:90%;
+}
+
+div.freepage24 ul.ulCategory1 li{
+	margin:0 0 5px 5px;
+}
+
+div.freepage24 ul.ulCategory1 li:first-child ,
+div.freepage24 ul.ulCategory1 li:nth-child(4) ,
+div.freepage24 ul.ulCategory1 li:nth-child(7){
+	margin:0 0 5px 0;
+}
+
+div.freepage24 ul.ulCategory1 li a{
+	width:130px;
+	height:90px;
+	display: table-cell; /* IE8から使用可能 */
+	vertical-align: middle;
+	text-align:center;
+	line-height:20px;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:bold;
+	color:#000;
+	background:#fff;
+	padding:0px 40px;
+	border:0.5px solid #ccc;
+	border-radius: 5px;		/* CSS3草案 */
+	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;	/* Firefox用 */
+	clear:both;
+}
+
+div.freepage24 ul.ulCategory1 li span{
+	font-size:16px
+}
+
+div.freepage24 ul.ulCategory1 li span:before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+div.freepage24 ul.ulCategory1 li a.lines2{
+	padding:9px 40px;
+}
+
+div.freepage24 ul.ulCategory2 li{
+	width:200px;
+	height:110px;
+	margin:0 0 5px 10px;
+}
+
+div.freepage24 ul.ulCategory2 li a{
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+	color:#ff7bac;
+	text-align:center;
+	/*padding-top:85px;*/
+}
+
+div.freepage24 ul.ulCategory2 li a span{
+	font-size:12px;
+}
+
+div.freepage24 ul.ulCategory2 li a span:before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+/*
+div.freepage24 ul.ulCategory2 li:nth-child(1) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(2) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(3) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(4) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(5) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(6) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(7) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(8) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(9) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(10) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(11) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+div.freepage24 ul.ulCategory2 li:nth-child(12) a{
+	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
+	background-size:100%;
+}*/
+
+/*カラコン一覧--------------------------------*/
+
+div.freepage21{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/item/colorcon_bnr.jpg) no-repeat center 20px;
+	background-size:90%;
+}
+
+div.freepage21 ul.ulCategory1 li{
+	margin:0 0 5px 5px;
+}
+
+div.freepage21 ul.ulCategory1 li:first-child{
+	margin:0 0 5px 0;
+}
+
+div.freepage21 ul.ulCategory1 li:first-child a , div.freepage21 ul.ulCategory1 li:nth-child(2) a{
+	width:246px;
+}
+
+div.freepage21 ul.ulCategory1 li:nth-child(3){
+	margin:0 0 5px 0;
+	clear:both;
+}
+
+div.freepage21 ul.ulCategory1 li a{
+	width:135px;
+	display:block;
+	text-align:center;
+	text-decoration:none;
+	font-size:22px;
+	font-weight:bold;
+	color:#fff;
+	background:#ff7bac;
+	padding:20px 40px;
+	border:0.5px solid #ff7bac;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	clear:both;
+}
+
+div.freepage21 ul.ulCategory2 li{
+	margin:0 0 5px 5px;
+}
+
+div.freepage21 ul.ulCategory2 li:first-child ,
+div.freepage21 ul.ulCategory2 li:nth-child(4) ,
+div.freepage21 ul.ulCategory2 li:nth-child(7){
+	margin:0 0 5px 0;
+}
+
+div.freepage21 ul.ulCategory2 li a{
+	width:130px;
+	height:70px;
+	display: table-cell; /* IE8から使用可能 */
+	vertical-align: middle;
+	text-align:center;
+	line-height:20px;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:bold;
+	color:#000;
+	background:#fff;
+	padding:0px 40px;
+	border:0.5px solid #ccc;
+	border-radius: 5px;		/* CSS3草案 */
+	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;	/* Firefox用 */
+	clear:both;
+}
+
+ul.ulColor li{
+	float:left;
+	overflow:hidden;
+	width:100px;
+	height:150px;
+	margin:0 5px;
+}
+
+ul.ulColor li a{
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+	color:black;
+	text-align:center;
+	padding-top:110px;
+}
+
+ul.ulColor li a span{
+	font-size:12px;
+}
+
+ul.ulColor li:nth-child(1) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-black.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(2) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-gray.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(3) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-green.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(4) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-pink.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(5) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-hazel.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(6) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-blown.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(7) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-blue.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(8) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-purple.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(9) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-silver.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(10) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-yellow.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(11) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-orang.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulColor li:nth-child(12) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-red.png) no-repeat 0 0;
+	background-size:100%;
+}
+
+ul.ulLenzBrand li{
+	float:left;
+	overflow:hidden;
+	width:200px;
+	height:100px;
+	margin:0 5px;
+}
+
+ulLenzBrand li a{
+	display:block;
+	overflow:hidden;
+}
+
+ul.ulLenzBrand li:nth-child(1) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/babylicious_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(2) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/bijou_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(3) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/kissmore_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(4) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/fallineyes_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(5) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/lilmoon_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(6) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/floweres_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(7) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/michebloomin_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(8) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/natumi_color.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(9) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/natumi_ootd.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
+}
+
+ul.ulLenzBrand li:nth-child(10) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/selectfairy_logo.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:70px;
 }

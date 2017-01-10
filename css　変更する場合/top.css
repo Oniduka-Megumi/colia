@@ -420,7 +420,7 @@ h2.new{
 
 .accordion {
 	min-width: 90%;
-	margin: 0 auto 20px;
+	margin: 0 auto 10px;
 }
 .accordion .ac-content {
 	margin: 0 0px;
@@ -451,14 +451,14 @@ h2.new{
 	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/contact/btn_cat.png) no-repeat 0 0; background-size:100%;
 	max-width: 95%;
 	height:auto;
-	padding-bottom: 8%;
+	padding-bottom: 7%;
 }
 
 .accordion label.btnCat2{
 	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/btn_cat_shop.jpg) no-repeat 0 0; background-size:100%;
 	max-width: 95%;
 	height:auto;
-	padding-bottom: 8%;
+	padding-bottom: 7%;
 }
 
 .accordion label.bland{
@@ -861,8 +861,8 @@ div.rankParts a img{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	margin-bottom: 20px;
-	padding-bottom: 20px;
+	/*margin-bottom: 20px*/;
+	padding-bottom: 10px;
 }
 
 #osusume h2{
@@ -930,7 +930,7 @@ div.rankParts a img{
 	max-width: 100%;
 	height: auto;
 	padding-top: 25%;
-	margin: 0 auto;
+	margin: 10px auto 0 auto;
 	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/bana_magazine.png) no-repeat 0 0; background-size:100%;
 }
 
@@ -1203,69 +1203,89 @@ ul.shopList li a{
 }
 
 ul.shopList li:nth-child(1) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/fours-oita-cat.jpg) no-repeat 0 0; background-size:100%;
+	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/nishiomichi-cat.jpg) no-repeat 0 0;
+	background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 10%;
 }
 
 ul.shopList li:nth-child(2) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/nishiomichi-cat.jpg) no-repeat 0 0; background-size:100%;
+	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/fours-oita-cat.jpg) no-repeat 0 0;
+	background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 10%;
 }
 
 ul.shopList li:nth-child(3) a{
-	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/aeonkyushu-hasama-cat.jpg) no-repeat 0 0; background-size:100%;
+	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/aeonkyushu-hasama-cat.jpg) no-repeat 0 0;
+	background-size:100%;
 	height: auto;
 	width: 100%;
 	padding-bottom: 10%;
 }
 
-h1#forus-Oita{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/foursoita-tittle.jpg) no-repeat 0 0; background-size: 100%;
-	background-size:100% auto;
-	width:100%;
-	height:auto;
+h1#nishiodori{
+	/*background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/nishioomichi.jpg) no-repeat 0 0;
+	background-size: 100%;
 	padding-bottom:22%;
+	width:100%;*/
+	height:auto;
+	background:#ff7bac;
+	color:#ffffff;
+	margin:0 0 10px 0;
+	padding:10px 0 5px 10px;
+	text-align:left;
 }
 
-h1#nishiodori{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/nishioomichi.jpg) no-repeat 0 0; background-size: 100%;
-	background-size:100% auto;
-	width:100%;
-	height:auto;
+h1#forus-Oita{
+	/*background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/foursoita-tittle.jpg) no-repeat 0 0;
+	background-size: 100%;
+	margin-top:10px;
 	padding-bottom:22%;
+	width:100%;*/
+	height:auto;
+	background:#ff7bac;
+	color:#ffffff;
+	margin:10px 0 10px 0;
+	padding:10px 0 5px 10px;
+	text-align:left;
 }
 
 h1#aeonkyushu-Hazama{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/aeonkyushu-hasama.jpg) no-repeat 0 0;
-	background-size:100% auto;
-	width:100%;
-	height:auto;
+	/*background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/tittle/aeonkyushu-hasama.jpg) no-repeat 0 0;
+	background-size: 100%;
+	margin-top:10px;
 	padding-bottom:22%;
+	width:100%;*/
+	height:auto;
+	background:#ff7bac;
+	color:#ffffff;
+	margin:10px 0 10px 0;
+	padding:10px 0 5px 10px;
+	text-align:left;
 }
 
-.imarge{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/fours-oita.jpg) no-repeat 0 0;
-	background-size:100% auto;
+.imarge2{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/nishiomichi.jpg) no-repeat 0 0;
+	background-size: 100%;
 	width:100%;
 	height:auto;
 	padding-bottom:53%;
 }
 
-.imarge2{
+.imarge{
 	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/fours-oita.jpg) no-repeat 0 0;
-	background-size:100% auto;
+	background-size: 100%;
 	width:100%;
 	height:auto;
 	padding-bottom:53%;
 }
 
 .imarge3{
-	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/fours-oita.jpg) no-repeat 0 0;
-	background-size:100% auto;
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/aeonkyushu-hasama.jpg) no-repeat 0 0;
+	background-size: 100%;
 	width:100%;
 	height:auto;
 	padding-bottom:53%;
@@ -1276,19 +1296,18 @@ table.type01 {
 	text-align: left;
 	line-height: 1.5;
 	margin-bottom:10px;
+	border-top:1px solid #ccc;
 }
 table.type01 th {
-	width: 150px;
-	padding: 10px;
-	font-weight: bold;
-	vertical-align: top;
-	border: 1px solid #ccc;
+	width:35%;
+	padding:5px 10px;
+	font-weight: normal;
+	border-bottom: 1px solid #ccc;
 }
 table.type01 td {
-	width: 350px;
-	padding: 10px;
-	vertical-align: top;
-	border: 1px solid #ccc;
+	/*width: 350px*/;
+	padding:5px 10px;
+	border-bottom: 1px solid #ccc;
 }
 
 .ggmap {
@@ -1308,4 +1327,19 @@ table.type01 td {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+/*======================================
+ facebook
+======================================*/
+.facebook-wrapper {
+    max-width: 500px;
+    width:95%;
+    margin: 0 auto 20px auto;
+}
+.facebook-wrapper > .fb-page {
+    width: 100%;
+}
+.facebook-wrapper > .fb-page > span,
+.facebook-wrapper iframe {
+    width: 100% !important;
 }

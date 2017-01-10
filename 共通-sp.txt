@@ -131,11 +131,15 @@
 </section>
 <!--スペシャル-->
 
-<!--メルマガ-->
 <section class="mailMagazineBox clearfix">
-<a class="mailMagazine indent" href="<{$mailmaga_url}>">メールマガジン登録はこちらから</a>
-</section>
+<!--LINE-->
+<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/line_qr_img.jpg" alt="LINE登録" width="100%">
+<!--LINE-->
+
 <!--メルマガ-->
+<a class="mailMagazine indent" href="<{$mailmaga_url}>">メールマガジン登録はこちらから</a>
+<!--メルマガ-->
+</section>
 
 <!--フッター-->
 <footer id="footerlink" class="sttl_s">
