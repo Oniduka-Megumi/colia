@@ -84,95 +84,41 @@
 
 <!-- ナビ -->
 <div id="navArea" class="clearfix">
-
 <nav>
 <ul class="menu">
+<li><a href="<{$home_url}>"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_1.jpg" width="201" height="69" alt="トップ"></a></li>
 
-<li class="indent"><a href="/">トップ</a></li>
-
-<!-- カテゴリー -->
+<!--カテゴリ-->
 <li class="menu__mega">
-<a href="#" class="init-bottom indent">カテゴリー</a>
-<ul class="menu__second-level">
-
-<li>
-<span>韓国コスメ</span>
-<ul class="navCategory01">
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327392">かたつむつり(エスカルゴ)成分配合コスメ</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327384">蛇毒(シンエイク)成分配合コスメ</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327387">蜂毒(Bee-Venom)成分配合コスメ</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482325">スペシャルケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=327383">スキンケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=482207">メイク</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450084">ボディー・ヘアケア</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=450074">小物品</a></li>
-<li class="indent"><a href="http://www.k-colle.net/?mode=grp&gid=480977">IKKOさんオススメ！</a></li>
+<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_2.jpg" width="201" height="69" alt="カテゴリー"></a>
+<ul class="menu_category">
+<{section name=num loop=$category}>
+<{if $category[num].img_url != ""}>
+<li><a href="<{$category[num].link_url}>"><{$category[num].name}></a></li>
+<{/if}>
+<{/section}>
 </ul>
 </li>
+<!--カテゴリ-->
 
-<li>
-<span>カラーコンタクト</span>
-<ul class="navCategory02">
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1320645">度あり</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1320648">度なし</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1320650">ワンデー</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1320651">２週間</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1320652">１ヶ月</a></li>
-</ul>
-<ul class="navCategory02_2">
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D6%A5%E9%A5%C3%A5%AF"><span>ブラック</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%B0%A5%EC%A1%BC"><span>グレー</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%B0%A5%EA%A1%BC%A5%F3"><span>グリーン</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D4%A5%F3%A5%AF"><span>ピンク</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D8%A1%BC%A5%BC%A5%EB"><span>ヘーゼル</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D6%A5%E9%A5%A6%A5%F3"><span>ブラウン</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D6%A5%EB%A1%BC"><span>ブルー</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D1%A1%BC%A5%D7%A5%EB"><span>パープル</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%B7%A5%EB%A5%D0%A1%BC"><span>シルバー</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%A4%A5%A8%A5%ED%A1%BC"><span>イエロー</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%AA%A5%EC%A5%F3%A5%B8"><span>オレンジ</span></a></li>
-<li><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%EC%A5%C3%A5%C9"><span>レッド</span></a></li>
+<!--ブランド-->
+<li class="menu__mega">
+<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_3.jpg" width="201" height="69" alt="グループ"></a>
+<div class="category">
+<ul class="menu_category">
+<{section name=num loop=$group}>
+<li><a href="<{$group[num].link_url}>"><{$group[num].name}></a></li>
+<{/section}>
 </ul>
 </li>
-
-<li>
-<span>医薬品・健康食品</span>
-<ul class="navCategory03">
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1309184">第一類医薬品</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1309185">第二類医薬品</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1309189">第三類医薬品</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1309163">胃痛・胸やけ</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1309286">催眠鎮静剤</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1309295">痛み止め</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1316144">かぜ薬</a></li>
-<li><a href="http://www.k-colle.net/?mode=grp&gid=1309230">ニキビ・肌荒れ・口内炎</a></li>
+<!--ブランド-->
+	    
+<li><a href="#new"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_4.jpg" width="201" height="69" alt="新着商品"></a></li>
+<li><a href="http://www.k-colle.net/?mode=f23"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_5.jpg" width="100%" alt="商品一覧"></a></li>
+<li><a href="#pickupArea"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_6.jpg" width="201" height="69" alt="店舗情報"></a></li>
 </ul>
-</li>
 
-</ul>
-</li>
-<!-- カテゴリー -->
-
-<li class="indent"><a href="#new">新着商品</a></li>
-
-<li class="indent"><a href="http://www.k-colle.net/?tid=3&mode=f23">商品一覧</a></li>
-
-<li class="indent"><a href="#guideArea">ショップガイド</a></li>
-
-<!-- 店舗 -->
-<li class="menu__single">
-<a href="#pickupArea" class="init-bottom indent">店舗情報</a>
-<ul class="menu__second-level">
-<li><a href="http://www.k-colle.net/?tid=3&mode=f6#nishiodori">西大道店</a></li>
-<li><a href="http://www.k-colle.net/?tid=3&mode=f6#forus-Oita">大分フォーラス店</a></li>
-<li><a href="http://www.k-colle.net/?tid=3&mode=f6#aeonkyushu-Hazama">イオン狭間店</a></li>
-</ul>
-</li>
-<!-- 店舗 -->
-
-</ul>
 </nav>
-
 </div>
 <!-- ナビ -->
 
@@ -191,7 +137,7 @@
 <div id="new" class="clearfix">
 <div id="newTittle">
 <h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_new.jpg" width="100%" alt="newアイテム"></h3>
-<p id="btnIchiran"><a href="http://www.k-colle.net/?tid=3&mode=f23">商品一覧はコチラ</a></p>
+<p id="btnIchiran"><a href="http://www.k-colle.net/?mode=srh">商品一覧はコチラ</a></p>
 </div>
 <{if $new_item_num != 0 }>
 <div class="newArea clearfix">

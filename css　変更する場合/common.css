@@ -77,6 +77,13 @@ span.priceBig{
 	font-size: 1.2em;
 }
 
+p.price span.soldout{
+	padding:5px 10px;
+	background:#b30000;
+	color:#fff;
+	font-weight:bold;
+}
+
 /*---------------------------*/
 
 .clear{
@@ -187,45 +194,56 @@ header #navArea{
 
 .menu {
     position: relative;
-    width: 1200px;
-    height:69px;
-    display:table;
-    margin:0 auto;
+    width: 100%;
+    height: 69px;
+    max-width: 1200px;
+    margin: 0 auto;
     padding:0;
-   list-style-type:none;
-}
-
-.menu img{
-	width:201px;
-	height:69px;
-	display:block;
+    text-align:center;
+    list-style:none;
 }
 
 .menu > li {
     float: left;
     width: 200px;
-    height:auto;
-    line-height: 50px;
+    height: 69px;
+    line-height: 69px;
 }
 
 .menu > li a {
     display: block;
+    color: #444;
 }
 
-ul.menu_category {
+.menu > li a:hover {
+    color: #999;
+}
+
+ul.menu__second-level {
     visibility: hidden;
     opacity: 0;
     z-index: 1;
 }
 
-ul.menu_brand {
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1;
+.menu > li:hover {
+    background: #ff7bac;
+    -webkit-transition: all .5s;
+    transition: all .5s;
 }
 
+.menu__second-level li {
+    border-top: 1px solid #fff;
+}
 
-/* floatƒNƒŠƒA */
+.menu__second-level li:first-child{
+    border-top:none;
+}
+
+.menu__second-level li a:hover {
+    background: #111;
+}
+
+/* floatクリア */
 .menu:before,
 .menu:after {
     content: " ";
@@ -236,83 +254,267 @@ ul.menu_brand {
     clear: both;
 }
 
-.menu {
-    *zoom: 1;
+/*-------------------------------*/
+
+.menu > li.menu__single {
+    position: relative;
+}
+
+li.menu__single ul.menu__second-level {
+    position: absolute;
+    margin-top:19px;
+    width: 100%;
+    padding:0;
+    text-align:center;
+    list-style:none;
+    background: #fbeaef;
+}
+
+li.menu__single:hover ul.menu__second-level {
+    top: 50px;
+    visibility: visible;
+    opacity: 1;
 }
 
 /*-------------------------------*/
 
-li.menu__mega ul.menu_category {
+li.menu__mega ul.menu__second-level {
     position: absolute;
+    margin-top:19px;
     left: 0;
     box-sizing: border-box;
     width: 100%;
-    background:#e7ccd4;
-    list-style-type:none;
-    border:1px solid #9a0000;
+    padding:10px 0 50px 30px;
+    background: #fbeaef;
+    list-style:none;
 }
 
-li.menu__mega:hover ul.menu_category {
-    top: 69px;
+li.menu__mega:hover ul.menu__second-level {
+    top: 50px;
     visibility: visible;
     opacity: 1;
-    padding:10px 20px 0 25px;
 }
 
-li.menu__mega ul.menu_category li{
-	text-indent:1px;
-}
-
-li.menu__mega ul.menu_category > li {
+li.menu__mega ul.menu__second-level > li {
     float: left;
-    width: 22%;
-    border:none;
-    font-size:8px;
-    line-height:1.6em;
-    padding:5px 12px;
+    width: 32%;
+    border: none;
 }
 
-li.menu__mega ul.menu_category > li:nth-child(9n+10) {
-    margin:0;
-    
+li.menu__mega ul.menu__second-level > li:nth-child(3n+2) {
+    margin: 0 1%;
+}
+
+li.menu__mega ul.menu__second-level li ul{
+	margin:0;
+	padding:0;
+	
+}
+
+li.menu__mega ul.menu__second-level li ul li{
+	padding:5px;
+	border:none;
+	line-height:20px;
+	text-align:left;
+	width:30%;
+	float:left;
 }
 
 /*-------------------------------*/
 
-li.menu__mega ul.menu_brand {
-    position: absolute;
-    left: 0;
-    box-sizing: border-box;
-    width: 100%;
-    background:#f3f8f8;
-    list-style-type:none;
-    border-top:1px solid #eee;
-    border-bottom:1px solid #eee;
+li.menu__mega ul.menu__second-level li ul.navCategory01 li a{
+	padding:0 0 65% 0;
 }
 
-li.menu__mega:hover ul.menu_brand {
-    top: 69px;
-    visibility: visible;
-    opacity: 1;
-    padding:10px;
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(1) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/01_icon_ct.png?cmsp_timestamp=2133) no-repeat center 0;
+	background-size:100%;
 }
 
-li.menu__mega ul.menu_brand li{
-	margin:5px 5px;
-	padding:10px 10px 0 10px;
-	text-indent:1px;
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(2) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/02_icon_ct.png?cmsp_timestamp=2152) no-repeat 0 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(3) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/03_icon_ct.png?cmsp_timestamp=2124) no-repeat 0 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(4) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/04_icon_ct.png?cmsp_timestamp=2142) no-repeat 0 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(5) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/05_icon_ct.png?cmsp_timestamp=210300) no-repeat center 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(6) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/06_icon_ct.png?cmsp_timestamp=2128) no-repeat center 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(7) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/07_icon_ct.png?cmsp_timestamp=2133) no-repeat center 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(8) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/08_icon_ct.png?cmsp_timestamp=2121) no-repeat center 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(9) a{
+	background:url(https://img17.shop-pro.jp/PA01166/275/etc/09_icon_ct.png?cmsp_timestamp=2143) no-repeat center 0;
+	background-size:100%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02 li a{
+	padding:5px 10px;
+	background:#ff7bac;
+	text-align:center;
+	color:#fff;
+	border-radius: 5px;		/* CSS3草案 */
+	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;	/* Firefox用 */
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02 li:nth-child(3){
+	clear:both;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li{
+	overflow:hidden;
+	margin:0 10px 0 8px;
+	width:25%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li a{
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+	color:black;
+	text-align:center;
+	padding-top:40px;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li a span{
 	font-size:10px;
 	font-weight:bold;
 }
 
-li.menu__mega ul.menu_brand > li {
-    float: left;
-    width: 22%;
-    border: none;
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(1) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-black.png) no-repeat center 0;
+	background-size:50%;
 }
 
-li.menu__mega ul.menu_brand > li:nth-child(4n+3) {
-    margin:0 1%;
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(2) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-gray.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(3) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-green.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(4) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-pink.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(5) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-hazel.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(6) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-blown.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(7) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-blue.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(8) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-purple.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(9) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-silver.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(10) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-yellow.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(11) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-orang.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li:nth-child(12) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-red.png) no-repeat center 0;
+	background-size:50%;
+}
+
+li.menu__mega ul.menu__second-level li ul.navCategory03 li a{
+	padding:5px 10px;
+	background:#ff7bac;
+	text-align:center;
+	color:#fff;
+	border-radius: 5px;		/* CSS3草案 */
+	-webkit-border-radius: 5px;	/* Safari,Google Chrome用 */
+	-moz-border-radius: 5px;	/* Firefox用 */
+}
+
+/*-------------------------------*/
+
+ul.menu li a{
+  display:block;
+  overflow:hidden;
+  border-left:1px solid #cfcfcf;
+}
+
+ul.menu li:last-child a{
+  border-right:1px solid #cfcfcf;
+}
+
+li.menu__mega ul.menu__second-level li a ,li.menu__single ul.menu__second-level li a{
+ background:none;
+ border-left:none;
+ border-right:none;
+}
+
+ul.menu li:nth-child(1) a{
+  background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_1.jpg) no-repeat center 0;
+}
+
+ul.menu li:nth-child(2) a{
+  background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_2.jpg) no-repeat center 0;
+}
+
+ul.menu li:nth-child(3) a{
+  background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_3.jpg) no-repeat center 0;
+}
+
+ul.menu li:nth-child(4) a{
+  background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_4.jpg) no-repeat center 0;
+}
+
+ul.menu li:nth-child(5) a{
+  background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_5.jpg) no-repeat center 0;
+}
+
+ul.menu li:nth-child(6) a{
+  background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/gnavi/nav_6.jpg) no-repeat center 0;
 }
 
 /*-------------------------------*/
@@ -519,7 +721,6 @@ article #new{
 	margin:0;
 	padding:0 0 5px 0;
 	top:0;
-	background:#fff;
 	border-bottom:2px solid #dcd2b1;
 }
 
@@ -540,9 +741,27 @@ article #new{
 
 #newTittle #btnIchiran a{
     position:absolute;  
-    top:-40px;
+    top:-50px;
     right:7px;
     font-size:12px;
+    padding:5px 10px;
+    background:#fff;
+    font-weight:bold;
+    color:#dcd2b1;
+    border:1px solid #dcd2b1;
+    display:block;
+}
+
+#newTittle #btnIchiran a:hover{
+    position:absolute;  
+    top:-50px;
+    right:7px;
+    font-size:12px;
+    padding:5px 10px;
+    background:#dcd2b1;
+    font-weight:bold;
+    color:#fff;
+    border:1px solid #dcd2b1;
     display:block;
 }
 
@@ -1363,6 +1582,7 @@ div#shopInfo{
 
 .pan ul.topicpass{
 	margin:0 0 5px;
+	padding:0;
 }
 
 .pan ul.topicpass li{
@@ -1838,6 +2058,16 @@ div.freepage19{
 	background-size:90%;
 }
 
+.freepage19 p{
+	position:absolute;
+	margin:-55px 0 0 605px;
+}
+
+.freepage19 p a{
+	color:blue;
+	font-size:12px;
+}
+
 div.freepage19 ul.ulCategory1 li{
 	margin:0 0 5px 5px;
 }
@@ -1868,20 +2098,26 @@ div.freepage19 ul.ulCategory1 li a.lines2{
 }
 
 div.freepage19 ul.ulCategory2 li{
-	margin:0 0 5px 10px;
+	margin:0 0 5px 20px;
 }
 
 div.freepage19 ul.ulCategory2 li a{
 	display:block;
-	text-align:center;
-	text-decoration:none;
-	font-size:22px;
-	font-weight:bold;
-	color:#fff;
-	background:#ff7bac;
-	padding:20px 105px;
-	border:0.5px solid #ff7bac;
-	clear:both;
+	width:300px;
+}
+
+div.freepage19 ul.ulCategory2 li:nth-child(1) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/uc2.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:85px;
+	border:1px solid #ccc;
+	box-sizing:border-box;
+}
+
+div.freepage19 ul.ulCategory2 li:nth-child(2) a{
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/krill.jpg) no-repeat 0 0;
+	background-size:100%;
+	height:85px;
 }
 
 /*韓国コスメ--------------------------------*/
@@ -1946,7 +2182,6 @@ div.freepage24 ul.ulCategory2 li a{
 	text-decoration:none;
 	color:#ff7bac;
 	text-align:center;
-	/*padding-top:85px;*/
 }
 
 div.freepage24 ul.ulCategory2 li a span{
@@ -1957,67 +2192,6 @@ div.freepage24 ul.ulCategory2 li a span:before {
 	content: "\A" ;
 	white-space: pre ;
 }
-
-/*
-div.freepage24 ul.ulCategory2 li:nth-child(1) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(2) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(3) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(4) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(5) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(6) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(7) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(8) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(9) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(10) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(11) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}
-
-div.freepage24 ul.ulCategory2 li:nth-child(12) a{
-	background:url(../img/brand_bnr/dermal.png) no-repeat 0 0;
-	background-size:100%;
-}*/
 
 /*カラコン一覧--------------------------------*/
 
@@ -2090,7 +2264,7 @@ div.freepage21 ul.ulCategory2 li a{
 	clear:both;
 }
 
-ul.ulColor li{
+div.freepage21 ul.ulColor li{
 	float:left;
 	overflow:hidden;
 	width:100px;
@@ -2098,7 +2272,7 @@ ul.ulColor li{
 	margin:0 5px;
 }
 
-ul.ulColor li a{
+div.freepage21 ul.ulColor li a{
 	display:block;
 	overflow:hidden;
 	text-decoration:none;
@@ -2107,71 +2281,71 @@ ul.ulColor li a{
 	padding-top:110px;
 }
 
-ul.ulColor li a span{
+div.freepage21 ul.ulColor li a span{
 	font-size:12px;
 }
 
-ul.ulColor li:nth-child(1) a{
+div.freepage21 ul.ulColor li:nth-child(1) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-black.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(2) a{
+div.freepage21 ul.ulColor li:nth-child(2) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-gray.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(3) a{
+div.freepage21 ul.ulColor li:nth-child(3) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-green.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(4) a{
+div.freepage21 ul.ulColor li:nth-child(4) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-pink.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(5) a{
+div.freepage21 ul.ulColor li:nth-child(5) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-hazel.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(6) a{
+div.freepage21 ul.ulColor li:nth-child(6) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-blown.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(7) a{
+div.freepage21 ul.ulColor li:nth-child(7) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-blue.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(8) a{
+div.freepage21 ul.ulColor li:nth-child(8) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-purple.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(9) a{
+div.freepage21 ul.ulColor li:nth-child(9) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-silver.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(10) a{
+div.freepage21 ul.ulColor li:nth-child(10) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-yellow.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(11) a{
+div.freepage21 ul.ulColor li:nth-child(11) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-orang.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulColor li:nth-child(12) a{
+div.freepage21 ul.ulColor li:nth-child(12) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/color/color-red.png) no-repeat 0 0;
 	background-size:100%;
 }
 
-ul.ulLenzBrand li{
+div.freepage21 ul.ulLenzBrand li{
 	float:left;
 	overflow:hidden;
 	width:200px;
@@ -2179,66 +2353,66 @@ ul.ulLenzBrand li{
 	margin:0 5px;
 }
 
-ulLenzBrand li a{
+div.freepage21 ulLenzBrand li a{
 	display:block;
 	overflow:hidden;
 }
 
-ul.ulLenzBrand li:nth-child(1) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(1) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/babylicious_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(2) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(2) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/bijou_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(3) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(3) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/kissmore_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(4) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(4) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/fallineyes_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(5) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(5) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/lilmoon_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(6) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(6) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/floweres_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(7) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(7) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/michebloomin_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(8) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(8) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/natumi_color.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(9) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(9) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/natumi_ootd.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }
 
-ul.ulLenzBrand li:nth-child(10) a{
+div.freepage21 ul.ulLenzBrand li:nth-child(10) a{
 	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/selectfairy_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;

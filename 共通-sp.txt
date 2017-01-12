@@ -115,18 +115,13 @@
 <section id="special" class="clearfix">
 <h2 class="indent">Special Contents</h2>
 <dl>
-<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp01.png" width="100%" height="auto"></a></dt>
-<dd>【今だけ】chayのナチュラルワンデーでお得キャンペーン開催中!!</dd>
 
-<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp02.png" width="100%" height="auto"></a></dt>
-<dd><span class="red bold">人気モデルなつぅみ完全プロデュース</span><br>
-毎日のオシャレは瞳から。新作マンスリーDebut</dd>
+<dt><a href="http://uc2.co.jp/" target="_blank" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/uc2.jpg" width="100%" height="auto"></a></dt>
+<dd>UC-Ⅱ DX【公式サイト】</dd>
 
-<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp03.png" width="100%" height="auto"></a></dt>
-<dd>【モテコン】ナチュラルハーフのなじみ系マンスリー</dd>
+<dt><a href="https://krilloil.co.jp/" target="_blank" rel="nofollow"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/krill.jpg" width="100%" height="auto"></a></dt>
+<dd>クリルオイル【公式サイト】</dd>
 
-<dt><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/bana_sp04.png" width="100%" height="auto"></a></dt>
-<dd><span class="bold">ヴィヴィアン</span><br>モアコンタクト先行発売！</dd>
 </dl>
 </section>
 <!--スペシャル-->

@@ -1,0 +1,60 @@
+<div id="inn-box">
+
+<h2>検索結果</h2>
+
+<dl class="condition">
+<dt>カテゴリー</dt>
+<dd><{if $search_category!=""}><{$search_category}><{else}>指定なし<{/if}></dd>
+<dt>キーワード</dt>
+<dd><{if $search_keyword!=""}><{$search_keyword}><{else}>指定なし<{/if}></dd>
+</dl>
+
+<p><{$productlist_num}>件の商品が見つかりました</p>
+
+<{if $productlist_num != 0}>
+<div class="product">
+<h3>商品一覧</h3>
+<p class="sort"><{if $productlist_sort_now != ""}>
+<a href="<{$productlist_sort_def}>">おすすめ順</a><{else}><strong>おすすめ順</strong><{/if}>&nbsp;|&nbsp;<{if $productlist_sort_now != "p"}><a href="<{$productlist_sort_price}>">価格順</a><{else}><strong>価格順</strong><{/if}>&nbsp;|&nbsp;<{if $productlist_sort_now != "n"}><a href="<{$productlist_sort_new}>">新着順</a><{else}><strong>新着順</strong><{/if}></p>
+<ul class="product">
+<{section name=num loop=$productlist}>
+<li>
+<a href="<{$productlist[num].link_url}>">
+<{if $productlist[num].img_url != ""}>
+<img src="<{$productlist[num].img_url}>" /><{else}>
+<span class="none">No Photo</span>
+<{/if}>
+<{$productlist[num].name}>
+</a>
+<{if $productlist[num].s_expl <> ""}>
+<span class="exp"><{$productlist[num].s_expl}></span><{/if}>
+<{if $members_login_flg == true && $productlist[num].discount_flg == true}><span class="regular"><{$productlist[num].regular_price}></span><{/if}>
+<{if $productlist[num].soldout_flg == true}><span class="soldout">SOLD OUT</span><{else}><span class="price"><{$productlist[num].price}><{if $members_login_flg == true && $productlist[num].discount_flg == true}><{$productlist[num].discount_rate}>OFF!!<{/if}></span><{/if}>
+</li>
+<{if $smarty.section.num.iteration % 4 == 0 and $smarty.section.num.last == false}>
+</ul>
+<ul class="product"><{/if}>
+<{/section}>
+</ul>
+
+</div>
+<ul class="page">
+<{if $productlist_prev_page != ""}><li><a href="<{$productlist_prev_page}>">&lt;</a></li><{else}><li><span>&lt;</span></li><{/if}>
+
+<{section name=pager start=$productlist_first_page loop=$productlist_last_page+1}>
+<{if $smarty.section.pager.first && $smarty.section.pager.index > 1}>
+<li><a href="<{$productlist_link_base}>">1</a> ...</li>
+<{/if}>
+<{if $smarty.section.pager.index == $productlist_current_page}>
+<li><span><{$smarty.section.pager.index}></span></li>
+<{else}>
+<li><a href="<{$productlist_link_base}>&page=<{$smarty.section.pager.index}>"><{$smarty.section.pager.index}></a></li>
+<{/if}>
+<{if $smarty.section.pager.last && $smarty.section.pager.index < $productlist_total_pages}>
+<li>... <a href="<{$productlist_link_base}>&page=<{$productlist_total_pages}>"><{$productlist_total_pages}></a></li>
+<{/if}>
+<{/section}>
+<{if $productlist_next_page != ""}><li><a href="<{$productlist_next_page}>">&gt;</a></li><{else}><li><span>&gt;</span></li><{/if}>
+</ul>
+<{else}><{if $subcategory_num == 0}><p class="none">該当する商品がありません</p><{/if}><{/if}>
+</div>

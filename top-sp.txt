@@ -10,10 +10,10 @@
 <!--スライドショー-->
 <div class="main-gallery">
 <img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide05.png" height="auto" width="100%" alt="" class="gallery-cell">
-<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide02.jpg" height="auto" width="100%" alt="" class="gallery-cell"></a>
-<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide01.jpg" height="auto" width="100%" alt="" class="gallery-cell"></a>
-<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide03.jpg" height="auto" width="100%" alt="" class="gallery-cell"></a>
-<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide04.jpg" height="auto" width="100%" alt="" class="gallery-cell"></a>
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide02.jpg" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide01.jpg" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide03.jpg" height="auto" width="100%" alt="" class="gallery-cell">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/slide/slide04.jpg" height="auto" width="100%" alt="" class="gallery-cell">
 </div>
 <!--スライドショー-->
 
@@ -87,13 +87,17 @@
 <label class="bland indent" for="ac-cap7">ブランド別</label>
 <input id="ac-cap7" type="checkbox">
 <div class="ac-cont">
-<ul class="list2 cosmebland">
 <{section name=num loop=$category}>
-
-<li><a href="<{$category[num].link_url}>"><img src="<{$category[num].img_url}>" width="100%"></a></li>
-
-<{/section}>
+<{if $smarty.section.num.first }>
+<ul class="list2 cosmebland">
+<{/if}>
+<{if $category[num].img_url != ""}>
+<li><a href="<{$category[num].link_url}>"><img src="<{$category[num].img_url}>" width="100%" alt=""></a></li>
+<{/if}>
+<{if $smarty.section.num.last }>
 </ul>
+<{/if}>
+<{/section}>
 </div>
 
 </section>
@@ -296,15 +300,15 @@
 
 <h3 class="color indent">カラーリング</h3>
 <ul class="colorList">
-<li class="indent"><a href="">ブラック</a></li>
-<li class="indent"><a href="">グレー</a></li>
-<li class="indent"><a href="">グリーン</a></li>
-<li class="indent"><a href="">ピンク</a></li>
-<li class="indent"><a href="">ヘーゼル</a></li>
-<li class="indent"><a href="">ブラウン</a></li>
-<li class="indent"><a href="">ブルー</a></li>
-<li class="indent"><a href="">パープル</a></li>
-<li class="indent"><a href="">シルバー</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D6%A5%E9%A5%C3%A5%AF">ブラック</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%B0%A5%EC%A1%BC">グレー</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%B0%A5%EA%A1%BC%A5%F3">グリーン</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D4%A5%F3%A5%AF">ピンク</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D8%A1%BC%A5%BC%A5%EB">ヘーゼル</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D6%A5%E9%A5%A6%A5%F3">ブラウン</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D6%A5%EB%A1%BC">ブルー</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%D1%A1%BC%A5%D7%A5%EB">パープル</a></li>
+<li class="indent"><a href="http://www.k-colle.net/?mode=srh&cid=2075820%2C0&keyword=%A5%B7%A5%EB%A5%D0%A1%BC">シルバー</a></li>
 </ul>
 
 </section>
