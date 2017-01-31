@@ -1,16 +1,3 @@
-<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/pc/css/common.css">
-<link rel="stylesheet" type="text/css" href="https://file001.shop-pro.jp/PA01166/275/pc/css/animate.css">
-<link rel="stylesheet" href="https://file001.shop-pro.jp/PA01166/275/pc/css/slick.css" />
-<link rel="stylesheet" href="https://file001.shop-pro.jp/PA01166/275/pc/css/slick-theme.css" />
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400i" rel="stylesheet">
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="https://file001.shop-pro.jp/PA01166/275/pc/js/common.js"></script>
-<script src="https://file001.shop-pro.jp/PA01166/275/pc/js/slick.min.js"></script>
-
-<!--↑検索エンジンに入れてから投稿してください-->
-
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -48,7 +35,6 @@
 </div>
 
 <div class="right">
-<p>
 <ul class="navUl">
 <li class="mypage"><span><a href="<{$view_myaccount_url}>">マイアカウント</a></span></li>
 <{if $members_use_flg == true}>
@@ -64,7 +50,6 @@
 <li class="cartBtn"><a href="<{$view_cart_url}>" ><span>カートを見る</span></a></li>
 <li class="cartG"><a href="#guideArea"><span>お買い物ガイド</span></a></li>
 </ul>
-</p>
 </div>
 
 </div>
@@ -74,10 +59,12 @@
 <div id="sliderImg" class="clearfix">
 <div id="slider">
 <div><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head01.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></div>
-<div><a href="http://www.k-colle.net/?mode=cate&cbid=2218989&csid=0"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head02.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
+<div><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head07.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></div>
+<div><a href="http://www.k-colle.net/?pid=110043684"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head02.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head03.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 <div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head04.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
-<div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head05.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
+<div><a href="http://www.k-colle.net/?pid=112094375"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head05.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
+<div><a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/slide/head06.jpg" width="1200" height="336" alt="韓国コスメ専門店　ビューティーガーデン" /></a></div>
 </div>
 </div>
 <!-- ここまでスライドショー -->
@@ -193,21 +180,22 @@
 <h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_new.jpg" width="100%" alt="newアイテム"></h3>
 <p id="btnIchiran"><a href="http://www.k-colle.net/?tid=3&mode=f23">商品一覧はコチラ</a></p>
 </div>
-<{if $new_item_num != 0 }>
+
+<{if $recommend_num != 0}>
 <div class="newArea clearfix">
-<{section name=num loop=5}> 
-<div class="newBox"><a href="<{ $new_item[num].link_url }>">
-<{if $new_item[num].img_url != ""}>
-<img src="<{ $new_item[num].img_url }>" width="100%">
+<{section name=num loop=$recommend}>
+<div class="newBox"><a href="<{$recommend[num].link_url}>">
+<{if $recommend[num].img_url != ""}>
+<img src="<{ $recommend[num].img_url }>" width="100%">
 <{else}>
 <span class="none">No Photo</span>
 <{/if}>
-<p class="newText"><{ $new_item[num].name }></p>
+<p class="newText"><{ $recommend[num].name }></p>
 <p class="newKingaku clearfix">
-<{if $new_item[num].soldout_flg == true}>
+<{if $recommend[num].soldout_flg == true}>
 <span class="soldout">SOLD OUT</span>
 <{else}>
-<span><{$new_item[num].price}></span>
+<span><{$recommend[num].price}></span>
 <{/if}>
 </p>
 </a></div>
@@ -344,10 +332,10 @@ TEL:097-574-7555
 </section>
 
 <section class="center">
-<h3>大分フォーラス<br>閉店売りつくしセール・第3弾</h3>
+<h3>大分フォーラス<br>閉店売り尽くし最終SALE開催！</h3>
 <p class="centerTittle">店舗情報</p>
 <p class="centerText">
-期    間：2017年1月1日(日)朝10時スタート！<br>
+期    間：2017年2月1日～2月26日まで<br>
 営業時間：10:00～20:00
 </p>
 </section>
@@ -355,11 +343,11 @@ TEL:097-574-7555
 <section class="right">
 
 <p>
-<img src="https://file001.shop-pro.jp/PA01166/275/pc/img/pickup/happybag_pc.jpg" width="500">
+<a href="<{$mailmaga_url}>" ><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/pickup/mailmagazine_pc.jpg" width="500"></a>
 </p>
 
 <p>
-福袋のご予約お待ちしております<br>
+メルマガ登録して最新情報をゲットしよう！
 </p>
 
 </section>
@@ -379,14 +367,14 @@ TEL:097-574-7555
 <img class = "guideTitle" src = "https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_guide.png">
 <div id="guideAll" class="clearfix">
 
-<div id="guidehead">
+<!--<div id="guidehead">
 <h3><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_about.png" width="88"></h3>
 <h4>株式会社シュプリーム</h4>
 <p>
 〒8700274 大分県大分市 大字種具８３２－５<br>
 TEL:0975747555 FAX:0975747556<br>
 </p>
-</div>
+</div>-->
 
 <div id="guideCntArea" class="clearfix">
 
@@ -527,7 +515,7 @@ BEAUTY GARDEN「返品・交換係」
 <h3><span>DM便ご利用の際の注意点</span></h3>
 
 <div class="guidefoot_L">
-<h4>・DM便の場合、荷物保証がございません。</h4>
+<h4>DM便の場合、荷物保証がございません。</h4>
 <p>
 ※ポスト投函の通常の郵便ですので、 荷物への保証(配送時の破損も含む)がございません。<br>
 送料を節約したい方のみご選択下さい。(質より安さ優先型)<br>
@@ -541,7 +529,7 @@ BEAUTY GARDEN「返品・交換係」
 </div>
 
 <div class="guidefoot_R">
-<h4>・到着日・時間のご指定はできません。</h4>
+<h4>到着日・時間のご指定はできません。</h4>
 <p>
 （発送からお届けまで数日かかります）<br>
 <ul>
@@ -568,9 +556,43 @@ BEAUTY GARDEN「返品・交換係」
 <img src="https://file001.shop-pro.jp/PA01166/275/pc/img/title/ttl_coupon.jpg" width="100%" alt="おトクなクーポン配信中！！" class="imgCT">
 </div>
 <div class="couponMenu">
-<a href="#" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_100.jpg" width="100%" alt="100off　クーポン"></a>
-<a href="#" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_300.jpg" width="100%" alt="300off　クーポン"></a>
-<a href="#" target="_blank"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_500.jpg" width="100%" alt="500off　クーポン"></a>
+<a href="#coupon100"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_100.jpg" width="100%" alt="100off　クーポン"></a>
+<a href="#coupon300"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_300.jpg" width="100%" alt="300off　クーポン"></a>
+<a href="#coupon500"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/coupon/btn_coupon_500.jpg" width="100%" alt="500off　クーポン"></a>
+
+<div class="remodal" data-remodal-id="coupon100" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+    <h2 id="modal1Title">20170201-100</h2>
+    <p id="modal1Desc">
+	クーポンコードを発行しました。<br>
+	テキストをコピーしてお使いください。
+    </p>
+  </div>
+</div>
+
+<div class="remodal" data-remodal-id="coupon300" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+    <h2 id="modal1Title">20170201-300</h2>
+    <p id="modal1Desc">
+	クーポンコードを発行しました。<br>
+	テキストをコピーしてお使いください。
+    </p>
+  </div>
+</div>
+
+<div class="remodal" data-remodal-id="coupon500" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+  <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+  <div>
+    <h2 id="modal1Title">20170201-500</h2>
+    <p id="modal1Desc">
+	クーポンコードを発行しました。<br>
+	テキストをコピーしてお使いください。
+    </p>
+  </div>
+</div>
+
 </div>
 </div>
 
@@ -601,3 +623,45 @@ BEAUTY GARDEN「返品・交換係」
 <a class="krilloil" href="https://krilloil.co.jp/" target="_blank">南極オキアミクリルオイル公式サイトはコチラ</a>
 </p>
 </div>
+<script>
+  $(document).on('opening', '.remodal', function () {
+    console.log('opening');
+  });
+
+  $(document).on('opened', '.remodal', function () {
+    console.log('opened');
+  });
+
+  $(document).on('closing', '.remodal', function (e) {
+    console.log('closing' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('closed', '.remodal', function (e) {
+    console.log('closed' + (e.reason ? ', reason: ' + e.reason : ''));
+  });
+
+  $(document).on('confirmation', '.remodal', function () {
+    console.log('confirmation');
+  });
+
+  $(document).on('cancellation', '.remodal', function () {
+    console.log('cancellation');
+  });
+
+//  Usage:
+//  $(function() {
+//
+//    // In this case the initialization function returns the already created instance
+//    var inst = $('[data-remodal-id=modal]').remodal();
+//
+//    inst.open();
+//    inst.close();
+//    inst.getState();
+//    inst.destroy();
+//  });
+
+  //  The second way to initialize:
+  $('[data-remodal-id=modal2]').remodal({
+    modifier: 'with-red-theme'
+  });
+</script>

@@ -135,6 +135,7 @@ header #headAreaSpeace .left p{
 
 header #headAreaSpeace .right{
 	float:right;
+	margin:0.2em 0 0 0;
 }
 
 header #headAreaSpeace .right ul{
@@ -145,6 +146,7 @@ header #headAreaSpeace .right ul{
 header #headAreaSpeace .right li{
 	float:left;
 	margin:0;
+	line-height:15px;
 }
 
 li.login {
@@ -299,6 +301,7 @@ li.menu__mega ul.menu__second-level > li {
     float: left;
     width: 32%;
     border: none;
+    list-style:none;
 }
 
 li.menu__mega ul.menu__second-level > li:nth-child(3n+2) {
@@ -308,13 +311,14 @@ li.menu__mega ul.menu__second-level > li:nth-child(3n+2) {
 li.menu__mega ul.menu__second-level li ul{
 	margin:0;
 	padding:0;
-	
+	list-style:none;
 }
 
 li.menu__mega ul.menu__second-level li ul li{
 	padding:5px;
 	border:none;
 	line-height:20px;
+	list-style:none;
 	text-align:left;
 	width:30%;
 	float:left;
@@ -371,6 +375,10 @@ li.menu__mega ul.menu__second-level li ul.navCategory01 li:nth-child(9) a{
 	background-size:100%;
 }
 
+li.menu__mega ul.menu__second-level li ul.navCategory02_2 li , li.menu__mega ul.menu__second-level li ul.navCategory03 li {
+	list-style:none;
+}
+
 li.menu__mega ul.menu__second-level li ul.navCategory02 li a{
 	padding:5px 10px;
 	background:#ff7bac;
@@ -397,7 +405,7 @@ li.menu__mega ul.menu__second-level li ul.navCategory02_2 li a{
 	text-decoration:none;
 	color:black;
 	text-align:center;
-	padding-top:40px;
+	padding-top:45px;
 }
 
 li.menu__mega ul.menu__second-level li ul.navCategory02_2 li a span{
@@ -719,13 +727,13 @@ article #new{
 
 #new h3{
 	margin:0;
-	padding:0 0 5px 0;
+	padding:0;
 	top:0;
 	border-bottom:2px solid #dcd2b1;
 }
 
 #new h3 img{
-	width:102px;
+	/*width:102px;*/
 	display:inline;
 }
 
@@ -1151,8 +1159,7 @@ footer #companyArea2 h4{
 #guideCntArea{
 	width:98.5%;
 	height:auto;
-	margin:0 auto;
-	margin-top:25px;
+	margin:20px auto 0 auto;
 	padding:0 10px 10px 10px;
 	font-family:monospace;
 }
@@ -1172,7 +1179,6 @@ footer #companyArea2 h4{
 #guideCnt03{
 	width:32%;
 	float:left;
-	margin-right:5px;
 }
 
 #guideCntArea h4{
@@ -1227,19 +1233,42 @@ footer #companyArea2 h4{
 #guidefoot{
 	width:95%;
 	margin:0 auto;
-	padding:10px;
+	padding:10px 10px 20px 10px;
 	background:#f6f6f6;
 	font-family:monospace;
 	line-height:20px;
 }
 
 #guidefoot h3 {
-	text-align:center;
+	position: relative;
+	width:96%;
+	margin:1em auto 2em auto;
+	/*text-align: center;*/
+}
+#guidefoot h3 span {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin:0 0 0 3em;
+	padding: 0 1em;
+	background-color: #f6f6f6;
+	text-align: left;
+	font-size:20px;
+}
+#guidefoot h3::before {
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #ccc;
 }
 
 #guidefoot .guidefoot_L,#guidefoot .guidefoot_R{
 	width:47%;
-	margin:0;
+	margin:0 0 0 8px;
 	padding:0px 10px;
 	float:left;
 	font-size:12px;
@@ -1249,13 +1278,13 @@ footer #companyArea2 h4{
 #guidefoot .guidefoot_L h4{
 	margin:0;
 	color:#9a0000;
-	font-size:15px;
+	font-size:16px;
 }
 
 #guidefoot .guidefoot_R h4{
 	margin:0;
 	color:#58aa92;
-	font-size:15px;
+	font-size:16px;
 }
 
 /*---------------------------*/
@@ -1807,6 +1836,7 @@ p.no01{
 .boxInner dl{
 	float: left;
 	width: 25%;
+	height:360px;
 	margin:0px;
 }
 
@@ -2383,7 +2413,7 @@ div.freepage21 ul.ulLenzBrand li:nth-child(4) a{
 }
 
 div.freepage21 ul.ulLenzBrand li:nth-child(5) a{
-	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/lilmoon_logo.jpg) no-repeat 0 0;
+	background:url(https://file001.shop-pro.jp/PA01166/275/pc/img/bland/secretcandymagic_logo.jpg) no-repeat 0 0;
 	background-size:100%;
 	height:70px;
 }

@@ -420,7 +420,7 @@ h2.new{
 
 .accordion {
 	min-width: 90%;
-	margin: 0 auto 10px;
+	margin: 0 auto;
 }
 .accordion .ac-content {
 	margin: 0 0px;
@@ -431,10 +431,6 @@ h2.new{
 .accordion label {
 	display: block;
 	cursor: pointer;
-	padding: 10px;
-}
-.accordion label:hover {
-	background: #ccc;
 }
 .accordion .ac-cont {
 	transition: 0.2s;
@@ -449,23 +445,21 @@ h2.new{
 
 .accordion label.btnCat{
 	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/contact/btn_cat.png) no-repeat 0 0; background-size:100%;
-	max-width: 95%;
 	height:auto;
-	padding-bottom: 7%;
+	padding-bottom: 10%;
 }
 
 .accordion label.btnCat2{
 	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/shop/btn_cat_shop.jpg) no-repeat 0 0; background-size:100%;
-	max-width: 95%;
 	height:auto;
-	padding-bottom: 7%;
+	padding-bottom: 10%;
 }
 
 .accordion label.bland{
 	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/contact/btn_brand.jpg) no-repeat 0 0; background-size:100%;
 	width: 90%;
 	height: auto;
-	padding-top:8%;
+	padding-top:10%;
 	margin: 0 auto;
 }
 
@@ -473,7 +467,7 @@ h2.new{
 	background: url(https://file001.shop-pro.jp/PA01166/275/sp/img/cosme/btn_brand_2.jpg) no-repeat 0 0; background-size:100%;
 	width: 90%;
 	height: auto;
-	padding-top:8%;
+	padding-top:10%;
 	margin: 0 auto;
 }
 
@@ -821,6 +815,7 @@ section#cosmeRank, section#contactRank{
 .ranking div.rankParts a img{
 	margin-top: 5px;
 	margin-bottom: 10px;
+	width:100%;
 }
 
 div.rankParts a img{
@@ -1124,34 +1119,6 @@ div.rankParts a img{
 	color: #F15A24;
 }
 
-/*クーポン等*/
-/*--------------------------------------*/
-
-.otoku{
-	width: 100%;
-	background-color:#ece7eb;
-	text-align: center;
-	padding: 0% 0 5%;
-	margin-top: 5%;
-}
-
-.otoku a{
-	display: block;
-	margin-top: 5%;
-}
-
-.days{
-	text-align: center;
-	width: 100%;
-	color: #333;
-	padding: 3% 0;
-	background-color: #ccc;
-}
-
-.couponInner{
-	margin-top: 5%;
-}
-
 /*オススメ定番商品*/
 /*--------------------------------------*/
 .recomend{
@@ -1247,7 +1214,7 @@ h1#forus-Oita{
 	height:auto;
 	background:#ff7bac;
 	color:#ffffff;
-	margin:10px 0 10px 0;
+	margin:0 0 10px 0;
 	padding:10px 0 5px 10px;
 	text-align:left;
 }
@@ -1261,7 +1228,7 @@ h1#aeonkyushu-Hazama{
 	height:auto;
 	background:#ff7bac;
 	color:#ffffff;
-	margin:10px 0 10px 0;
+	margin:0 0 10px 0;
 	padding:10px 0 5px 10px;
 	text-align:left;
 }
@@ -1304,7 +1271,7 @@ table.type01 th {
 	border-bottom: 1px solid #ccc;
 }
 table.type01 td {
-	/*width: 350px*/;
+	width: 350px;
 	padding:5px 10px;
 	border-bottom: 1px solid #ccc;
 }
@@ -1341,4 +1308,72 @@ table.type01 td {
 .facebook-wrapper > .fb-page > span,
 .facebook-wrapper iframe {
     width: 100% !important;
+}
+
+/*======================================
+ curpon
+======================================*/
+
+.otoku{
+	width: 100%;
+	background-color:#ece7eb;
+	text-align: center;
+	padding:5% 0 5%;
+}
+
+.otoku a{
+	display: block;
+	margin-top: 5%;
+}
+
+.days{
+	text-align: center;
+	width: 100%;
+	color: #333;
+	padding: 3% 0;
+	background-color: #ccc;
+}
+
+.couponInner{
+	margin-top: 5%;
+}
+
+.coupon100{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/coupon/100off.png) no-repeat center;
+	background-size:95%;
+	padding-top:15%;
+}
+
+.coupon300{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/coupon/300off.png) no-repeat center;
+	background-size:95%;
+	padding-top:15%;
+}
+
+.coupon500{
+	background:url(https://file001.shop-pro.jp/PA01166/275/sp/img/coupon/500off.png) no-repeat center;
+	background-size:95%;
+	padding-top:15%;
+}
+
+p.couponCopy{
+	width:70%;
+	background:#ffffff;
+	text-align:center;
+	margin:40px auto 15px auto;
+	padding:10px 5px;
+	font-size:20px;
+}
+
+p.couponText{
+	width:80%;
+	margin:0 auto 25px auto;
+	text-align:left;
+	font-size:10px;
+}
+
+.bg{
+	background:#999;
+	width:90%;
+	margin: 0 auto;
 }

@@ -140,31 +140,6 @@
 </dl>
 </a>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<a href="<{$seller[num].link_url}>">
-<dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no6.png" width="100%" height="auto" alt="No06"></p></dt>
-<dt>
-<{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</dt>
-<dd>
-<p><span class="itemTtl"><{$seller[num].name}></span></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</dd>
-<{/if}><{/section}>
-</dl>
-</a>
-
 </section>
 </div>
 
@@ -177,7 +152,7 @@
 
 <section class="boxInner">
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 7)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <a href="<{$seller[num].link_url}>">
 <dl>
@@ -202,7 +177,7 @@
 </dl>
 </a>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 8)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 7)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <a href="<{$seller[num].link_url}>">
 <dl>
@@ -227,7 +202,7 @@
 </dl>
 </a>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 9)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 8)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <a href="<{$seller[num].link_url}>">
 <dl>
@@ -252,7 +227,7 @@
 </dl>
 </a>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 10)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 9)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <a href="<{$seller[num].link_url}>">
 <dl>
@@ -277,61 +252,19 @@
 </dl>
 </a>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 11)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<a href="<{$seller[num].link_url}>">
-<dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no5.png" width="100%" height="auto" alt="No05"></p></dt>
-<dt>
-<{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</dt>
-<dd>
-<p><span class="itemTtl"><{$seller[num].name}></span></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</dd>
-<{/if}><{/section}>
-</dl>
-</a>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 12)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<a href="<{$seller[num].link_url}>">
-<dl>
-<dt><p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/pc/img/ranking/ico_no6.png" width="100%" height="auto" alt="No06"></p></dt>
-<dt>
-<{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" />
-<{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</dt>
-<dd>
-<p>
-<span class="itemTtl">
-<{$seller[num].name}></span></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</dd>
-<{/if}><{/section}>
-</dl>
-</a>
 </section>
 </div>
 
 </div>
 </section>
 <{/if}>
+
+<script>
+    $(function(){
+        $("#tabMenu li a").on("click", function() {
+            $("#tabBoxes div").hide();
+            $($(this).attr("href")).fadeToggle();
+        });
+        return false;
+    });
+</script>

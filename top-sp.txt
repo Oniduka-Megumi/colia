@@ -208,26 +208,6 @@
 </div>
 <{/if}><{/section}>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts">
-<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
 <{/if}>
 
 <div class="btnAll indent"><a href="http://www.k-colle.net/?mode=srh&keyword=&view=smartphone">全商品を見る</a></div>
@@ -262,7 +242,6 @@
 <li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=3">シークレットキャンディーマジック</a></li>
 <li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=8">ラヴェール 倖田來未デザインプロデュース</a></li>
 <li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=11">アンヴィ</a></li>
-<li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=12">リルムーン モデル【ローラ】プロデュース</a></li>
 <li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=13">フランミー</a></li>
 <li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=14">ナチュラリ</a></li>
 <li><a href="http://www.k-colle.net/?mode=cate&cbid=2075820&csid=15">クオーレ ナチュラ</a></li>
@@ -320,7 +299,7 @@
 
 <h3 class="rankingTittle indent">RANKING</h3>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 7)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 6)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
 <p class="no01"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no01.png" width="100%" height="auto" alt="No01"></p>
@@ -340,7 +319,7 @@
 </div>
 <{/if}><{/section}>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 8)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 7)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts center">
 <p class="no02"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no02.png" width="100%" height="auto" alt="No02"></p>
@@ -360,7 +339,7 @@
 </div>
 <{/if}><{/section}>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 9)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 8)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts">
 <p class="no03"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no03.png" width="100%" height="auto" alt="No03"></p>
@@ -380,50 +359,10 @@
 </div>
 <{/if}><{/section}>
 
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 10)}>
+<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 9)}>
 <{assign var="num" value=$smarty.section.num.iteration}>
 <div class="rankParts clearfix">
 <p class="no04"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no04.png" width="100%" height="auto" alt="No04"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 11)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts center">
-<p class="no05"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no05.png" width="100%" height="auto" alt="No05"></p>
-<a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
-<img src="<{$seller[num].img_url}>" /><{else}>
-<span class="none">No Photo</span>
-<{/if}>
-</a>
-<p><{$seller[num].name}></p>
-<{if $seller[num].soldout_flg == true}>
-<p class="price">
-<span class="soldout">SOLD OUT</span>
-<{else}>
-<span class="priceBig red bold"><{$seller[num].price}></span>
-</p>
-<{/if}>
-</div>
-<{/if}><{/section}>
-
-<{section name=num loop=$seller}><{if ($smarty.section.num.iteration == 12)}>
-<{assign var="num" value=$smarty.section.num.iteration}>
-<div class="rankParts">
-<p class="no06"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/ranking/ico_no06.png" width="100%" height="auto" alt="No06"></p>
 <a href="<{$seller[num].link_url}>"><{if $seller[num].img_url != ""}>
 <img src="<{$seller[num].img_url}>" /><{else}>
 <span class="none">No Photo</span>
@@ -450,14 +389,14 @@
 <section id="osusume">
 <h2 class="indent">おすすめコーデ</h2>
 <div class="osusumeInner">
-<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/christmas.jpg" width="100%" height="auto">
+<img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/agecelemony_sp.jpg" width="100%" height="auto">
 <ul>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code01.png" width="100%" height="auto"></a></li>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code02.png" width="100%" height="auto"></a></li>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code03.png" width="100%" height="auto"></a></li>
-<li><a href=""><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code04.png" width="100%" height="auto"></a></li>
+<li><a href="http://www.k-colle.net/?pid=76558874"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code01.png" width="100%" height="auto"></a></li>
+<li><a href="http://www.k-colle.net/?pid=95869808"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code02.png" width="100%" height="auto"></a></li>
+<li><a href="http://www.k-colle.net/?pid=100071351"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code03.png" width="100%" height="auto"></a></li>
+<li><a href="http://www.k-colle.net/?pid=42959252"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/code04.png" width="100%" height="auto"></a></li>
 </ul>
-<a href="#"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/btn_coode.png" width="100%" height="auto"></a>
+<a href="http://www.k-colle.net/?mode=grp&gid=1297539"><img src="https://file001.shop-pro.jp/PA01166/275/sp/img/common/btn_coode.png" width="100%" height="auto"></a>
 </div>
 </section>
 
